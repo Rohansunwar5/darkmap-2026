@@ -1,0 +1,17 @@
+/* RightContent.module.css */
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  scrollbar-width: none;
+}
+
+/* Ensure only this div can
+
+
+use the overflow properties */
+.scrollableDiv {
+  overflow-x: hidden;
+  overflow-y: auto;
+}

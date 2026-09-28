@@ -1,0 +1,6 @@
+{"account": "brand.support", "id": "123", "full_name": "Brand Support", "biography": "Help at https://brand.example/support",
+ "followers": 440, "following": 10, "posts_count": 1, "is_verified": false,
+ "external_url": ["https://brand.example/support"], "profile_image_link": "https://cdn.example/avatar.jpg",
+ "posts": [{"id": "900", "caption": "Contact @brand #help", "datetime": "2026-09-12T01:00:00.000Z", "content_type": "Video",
+            "likes": 12, "comments": 3, "url": "https://www.instagram.com/reel/ABC123/",
+            "image_url": "https://cdn.example/cover.jpg", "video_url": "https://cdn.example/video.mp4"}]}

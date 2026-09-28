@@ -1,0 +1,17 @@
+{
+  "brand": {"name": "Luminaire", "official_handles": ["luminaire"], "official_domains": ["luminaire.com"],
+            "keywords": ["luminaire", "aurora series"]},
+  "account": {"handle": "luminaire.offers_hindi", "display_name": "Luminaire ऑफर 😀", "biography":
+              "सिर्फ़ आज! Luminaire loot deal — telegram channel से जुड़ें, UPI pay.me@ybl",
+              "external_url": "https://t.me/lumiloot", "followers_count": 312, "follows_count": 5,
+              "media_count": 9, "is_verified": false},
+  "provenance": {"collection_mode": "keyword", "lawful_basis": "licensed_public_data_api"},
+  "posts": [{"caption": "Luminaire पर 90% off 🔥 link in bio, comment LINK for free cash ₹500 cashback",
+             "media": [{"media_type": "image"}],
+             "comments": [{"author_handle": "victim_1", "text": "I paid already but never received 😡"}],
+             "engagement": {"likes": 40, "comments": 3, "views": null, "shares": null}}],
+  "entities": [{"kind": "url", "value": "https://t.me/lumiloot", "domain": "t.me", "source_field": "external_url"},
+               {"kind": "upi", "value": "pay.me@ybl", "domain": null, "source_field": "bio"}],
+  "media_analysis": [], "shared_artifacts": [], "account_changes": [],
+  "velocity": {"posts_last_hour": 0, "posts_last_24h": 1, "follower_delta": null, "duplicate_post_count": 0}
+}

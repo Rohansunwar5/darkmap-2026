@@ -1,0 +1,13 @@
+.env
+.venv
+.pytest_cache
+__pycache__
+tests
+data/seed
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+Dockerfile
+docker-compose.yml

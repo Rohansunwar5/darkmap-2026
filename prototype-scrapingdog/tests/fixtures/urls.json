@@ -1,0 +1,3 @@
+["http://[::1]:80/", "http://[bad/", "http://[127.0.0.1]/", "user@host.com:8080", "http://exämple.com/x",
+ "www.EXAMPLE.com", "", "mailto:x@y.com", "http://example.com#frag", "https://a.com\\@b.com", " \thttp://tab.com",
+ "t.me/channel", "ftp://files.example.org/x", "//double.slash.com/p", "http://example.com:99999/"]

@@ -1,0 +1,578 @@
+{
+  "request": {
+    "path": "/instagram/post_details",
+    "params": {
+      "url": "https://www.instagram.com/reel/DUTalcSCbgP/"
+    },
+    "url": "https://api.scrapingdog.com/instagram/post_details?url=https%3A%2F%2Fwww.instagram.com%2Freel%2FDUTalcSCbgP%2F"
+  },
+  "status": 200,
+  "ms": 4285,
+  "headers": {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, multipart/form-data",
+    "access-control-allow-methods": "HEAD,GET,POST,DELETE,OPTIONS,PUT",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a3f94dcaffcae8eb-BOM",
+    "connection": "keep-alive",
+    "content-encoding": "br",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 23 Sep 2026 11:45:38 GMT",
+    "etag": "W/\"4cae-Xc9rK+nTMPAsoOfzgSrZMXVQ1nw\"",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=bzChIhBq64EZuNnRS%2FPegsEsvlqHviHaetMHf3BpUH0tpe4nsh9ECFBD1S3xMCDLfmXSa4WzERcYPI80Cg6dhwaWA2vJw0tUagMcwkTQbXgggw2%2B0ydCEWCQQ%2FzXxcmE8l5yvQoAXUp%2FiSDi6p095%2F4%3D\"}]}",
+    "server": "cloudflare",
+    "transfer-encoding": "chunked",
+    "x-frame-options": "sameorigin, SAMEORIGIN",
+    "x-powered-by": "Express"
+  },
+  "json": {
+    "post": {
+      "url": "https://www.instagram.com/reel/DUTalcSCbgP/",
+      "shortcode": null,
+      "image": "https://scontent.cdninstagram.com/v/t51.82787-15/626429994_18595194466020081_2862965342104441026_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=xQpajZ4XZFAQ7kNvwGIEL00&_nc_oc=AdpmSnmHHnleXTTRgyb2Cj9EHlY5_O2vsQseg-r0EpJKhiVIjsGiRABtg1UO72DNt2U&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=ngAVSNk1wkUhOUcJcYl1zA&_nc_ss=79689&oh=00_AQLL2QzHZjCbqweB0YNehebytxZRT_A917h0sogmkIBHyQ&oe=6AB97ECA",
+      "twitterImage": "https://scontent.cdninstagram.com/v/t51.82787-15/626429994_18595194466020081_2862965342104441026_n.jpg?stp=cmp1_dst-jpg_e35_s640x640_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=xQpajZ4XZFAQ7kNvwGIEL00&_nc_oc=AdpmSnmHHnleXTTRgyb2Cj9EHlY5_O2vsQseg-r0EpJKhiVIjsGiRABtg1UO72DNt2U&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=ngAVSNk1wkUhOUcJcYl1zA&_nc_ss=79689&oh=00_AQLL2QzHZjCbqweB0YNehebytxZRT_A917h0sogmkIBHyQ&oe=6AB97ECA",
+      "title": "Nike on Instagram: \"NIKE MIND INTAKE SESSION\n\nAthlete:\nShubman Gill\nCricketer\n\nKey finding:\n“Cricket is a mind game.”\n\nBrought to you by Nike Mind: A MIND-ALTERING SHOE. Restocks coming soon.\"",
+      "caption": "NIKE MIND INTAKE SESSION\n\nAthlete:\nShubman Gill\nCricketer\n\nKey finding:\n“Cricket is a mind game.”\n\nBrought to you by Nike Mind: A MIND-ALTERING SHOE. Restocks coming soon.",
+      "description": "224K likes, 1,797 comments - nike on February 3, 2026: \"NIKE MIND INTAKE SESSION\n\nAthlete:\nShubman Gill\nCricketer\n\nKey finding:\n“Cricket is a mind game.”\n\nBrought to you by Nike Mind: A MIND-ALTERING SHOE. Restocks coming soon.\". ",
+      "mediaId": "3824517430765008911",
+      "display_url": "https://instagram.fgdl9-1.fna.fbcdn.net/v/t51.82787-15/626429994_18595194466020081_2862965342104441026_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=111&ig_cache_key=MzgyNDUxNzQzMDc2NTAwODkxMTE4NTk1MTk0NDYzMDIwMDgx.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNMSVBTLnhwaWRzLjEwOTIuc2RyLnZpZGVvX2RlZmF1bHRfY292ZXJfZnJhbWUuQzMifQ%3D%3D&_nc_ohc=xQpajZ4XZFAQ7kNvwGIEL00&_nc_oc=AdpmSnmHHnleXTTRgyb2Cj9EHlY5_O2vsQseg-r0EpJKhiVIjsGiRABtg1UO72DNt2U&_nc_zt=23&_nc_ht=instagram.fgdl9-1.fna&_nc_gid=LGYsBrkSD6FGR4xcZXIPMw&_nc_ss=79689&oh=00_AQJ16twh5-NAwcf_U2NSAjqB2RR2ynqUKDNfoGE-RQ72Yw&oe=6AB97ECA",
+      "taken_at": 1770138051,
+      "taken_at_iso": "2026-02-03T17:00:51.000Z",
+      "like_count": 223920,
+      "comment_count": 1797
+    },
+    "account": {
+      "username": "reel",
+      "userId": "13460080",
+      "profileUrl": "https://www.instagram.com/reel/",
+      "profilePic": "https://scontent.cdninstagram.com/v/t51.82787-19/551608484_18567162979020081_1135468084872726555_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4zOTkuQzMifQ%3D%3D&_nc_ohc=l3wg8iAkAc4Q7kNvwEEbW3j&_nc_oc=AdqR9AAot8VY4gDyOJwOlhuTwcPh_FAlL7865JwrKbge_UxA8RqUZUNFpLbqr79w4ns&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=LGYsBrkSD6FGR4xcZXIPMw&_nc_ss=79689&oh=00_AQIRj2yXwZBo-9p-uwAqLwvJdp4-Eui2xHHWSnS43qV3Ow&oe=6AB9883A"
+    },
+    "comments": [
+      {
+        "id": "18155596351501822",
+        "text": "❤️🙌🙌🙌🙌",
+        "created_at": 1789810437,
+        "created_at_iso": "2026-09-19T09:33:57.000Z",
+        "like_count": 0,
+        "parent_comment_id": null,
+        "user": {
+          "id": "79989993253",
+          "username": "shagundeep_kaur_",
+          "full_name": null,
+          "profile_pic_url": "https://scontent.cdninstagram.com/v/t51.82787-19/820973875_17902817163665254_4729594230982169382_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=104&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=Pq23GxQFXKQQ7kNvwHGGLOi&_nc_oc=AdrCEinh33SLXQidsJa_SLvLL591qis5M8F7tmOWsEjN0LzFI76EXxR-Eii-43BvsKs&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=LGYsBrkSD6FGR4xcZXIPMw&_nc_ss=79689&oh=00_AQLWV0XxZNEfQSVVyordy8PZI2znxfg3Kc3rJDTXa7g9bQ&oe=6AB9A434",
+          "is_verified": false
+        }
+      },
+      {
+        "id": "18128999083690303",
+        "text": "🤍",
+        "created_at": 1789663040,
+        "created_at_iso": "2026-09-17T16:37:20.000Z",
+        "like_count": 0,
+        "parent_comment_id": null,
+        "user": {
+          "id": "34943826891",
+          "username": "pranavi26022007",
+          "full_name": null,
+          "profile_pic_url": "https://scontent.cdninstagram.com/v/t51.89012-19/573323465_1219825463302212_7278921664109726296_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy5DMyJ9&_nc_ohc=jXWZiZMGxX0Q7kNvwHU5W6r&_nc_oc=AdoyXb9tC86IO0uHvVqJHnhxD-fVb2a0KwlImhX-9_P3UYopTtNNBp662EAzY-tV_Xk&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=LGYsBrkSD6FGR4xcZXIPMw&_nc_ss=79689&oh=00_AQKNB4ornSoVhuVghwfxNJnuECPemF7BID1642xbWrMa8w&oe=6AB984A2",
+          "is_verified": false
+        }
+      },
+      {
+        "id": "18080702783687568",
+        "text": "❤️❤️❤️",
+        "created_at": 1789560903,
+        "created_at_iso": "2026-09-16T12:15:03.000Z",
+        "like_count": 0,
+        "parent_comment_id": null,
+        "user": {
+          "id": "53393201465",
+          "username": "kobitadus",
+          "full_name": null,
+          "profile_pic_url": "https://scontent.cdninstagram.com/v/t51.89012-19/573323465_1219825463302212_7278921664109726296_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy5DMyJ9&_nc_ohc=jXWZiZMGxX0Q7kNvwHU5W6r&_nc_oc=AdoyXb9tC86IO0uHvVqJHnhxD-fVb2a0KwlImhX-9_P3UYopTtNNBp662EAzY-tV_Xk&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=LGYsBrkSD6FGR4xcZXIPMw&_nc_ss=79689&oh=00_AQKNB4ornSoVhuVghwfxNJnuECPemF7BID1642xbWrMa8w&oe=6AB984A2",
+          "is_verified": false
+        }
+      },
+      {
+        "id": "18077856131352662",
+        "text": "Happy birthday 🎂 shubman gill ❤️❤️",
+        "created_at": 1788806190,
+        "created_at_iso": "2026-09-07T18:36:30.000Z",
+        "like_count": 0,
+        "parent_comment_id": null,
+        "user": {
+          "id": "71549375462",
+          "username": "miss_meerab130",
+          "full_name": null,
+          "profile_pic_url": "https://scontent.cdninstagram.com/v/t51.82787-19/732271573_17921582100391463_6728183241417261347_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=111&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy43MjAuQzMifQ%3D%3D&_nc_ohc=tKWbje_QOhYQ7kNvwHQzxBB&_nc_oc=AdqDhts81R6LEo3UMQ9tQJizuVzuP8h57qOs_iJi7nkUBB_sPD6qo-zbXJT0_Uic5dA&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=LGYsBrkSD6FGR4xcZXIPMw&_nc_ss=79689&oh=00_AQLSquGO5NsH8AIzQwnXpQ-dxz4X-JGcR5kxRdinVc_1mQ&oe=6AB99D6E",
+          "is_verified": false
+        }
+      },
+      {
+        "id": "18618318346013736",
+        "text": "Big fan",
+        "created_at": 1788634267,
+        "created_at_iso": "2026-09-05T18:51:07.000Z",
+        "like_count": 0,
+        "parent_comment_id": null,
+        "user": {
+          "id": "17629948763",
+          "username": "deepak_yogi1234",
+          "full_name": null,
+          "profile_pic_url": "https://scontent.cdninstagram.com/v/t51.82787-19/806317901_18145931053588764_2408643750904537184_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=103&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=FGxTaYGWCvUQ7kNvwETp8tQ&_nc_oc=AdqMke02KFDS89LE_BzLJ4cN1-umzmfo5-nGyO7GmGNHfokA8YEVVqb_mSQZAYAAFoA&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=LGYsBrkSD6FGR4xcZXIPMw&_nc_ss=79689&oh=00_AQJqYcquyS2SM1Okw8a8R4R_pzH6je-KvibKtOihoL_hOQ&oe=6AB982A5",
+          "is_verified": false
+        }
+      },
+      {
+        "id": "17905001871550123",
+        "text": "Hey shubhman",
+        "created_at": 1788627360,
+        "created_at_iso": "2026-09-05T16:56:00.000Z",
+        "like_count": 0,
+        "parent_comment_id": null,
+        "user": {
+          "id": "77476811304",
+          "username": "shreyaray8248",
+          "full_name": null,
+          "profile_pic_url": "https://scontent.cdninstagram.com/v/t51.89012-19/573323465_1219825463302212_7278921664109726296_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy5DMyJ9&_nc_ohc=jXWZiZMGxX0Q7kNvwHU5W6r&_nc_oc=AdoyXb9tC86IO0uHvVqJHnhxD-fVb2a0KwlImhX-9_P3UYopTtNNBp662EAzY-tV_Xk&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=LGYsBrkSD6FGR4xcZXIPMw&_nc_ss=79689&oh=00_AQKNB4ornSoVhuVghwfxNJnuECPemF7BID1642xbWrMa8w&oe=6AB984A2",
+          "is_verified": false
+        }
+      },
+      {
+        "id": "18109362230127427",
+        "text": "❤️❤️❤️❤️❤️❤️❤️",
+        "created_at": 1788508295,
+        "created_at_iso": "2026-09-04T07:51:35.000Z",
+        "like_count": 0,
+        "parent_comment_id": null,
+        "user": {
+          "id": "23679173046",
+          "username": "suman4345721",
+          "full_name": null,
+          "profile_pic_url": "https://scontent.cdninstagram.com/v/t51.82787-19/797357699_18125238430789047_5665970061577242155_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=109&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=tdM1XJq_lL8Q7kNvwHH7pWC&_nc_oc=AdrbAsROwW7ebN2hGTKqzj2HZxPA4YijYdG6pc6Z_ISPOHw9TEzZlWfNglfcPFCGXs0&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=LGYsBrkSD6FGR4xcZXIPMw&_nc_ss=79689&oh=00_AQIpuqOSs0eqWSaHYoj_YzYA3aXktTnpS2i1-pjgIUt_4g&oe=6AB99A0C",
+          "is_verified": false
+        }
+      },
+      {
+        "id": "18113117155966493",
+        "text": "Mr Gill 😎🫰❤️💙🫰",
+        "created_at": 1787943794,
+        "created_at_iso": "2026-08-28T19:03:14.000Z",
+        "like_count": 0,
+        "parent_comment_id": null,
+        "user": {
+          "id": "58419973567",
+          "username": "official_sujujaiswal",
+          "full_name": null,
+          "profile_pic_url": "https://scontent.cdninstagram.com/v/t51.75761-19/502396092_17956475030949568_3226203176649427199_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=100&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy45OTkuQzMifQ%3D%3D&_nc_ohc=lSNn5q7vFqMQ7kNvwEOpDpZ&_nc_oc=AdrRGo2ngKKAawLG8F1RtJxtlrqTKgHx662M-yE4e-2vCsmGYsJJmHZ-ZQmMvl1pymU&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=LGYsBrkSD6FGR4xcZXIPMw&_nc_ss=79689&oh=00_AQJauRFTEmSouHEMZqPApMofIeWNRiOQtnWckbtBuhGIJg&oe=6AB98365",
+          "is_verified": false
+        }
+      },
+      {
+        "id": "18471911287117451",
+        "text": "3🙌",
+        "created_at": 1787500613,
+        "created_at_iso": "2026-08-23T15:56:53.000Z",
+        "like_count": 0,
+        "parent_comment_id": null,
+        "user": {
+          "id": "65918113257",
+          "username": "_afiya_.32",
+          "full_name": null,
+          "profile_pic_url": "https://scontent.cdninstagram.com/v/t51.82787-19/570586157_17918863629193258_6731631916469875011_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=103&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy41MjguQzMifQ%3D%3D&_nc_ohc=WoF0QmSzcCcQ7kNvwHCG-mk&_nc_oc=AdqXkXi3CG9iD3UUB8YQuyO6_DX7pPofOgy8jJuiLRwCEk-xQ8uXv_o6KdfmVs_UxDE&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=LGYsBrkSD6FGR4xcZXIPMw&_nc_ss=79689&oh=00_AQIs26ripKWPb7z79njH4PVvvbUhXlU7-AagatNVnaPlvQ&oe=6AB9A80B",
+          "is_verified": false
+        }
+      },
+      {
+        "id": "18092229752409989",
+        "text": "❤️❤️",
+        "created_at": 1787405246,
+        "created_at_iso": "2026-08-22T13:27:26.000Z",
+        "like_count": 0,
+        "parent_comment_id": null,
+        "user": {
+          "id": "32587662376",
+          "username": "maan__pb05_",
+          "full_name": null,
+          "profile_pic_url": "https://scontent.cdninstagram.com/v/t51.82787-19/673780590_18086087468086377_8152116309068363358_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=105&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=NQU73c-8-B0Q7kNvwHgNa9x&_nc_oc=Adpkx-Rcb8HJlOZjrgZbIl7XREPJUmmUX2ykxKyGsaCOqqN4Lq4kO-OornaIbxkId2k&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=LGYsBrkSD6FGR4xcZXIPMw&_nc_ss=79689&oh=00_AQISH6OWMo2ptZ4Rk1bhrdTnCNJ6upWhVvqxPQd13N9S6Q&oe=6AB99BB2",
+          "is_verified": false
+        }
+      },
+      {
+        "id": "18403577662095503",
+        "text": "❤️❤️❤️❤️❤️",
+        "created_at": 1786457837,
+        "created_at_iso": "2026-08-11T14:17:17.000Z",
+        "like_count": 0,
+        "parent_comment_id": null,
+        "user": {
+          "id": "69457695647",
+          "username": "dipa79126",
+          "full_name": null,
+          "profile_pic_url": "https://scontent.cdninstagram.com/v/t51.82787-19/684325500_17923887984319648_399856108886961843_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=100&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=vVwOa60eRR4Q7kNvwGyGDUK&_nc_oc=AdpnXiiU8JazYfqViSDKQ6vlzDYNc2RmuszAoQWLSao9fXrA6gnWiUOGbaGwlLMRFts&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=LGYsBrkSD6FGR4xcZXIPMw&_nc_ss=79689&oh=00_AQLWt8KKKlukFwI7iXxRalZ5sOB6P-hv6OAf4Yt3tssqbA&oe=6AB97AA8",
+          "is_verified": false
+        }
+      },
+      {
+        "id": "18113183318316733",
+        "text": "Shubman gill 🇮🇳",
+        "created_at": 1785472561,
+        "created_at_iso": "2026-07-31T04:36:01.000Z",
+        "like_count": 1,
+        "parent_comment_id": null,
+        "user": {
+          "id": "78010758305",
+          "username": "cricket_hiten_77",
+          "full_name": null,
+          "profile_pic_url": "https://scontent.cdninstagram.com/v/t51.82787-19/621152750_17856397893606306_4832509483009334051_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=100&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=PuWy9k0AAX4Q7kNvwGQXGby&_nc_oc=AdqXl4jNkHwmJ2SzloEkyjbLAPtWldDNuxTTcwZf8IPT04tTOA6g7qQaaONrfzdIs5A&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=LGYsBrkSD6FGR4xcZXIPMw&_nc_ss=79689&oh=00_AQJSlQmXqUjAJ2sjkaogn_pZdpLd-ahXxe4HlqOddpTa4w&oe=6AB984E9",
+          "is_verified": false
+        }
+      },
+      {
+        "id": "18155802604496341",
+        "text": "❤️❤️🔥🔥",
+        "created_at": 1785039612,
+        "created_at_iso": "2026-07-26T04:20:12.000Z",
+        "like_count": 0,
+        "parent_comment_id": null,
+        "user": {
+          "id": "68319601441",
+          "username": "gavuuhh_77",
+          "full_name": null,
+          "profile_pic_url": "https://scontent.cdninstagram.com/v/t51.82787-19/788839013_17945790081273442_4020984965879369945_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=110&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=_4uiyrwvNDQQ7kNvwHm1K75&_nc_oc=AdoP_ViDK68rZ-c4fqalkPkxepBrFuvCjwsD9l6vAtGivbS6uJvCZSRZccaGbNqVjx0&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=LGYsBrkSD6FGR4xcZXIPMw&_nc_ss=79689&oh=00_AQJoHC32zwH0T8KFyE0iU2DjaMqInem1CdSvXrD73IMJ6Q&oe=6AB9A7E5",
+          "is_verified": false
+        }
+      },
+      {
+        "id": "18071546183432239",
+        "text": "❤️❤️",
+        "created_at": 1784873017,
+        "created_at_iso": "2026-07-24T06:03:37.000Z",
+        "like_count": 0,
+        "parent_comment_id": null,
+        "user": {
+          "id": "53087679976",
+          "username": "its_sakib_pathan00",
+          "full_name": null,
+          "profile_pic_url": "https://scontent.cdninstagram.com/v/t51.82787-19/510463959_18008348384775977_7931873906938151369_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=100&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=g_DHiGyXMqwQ7kNvwHT0TXN&_nc_oc=AdqabSmRK1TeztZaLoxSDHdNo4cRNt1NHGc5A734yMHjwJmXJCIvje98ZSx_jNci2lk&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=LGYsBrkSD6FGR4xcZXIPMw&_nc_ss=79689&oh=00_AQKuiQpg_jrQnm0LZqAP85PiUtYVkD1nEvt5OuacodQWrg&oe=6AB98225",
+          "is_verified": false
+        }
+      }
+    ],
+    "comments_page_info": {
+      "end_cursor": "AQHTE4bFCTWL3euDatc_UUp8dDt_sy5yO1MEIQa-d4ud6XEn27sTbuB7EeNOKAc9I_HIlCMJDXNacuz_yquEIHfmGw",
+      "has_next_page": true,
+      "has_previous_page": false,
+      "start_cursor": null
+    },
+    "alternateUrls": [
+      {
+        "lang": "x-default",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/"
+      },
+      {
+        "lang": "en",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=en"
+      },
+      {
+        "lang": "fr",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=fr"
+      },
+      {
+        "lang": "it",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=it"
+      },
+      {
+        "lang": "de",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=de"
+      },
+      {
+        "lang": "es",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es"
+      },
+      {
+        "lang": "zh-cn",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=zh-cn"
+      },
+      {
+        "lang": "zh-tw",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=zh-tw"
+      },
+      {
+        "lang": "ja",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=ja"
+      },
+      {
+        "lang": "ko",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=ko"
+      },
+      {
+        "lang": "pt",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=pt"
+      },
+      {
+        "lang": "pt-br",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=pt-br"
+      },
+      {
+        "lang": "af",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=af"
+      },
+      {
+        "lang": "cs",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=cs"
+      },
+      {
+        "lang": "da",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=da"
+      },
+      {
+        "lang": "el",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=el"
+      },
+      {
+        "lang": "fi",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=fi"
+      },
+      {
+        "lang": "hr",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=hr"
+      },
+      {
+        "lang": "hu",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=hu"
+      },
+      {
+        "lang": "id",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=id"
+      },
+      {
+        "lang": "ms",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=ms"
+      },
+      {
+        "lang": "nb",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=nb"
+      },
+      {
+        "lang": "nl",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=nl"
+      },
+      {
+        "lang": "pl",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=pl"
+      },
+      {
+        "lang": "ru",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=ru"
+      },
+      {
+        "lang": "sk",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=sk"
+      },
+      {
+        "lang": "sv",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=sv"
+      },
+      {
+        "lang": "th",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=th"
+      },
+      {
+        "lang": "tl",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=tl"
+      },
+      {
+        "lang": "tr",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=tr"
+      },
+      {
+        "lang": "hi",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=hi"
+      },
+      {
+        "lang": "bn",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=bn"
+      },
+      {
+        "lang": "gu",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=gu"
+      },
+      {
+        "lang": "kn",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=kn"
+      },
+      {
+        "lang": "ml",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=ml"
+      },
+      {
+        "lang": "mr",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=mr"
+      },
+      {
+        "lang": "pa",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=pa"
+      },
+      {
+        "lang": "ta",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=ta"
+      },
+      {
+        "lang": "te",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=te"
+      },
+      {
+        "lang": "ne",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=ne"
+      },
+      {
+        "lang": "si",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=si"
+      },
+      {
+        "lang": "vi",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=vi"
+      },
+      {
+        "lang": "bg",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=bg"
+      },
+      {
+        "lang": "fr-ca",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=fr-ca"
+      },
+      {
+        "lang": "ro",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=ro"
+      },
+      {
+        "lang": "sr",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=sr"
+      },
+      {
+        "lang": "uk",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=uk"
+      },
+      {
+        "lang": "zh-hk",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=zh-hk"
+      },
+      {
+        "lang": "es-ar",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-bo",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-cl",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-co",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-cr",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-cu",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-do",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-ec",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-gt",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-hn",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-mx",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-ni",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-pa",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-pr",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-py",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-pe",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-sv",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-uy",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "es-ve",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=es-la"
+      },
+      {
+        "lang": "he",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=he"
+      },
+      {
+        "lang": "fa",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=fa"
+      },
+      {
+        "lang": "ar",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=ar"
+      },
+      {
+        "lang": "ur",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=ur"
+      },
+      {
+        "lang": "en-gb",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=en-gb"
+      },
+      {
+        "lang": "sw-ke",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=sw-ke"
+      },
+      {
+        "lang": "ha-ng",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=ha-ng"
+      },
+      {
+        "lang": "am-et",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=am-et"
+      },
+      {
+        "lang": "om-et",
+        "url": "https://www.instagram.com/reel/DUTalcSCbgP/?hl=om-et"
+      }
+    ]
+  }
+}

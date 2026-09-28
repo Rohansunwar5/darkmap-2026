@@ -1,0 +1,5 @@
+quart==0.20.0
+quart-cors==0.7.0
+python-dotenv==1.0.0
+pyppeteer==2.0.0
+hypercorn==0.15.0

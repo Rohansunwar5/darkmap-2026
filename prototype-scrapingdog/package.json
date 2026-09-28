@@ -1,0 +1,20 @@
+{
+  "name": "darkmap-scrapingdog-prototype",
+  "private": true,
+  "version": "0.1.0",
+  "description": "REF Darkmap search flow over ScrapingDog (local prototype)",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test \"tests/**/*.test.js\" \"tests/**/*.cjs\"",
+    "scan": "node scripts/scan.js",
+    "probe": "node scripts/probe-scrapingdog.js"
+  },
+  "devDependencies": {
+    "vite": "^7.3.6"
+  }
+}

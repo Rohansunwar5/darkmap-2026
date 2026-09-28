@@ -1,0 +1,164 @@
+{
+  "request": {
+    "path": "/google",
+    "params": {
+      "query": "site:instagram.com/reel/ \"nike\"",
+      "results": 10,
+      "country": "in",
+      "language": "en",
+      "page": 0
+    },
+    "url": "https://api.scrapingdog.com/google?query=site%3Ainstagram.com%2Freel%2F+%22nike%22&results=10&country=in&language=en&page=0"
+  },
+  "status": 200,
+  "ms": 2030,
+  "headers": {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, multipart/form-data",
+    "access-control-allow-methods": "HEAD,GET,POST,DELETE,OPTIONS,PUT",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a3f94d623d8de8eb-BOM",
+    "connection": "keep-alive",
+    "content-encoding": "br",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 23 Sep 2026 11:45:19 GMT",
+    "etag": "W/\"1546-x/Evxb2IvHqEM9pI28msBm/ZCHw\"",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=u90692mrdMIBTx2E6IYCLSk0%2FujXdWwgMAMgATsOnB3dPembDfqXoxhYEMHT78hwI33MFTUp663kCZ%2BzLT1a9RIZUyfnw4whe9x%2BwNsY5G%2BTVPhoC%2BTFg9Ii8%2FJ2n8fjc7c8jt1ihwtIdvMpiNz3oaU%3D\"}]}",
+    "server": "cloudflare",
+    "transfer-encoding": "chunked",
+    "vary": "Accept-Encoding",
+    "x-frame-options": "sameorigin, SAMEORIGIN",
+    "x-powered-by": "Express"
+  },
+  "json": {
+    "search_information": {
+      "query_displayed": "site:instagram.com/reel/ \"nike\"",
+      "organic_results_state": "Results for exact spelling"
+    },
+    "total_time_taken": 1.75,
+    "peopleAlsoAskedFor": [],
+    "organic_results": [
+      {
+        "title": "NIKE MIND INTAKE SESSION Athlete: Shubman Gill Cricketer Key ...",
+        "displayed_link": "https://www.instagram.com › reel › DUTalcSCbgP",
+        "snippet": "Sabia que as Nike Mind ativa os teus sentidos?! Desenvolvida por neurocientistas e testada por atletas de elite, a tecnologia Nike Mind ativa ...",
+        "date": "3 Feb 2026",
+        "link": "https://www.instagram.com/reel/DUTalcSCbgP/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 1,
+        "page_rank": 1
+      },
+      {
+        "title": "Recovery mode: ON A new essential added to the collection @nike",
+        "displayed_link": "https://www.instagram.com › reel",
+        "snippet": "Nike mind 001 @nike. Instead of maximizing speed or athletic output, it is built for pre-game mental preparation and post-game recovery by using ...",
+        "date": "15 Jun 2026",
+        "link": "https://www.instagram.com/reel/DZnbU3IsPrY/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 2,
+        "page_rank": 2
+      },
+      {
+        "title": "Nike Air is not just a shoe. It's innovation and the constant pursuit of ...",
+        "displayed_link": "https://www.instagram.com › reel › DCW-rnkvQ-y",
+        "snippet": "The AIRMAX 1000, manufactured in partnership with Zellerfeld, reinvents the iconic Air Max 1 for Nike's latest expression of visible Air ...",
+        "date": "14 Nov 2024",
+        "link": "https://www.instagram.com/reel/DCW-rnkvQ-y/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 3,
+        "page_rank": 3
+      },
+      {
+        "title": "Nike is becoming Nykaaaa       - Instagram",
+        "displayed_link": "https://www.instagram.com › reel",
+        "snippet": "Buy the white ones and color the yourself? shalinilahiri. Wow looks like Nike is making Nykaa a full ...",
+        "date": "29 Jan 2026",
+        "link": "https://www.instagram.com/reel/DUFny97jWpy/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 4,
+        "page_rank": 4
+      },
+      {
+        "title": "nike - Instagram",
+        "displayed_link": "https://www.instagram.com › reel",
+        "snippet": "There is no finish line when it comes to innovating to serve athletes. Introducing four game-changing Nike innovations designed to transform ...",
+        "date": "23 Oct 2025",
+        "link": "https://www.instagram.com/reel/DQJxDm9joWp/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 5,
+        "page_rank": 5
+      },
+      {
+        "title": "Nike Mind Science Dept. Be sure to view thoroughly before wearing ...",
+        "displayed_link": "https://www.instagram.com › reel",
+        "snippet": "Sabia que as Nike Mind ativa os teus sentidos?! Desenvolvida por neurocientistas e testada por atletas de elite, a tecnologia Nike Mind ativa ...",
+        "date": "8 Jan 2026",
+        "link": "https://www.instagram.com/reel/DTQkue6DrIk/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 6,
+        "page_rank": 6
+      },
+      {
+        "title": "Nike Alphafly 4 | A First World-Exclusive Look RunnersNerd",
+        "displayed_link": "https://www.instagram.com › reel",
+        "snippet": "Nike Alphafly 3. Built for speed. Engineered for race day. ‍♀️. August 24.",
+        "date": "6 days ago",
+        "link": "https://www.instagram.com/reel/DdY5M2qIHoj/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 7,
+        "page_rank": 7
+      },
+      {
+        "title": "Nike on Instagram: \"This is a REAL sneaker. Widely recognized for ...",
+        "displayed_link": "https://www.instagram.com › reel",
+        "snippet": "最新入荷情報   RTFKT × Nike Dunk Genesis \"Void Edition\" デジタルファッションやNFT、スニーカー文化を融合させた次世代のクリュプト・ブランド ...",
+        "date": "17 Nov 2023",
+        "link": "https://www.instagram.com/reel/CzwhdteP99x/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 8,
+        "page_rank": 8
+      },
+      {
+        "title": "My FIRST ever Nike shoe is out now. Nike by Miles. It's ... - Instagram",
+        "displayed_link": "https://www.instagram.com › reel",
+        "snippet": "Nike by Miles. It's been such an amazingly incredible and beautiful process designing this shoe. Living out my childhood dreams. Picking these ...",
+        "date": "19 Oct 2025",
+        "link": "https://www.instagram.com/reel/DP_k55wAIIx/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 9,
+        "page_rank": 9
+      },
+      {
+        "title": "Making Nike more than a brand. Making it my lifestyle. - Instagram",
+        "displayed_link": "https://www.instagram.com › reel",
+        "snippet": "1357 likes, 50 comments - jayda_coleman10 on September 19, 2026: \"Making Nike more than a brand. Making it my lifestyle. \".",
+        "date": "4 days ago",
+        "link": "https://www.instagram.com/reel/DdeemdmR-2C/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 10,
+        "page_rank": 10
+      }
+    ],
+    "dmca_message": {
+      "text": "",
+      "links": []
+    },
+    "pagination": {
+      "current": "1",
+      "next": "https://www.google.com/search?q=site:instagram.com/reel/+%22nike%22&sca_esv=585baa279a4b2485&gl=in&hl=en&gbv=1&ei=zruzarD5CrPoi-gPtZeX2A8&start=10&sa=N",
+      "page_no": {
+        "2": "https://www.google.com/search?q=site:instagram.com/reel/+%22nike%22&sca_esv=585baa279a4b2485&gl=in&hl=en&gbv=1&ei=zruzarD5CrPoi-gPtZeX2A8&start=10&sa=N"
+      }
+    },
+    "scrapingdog_pagination": {
+      "current": "1",
+      "next": "https://api.scrapingdog.com/google?api_key=[REDACTED]&query=site%3Ainstagram.com%2Freel%2F+%22nike%22&country=in&language=en&page=1",
+      "page_no": {
+        "2": "https://api.scrapingdog.com/google?api_key=[REDACTED]&query=site%3Ainstagram.com%2Freel%2F+%22nike%22&country=in&language=en&page=1"
+      }
+    }
+  }
+}

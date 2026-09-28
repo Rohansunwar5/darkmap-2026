@@ -1,0 +1,35 @@
+{
+  "request": {
+    "path": "/instagram/postdetails",
+    "params": {
+      "url": "https://www.instagram.com/p/Ddl5eH-u4le/"
+    },
+    "url": "https://api.scrapingdog.com/instagram/postdetails?url=https%3A%2F%2Fwww.instagram.com%2Fp%2FDdl5eH-u4le%2F"
+  },
+  "status": 200,
+  "ms": 263,
+  "headers": {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, multipart/form-data",
+    "access-control-allow-methods": "HEAD,GET,POST,DELETE,OPTIONS,PUT",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cache-control": "public, max-age=0",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a3f94dac9d0fe8eb-BOM",
+    "connection": "keep-alive",
+    "content-encoding": "br",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Wed, 23 Sep 2026 11:45:29 GMT",
+    "last-modified": "Tue, 22 Sep 2026 22:52:48 GMT",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=KBzoYx8lOfu5vwIEO8JvD6H7u9%2FgwmK3SZICb3Aod9P8HyRYObIX335NOis9jlRJqwqJ7ou2upIcbGnCJFT7855xjXfzzQYYernerq2c4KFHD8EVD%2F2RXuh2gP4nnCksc9G9ohyjwgi1s%2FpNVzTAhDY%3D\"}]}",
+    "server": "cloudflare",
+    "transfer-encoding": "chunked",
+    "vary": "accept-encoding",
+    "x-frame-options": "sameorigin, SAMEORIGIN",
+    "x-powered-by": "Express"
+  },
+  "json": null,
+  "text": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <title>Scrapingdog</title>\n    <link rel=\"icon\" href=\"/favicon.ico\" />\n    <!-- Meta Tags-->\n    <meta charset=\"utf-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <meta name=\"theme-color\" content=\"#2296f3\" />\n    <meta name=\"title\" content=\"Scrapingdog\" />\n    <meta name=\"description\" content=\" Scrapingdog | Best Web Scraping API\" />\n    <meta name=\"og:description\" content=\"Scrapingdog | Best Web Scraping API\"/>\n    <!-- Open Graph / Facebook -->\n    <meta property=\"og:locale\" content=\"en_US\" />\n    <meta property=\"og:title\" content=\"Scrapingdog\" />\n    <link rel=\"canonical\" href=\"https://api.scrapingdog.com\"/>\n    <link rel=\"icon\" type=\"image/svg\" sizes=\"32x32\" href=\"/LOGO ICON BLACK.svg\">\n    <link rel=\"icon\" type=\"image/svg\" sizes=\"16x16\" href=\"/LOGO ICON BLACK.svg\">\n    <link rel=\"apple-touch-icon\" href=\"/LOGO ICON BLACK.svg\" />\n\n    <script type=\"text/javascript\">window.$crisp=[];window.CRISP_WEBSITE_ID=\"5f365703-71a6-4cfb-9bd3-1c2fd7dd7f49\";(function(){d=document;s=d.createElement(\"script\");s.src=\"https://client.crisp.chat/l.js\";s.async=1;d.getElementsByTagName(\"head\")[0].appendChild(s);})();</script>\n\n    <script type=\"text/javascript\">\n      (function(c,l,a,r,i,t,y){\n        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};\n        t=l.createElement(r);t.async=1;t.src=\"https://www.clarity.ms/tag/\"+i;\n        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);\n      })(window, document, \"clarity\", \"script\", \"fhehwocn9q\");\n    </script>\n\n    <script type=\"text/javascript\">\n      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n      })(window,document,'script','dataLayer','GTM-P8RKS6W');\n    </script>\n\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n    <link href=\"https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap\" rel=\"stylesheet\">\n    <script type=\"module\" crossorigin src=\"/assets/index-DIFU3sXj.js\"></script>\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/clsx-f_0-YPbz.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/Box-BTS9B_NF.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/isFocusVisible-CvGwr1W8.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/emotion-react.browser.esm-BsZ_lOPk.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/ButtonBase-BSq6xKYu.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/Portal-gvddadU9.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/getThemeProps-BAl43_uz.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/useThemeProps-Bbs3WG0o.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/useSlot-Dnjf3_sp.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/useSlotProps-DuYH9Vtz.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/useId-BmkN0Fur.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/isMuiElement-qWjLWV79.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/Modal-bM5q-QX1.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/List-TqJJkYd7.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/createSvgIcon-dVFukcBn.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/mergeSlotProps-DO3Tua89.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/Paper-BaFF6nvL.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/CircularProgress-C_ouvh-O.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/Typography-C6Wed25h.js\">\n    <link rel=\"modulepreload\" crossorigin href=\"/assets/dividerClasses-D7tWbJWU.js\">\n    <link rel=\"modulepre"
+}

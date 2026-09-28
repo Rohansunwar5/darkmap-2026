@@ -1,0 +1,18 @@
+{
+  "brand": {"name": "Luminaire", "official_handles": ["luminaire"], "official_domains": ["luminaire.com"],
+            "keywords": ["luminaire"]},
+  "account": {"handle": "luminaire_rewards_in", "display_name": "Luminaire Rewards", "biography": "Scan & win",
+              "external_url": null, "followers_count": 430, "follows_count": 60, "media_count": 4,
+              "is_verified": false},
+  "provenance": {"collection_mode": "keyword", "lawful_basis": "licensed_public_data_api"},
+  "posts": [{"caption": "Scan the QR to claim your Luminaire reward",
+             "media": [{"media_type": "image", "ocr_text": "Enter OTP to claim reward. Send your OTP code to our agent"}],
+             "comments": [], "engagement": {"likes": 7, "comments": 0, "views": null, "shares": null}}],
+  "entities": [],
+  "media_analysis": [{"media_type": "image", "brand_match_score": 0.7,
+                      "ocr_text": "Enter OTP to claim reward. Send your OTP code to our agent",
+                      "transcript": "Our CEO says invest now for guaranteed return and daily returns",
+                      "qr_payloads": ["https://pay.example/upi/claim"], "synthetic_media_score": 0.8}],
+  "shared_artifacts": [], "account_changes": [],
+  "velocity": {"posts_last_hour": 0, "posts_last_24h": 1, "follower_delta": null, "duplicate_post_count": 0}
+}

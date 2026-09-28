@@ -1,0 +1,168 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.normal-class {
+  color: #ff0000;
+  filter: blur(3px);
+  margin-left: 4px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.premium-class {
+  margin-left: 4px;
+  display: inline-block;
+}
+
+.code-font {
+  font-family: "Fira Code", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@property --glow-deg {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: -90deg;
+}
+
+/* the colors don't need to be registed */
+@property --clr-1 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: red;
+}
+
+@property --clr-2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: yellow;
+}
+
+@property --clr-3 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: rgb(0, 212, 250);
+}
+
+@property --clr-4 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: rgb(25, 0, 255);
+}
+
+@property --clr-5 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: purple;
+}
+
+.glowing-border {
+  --surface: rgb(10, 10, 10);
+  --gradient-glow: var(--clr-3), var(--clr-4),
+    var(--clr-5), var(--clr-3);
+--glow-intensity: 0.3;
+  border: var(--border-width, 1px) solid transparent;
+  border-left: 0;
+  background: linear-gradient(var(--surface, canvas) 0 0) padding-box,
+    conic-gradient(from var(--glow-deg), var(--gradient-glow)) border-box;
+
+  position: relative;
+  isolation: isolate;
+
+  animation: glow 3s infinite linear;
+}
+
+@keyframes glow {
+  100% {
+    --glow-deg: 270deg;
+  }
+}
+
+.glowing-border::before,
+.glowing-border::after {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+}
+
+.glowing-border::before {
+  z-index: -1;
+  background: var(--surface, canvas);
+  inset: 0.25rem;
+  filter: blur(var(--glow-size, 2rem));
+}
+
+.glowing-border::after {
+  z-index: -2;
+  inset: -2rem;
+  background: conic-gradient(from var(--glow-deg), var(--gradient-glow));
+  filter: blur(var(--glow-size, 1rem));
+  opacity: var(--glow-intensity, 0.125);
+}
+
+.reset-all * {
+  all: revert;
+  font-family: 'Arial';
+}
+
+.reset-all #text{
+  display: block;
+}
+
+.reset-all h1,
+.reset-all h2,
+.reset-all h3 {
+  @apply text-primary-500;
+}
+
+.reset-all p {
+  @apply text-gray-300;
+}
+
+.reset-all strong{
+  color: rgb(223, 29, 29);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}

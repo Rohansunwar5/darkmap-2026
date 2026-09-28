@@ -1,0 +1,49 @@
+{
+  "request": {
+    "path": "/account",
+    "params": {},
+    "url": "https://api.scrapingdog.com/account"
+  },
+  "status": 200,
+  "ms": 538,
+  "headers": {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, multipart/form-data",
+    "access-control-allow-methods": "HEAD,GET,POST,DELETE,OPTIONS,PUT",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a3f94d33ac90e8eb-BOM",
+    "connection": "keep-alive",
+    "content-encoding": "br",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 23 Sep 2026 11:45:09 GMT",
+    "etag": "W/\"1c3-qrq9/2gwNcoygyCqgdWue/ZmU44\"",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=zRY%2F49catMkPp5KS20RqBNt4mxIDwuorrmXsFeXJ8dh02xSbEwLa%2BtLxjLH%2FF1W81l%2BoeLyJ7b092uN6zzAaYG%2F12NjC6vhPFfTS13x6C26iJ52QwIIJpU%2B2eow0wcwc%2B7EpLBfR%2F5WewXArjcIwbE0%3D\"}]}",
+    "server": "cloudflare",
+    "transfer-encoding": "chunked",
+    "x-frame-options": "sameorigin, SAMEORIGIN",
+    "x-powered-by": "Express"
+  },
+  "json": {
+    "threadCount": 0,
+    "requestLimit": 200,
+    "requestUsed": 22,
+    "validity": 16,
+    "concurrency_limit": 5,
+    "pack": "free",
+    "pack_type": "monthly",
+    "linkedin_concurrency_limit": 1,
+    "linkedin_thread_count": 0,
+    "dailyCreditLimit": null,
+    "dailyCreditsUsed": 0,
+    "dailyCreditsRemaining": null,
+    "dailyCreditLimitResetsAt": "00:00 UTC",
+    "canManageDailyCreditLimit": true,
+    "email": "[SCRUBBED]",
+    "username": "[SCRUBBED]",
+    "onboarding_completed": true,
+    "apiKey": "[REDACTED]"
+  }
+}

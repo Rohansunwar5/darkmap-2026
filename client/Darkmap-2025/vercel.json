@@ -1,0 +1,13 @@
+
+{
+    "rewrites": [
+      {
+      "source": "/api/ahamia/:query*",
+      "destination": "https://ahmscrap.darkmap.org/search/:query*"
+      },
+      {
+        "source": "/(.*)",
+        "destination": "/"
+      }
+    ]
+  }

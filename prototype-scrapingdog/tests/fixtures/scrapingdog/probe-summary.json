@@ -1,0 +1,350 @@
+{
+  "brand": "nike",
+  "postUrl": "https://www.instagram.com/p/Ddl5eH-u4le/",
+  "reelUrl": "https://www.instagram.com/reel/DUTalcSCbgP/",
+  "profileEndpoint": {
+    "path": "/instagram/profile",
+    "param": "username"
+  },
+  "postsEndpoint": {
+    "path": "/instagram/posts",
+    "param": "id"
+  },
+  "postEndpoint": {
+    "path": "/instagram/post_details",
+    "param": "url"
+  },
+  "calls": [
+    {
+      "name": "account-before",
+      "path": "/account",
+      "params": [],
+      "status": 200,
+      "ms": 538
+    },
+    {
+      "name": "google-standard",
+      "path": "/google",
+      "params": [
+        "query",
+        "results",
+        "country",
+        "language",
+        "page"
+      ],
+      "status": 200,
+      "ms": 1710
+    },
+    {
+      "name": "google-advanced",
+      "path": "/google",
+      "params": [
+        "query",
+        "results",
+        "country",
+        "language",
+        "page",
+        "advance_search"
+      ],
+      "status": 200,
+      "ms": 5443
+    },
+    {
+      "name": "google-reels",
+      "path": "/google",
+      "params": [
+        "query",
+        "results",
+        "country",
+        "language",
+        "page"
+      ],
+      "status": 200,
+      "ms": 2030
+    },
+    {
+      "name": "google-special",
+      "path": "/google",
+      "params": [
+        "query",
+        "results",
+        "country",
+        "language",
+        "page"
+      ],
+      "status": 200,
+      "ms": 1429
+    },
+    {
+      "name": "profile.try0",
+      "path": "/instagram/profile",
+      "params": [
+        "username"
+      ],
+      "status": 200,
+      "ms": 4625
+    },
+    {
+      "name": "profile-missing",
+      "path": "/instagram/profile",
+      "params": [
+        "username"
+      ],
+      "status": 200,
+      "ms": 943
+    },
+    {
+      "name": "bad-key",
+      "path": "/instagram/profile",
+      "params": [
+        "username"
+      ],
+      "status": 403,
+      "ms": 253
+    },
+    {
+      "name": "posts.try0",
+      "path": "/instagram/posts",
+      "params": [
+        "id"
+      ],
+      "status": 200,
+      "ms": 2056
+    },
+    {
+      "name": "post.try0",
+      "path": "/instagram/post",
+      "params": [
+        "url"
+      ],
+      "status": 200,
+      "ms": 283
+    },
+    {
+      "name": "post.try1",
+      "path": "/instagram/post",
+      "params": [
+        "shortcode"
+      ],
+      "status": 200,
+      "ms": 276
+    },
+    {
+      "name": "post.try2",
+      "path": "/instagram/postdetails",
+      "params": [
+        "url"
+      ],
+      "status": 200,
+      "ms": 263
+    },
+    {
+      "name": "post.try3",
+      "path": "/instagram/post-details",
+      "params": [
+        "url"
+      ],
+      "status": 200,
+      "ms": 261
+    },
+    {
+      "name": "post.try4",
+      "path": "/instagram/post_details",
+      "params": [
+        "url"
+      ],
+      "status": 200,
+      "ms": 4328
+    },
+    {
+      "name": "reel",
+      "path": "/instagram/post_details",
+      "params": [
+        "url"
+      ],
+      "status": 200,
+      "ms": 4285
+    },
+    {
+      "name": "comments.try0",
+      "path": "/instagram/comments",
+      "params": [
+        "url"
+      ],
+      "status": 200,
+      "ms": 1729
+    },
+    {
+      "name": "account-after",
+      "path": "/account",
+      "params": [],
+      "status": 200,
+      "ms": 263
+    }
+  ],
+  "shapes": {
+    "google": {
+      "search_information": {
+        "query_displayed": "string",
+        "organic_results_state": "string"
+      },
+      "total_time_taken": "number",
+      "peopleAlsoAskedFor": [],
+      "organic_results": [
+        {
+          "title": "string",
+          "displayed_link": "string",
+          "snippet": "string",
+          "link": "string",
+          "favicon": "string",
+          "rank": "number",
+          "page_rank": "number"
+        }
+      ],
+      "dmca_message": {
+        "text": "string",
+        "links": []
+      },
+      "pagination": {
+        "current": "string",
+        "next": "string",
+        "page_no": {
+          "2": "string"
+        }
+      },
+      "scrapingdog_pagination": {
+        "current": "string",
+        "next": "string",
+        "page_no": {
+          "2": "string"
+        }
+      }
+    },
+    "profile": {
+      "username": "string",
+      "profile_id": "string",
+      "full_name": "string",
+      "bio": "string",
+      "followers_count": "number",
+      "following_count": "number",
+      "bio_links": [
+        {
+          "image_url": "string",
+          "is_pinned": "boolean",
+          "link_id": "string",
+          "link_type": "string",
+          "lynx_url": "string",
+          "media_accent_color_hex": "string",
+          "media_type": "string",
+          "title": "string",
+          "url": "string",
+          "creation_source": "string"
+        }
+      ],
+      "profile_pic_url": "string",
+      "profile_pic_url_hd": "string",
+      "is_business_account": "null",
+      "is_professional_account": "null",
+      "is_supervision_enabled": "null",
+      "is_supervised_by_viewer": "null",
+      "is_supervised_user": "null",
+      "is_joined_recently": "null",
+      "business_email": "null",
+      "business_phone_number": "null",
+      "business_category_name": "null",
+      "overall_category_name": "null",
+      "category_enum": "null",
+      "category_name": "null",
+      "is_private": "boolean",
+      "is_verified": "boolean",
+      "pinned_channels_list_count": "null",
+      "highlight_reel_count": "null",
+      "video_timeline": {
+        "count": "null",
+        "videos": []
+      },
+      "related_profiles": [],
+      "owner_to_timeline_media": {
+        "count": "null",
+        "media": [
+          {
+            "id": "string",
+            "shortcode": "string",
+            "type": "string",
+            "product_type": "string",
+            "url": "string",
+            "caption": "string",
+            "hashtags": [],
+            "dimensions": "{…}",
+            "display_url": "string",
+            "images": [],
+            "owner": "{…}",
+            "is_video": "boolean",
+            "has_audio": "null",
+            "video_url": "null",
+            "comment": "null",
+            "likes": "null",
+            "preview_likes": "null",
+            "video_view_count": "null",
+            "thumbnail": "string",
+            "timestamp": "number",
+            "timestamp_source": "string",
+            "taken_at_iso": "string"
+          }
+        ]
+      }
+    },
+    "post": {
+      "post": {
+        "url": "string",
+        "shortcode": "null",
+        "image": "string",
+        "twitterImage": "string",
+        "title": "string",
+        "caption": "string",
+        "description": "string",
+        "mediaId": "string",
+        "display_url": "string",
+        "taken_at": "number",
+        "taken_at_iso": "string",
+        "like_count": "number",
+        "comment_count": "number"
+      },
+      "account": {
+        "username": "string",
+        "userId": "string",
+        "profileUrl": "string",
+        "profilePic": "string"
+      },
+      "comments": [
+        {
+          "id": "string",
+          "text": "string",
+          "created_at": "number",
+          "created_at_iso": "string",
+          "like_count": "number",
+          "parent_comment_id": "null",
+          "user": {
+            "id": "string",
+            "username": "string",
+            "full_name": "null",
+            "profile_pic_url": "string",
+            "is_verified": "boolean"
+          }
+        }
+      ],
+      "comments_page_info": {
+        "end_cursor": "string",
+        "has_next_page": "boolean",
+        "has_previous_page": "boolean",
+        "start_cursor": "null"
+      },
+      "alternateUrls": [
+        {
+          "lang": "string",
+          "url": "string"
+        }
+      ]
+    }
+  }
+}

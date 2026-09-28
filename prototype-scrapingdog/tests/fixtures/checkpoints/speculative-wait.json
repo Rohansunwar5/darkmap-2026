@@ -1,0 +1,2 @@
+{"version": 1, "expires_at": 9999999999, "query": "Brand", "retrieved_at": "2026-09-23T00:00:00", "visible": [],
+ "params": {"mode": "keyword", "max_items": 250, "profile_limit": 50, "include_comments": true, "comments_per_post": 20}}

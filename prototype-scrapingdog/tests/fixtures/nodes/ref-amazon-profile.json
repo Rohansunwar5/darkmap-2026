@@ -1,0 +1,3 @@
+{"account": "amazon", "full_name": "Amazon", "profile_image_link": "https://cdn.example/amazon.jpg",
+ "posts": [{"id": "post-1", "url": "https://www.instagram.com/p/AMAZON1/", "description": "Amazon delivery update",
+            "image_url": "https://cdn.example/post.jpg"}]}

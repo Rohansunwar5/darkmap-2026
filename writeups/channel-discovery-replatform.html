@@ -1,0 +1,362 @@
+<title>Channel Discovery Replatform</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+:root{
+  --ground:#F7F8F9; --surface:#FFFFFF; --sunk:#EEF1F3;
+  --ink:#151A22; --graphite:#5A6472; --faint:#8A93A0; --rule:#DCE1E6;
+  --signal:#0F6E5C; --signal-soft:#E3F0EC;
+  --alarm:#A6432B; --alarm-soft:#F7E8E3;
+  --warn:#8A6410; --warn-soft:#F6EEDC;
+  --display:"Newsreader",Georgia,serif;
+  --body:"Public Sans",-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#101318; --surface:#171B22; --sunk:#1D222B;
+    --ink:#E6E9ED; --graphite:#9AA4B2; --faint:#6B7482; --rule:#2A3140;
+    --signal:#4FBFA3; --signal-soft:#13302A;
+    --alarm:#E08A6E; --alarm-soft:#33211B;
+    --warn:#D6A94A; --warn-soft:#2E2716;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#101318; --surface:#171B22; --sunk:#1D222B;
+  --ink:#E6E9ED; --graphite:#9AA4B2; --faint:#6B7482; --rule:#2A3140;
+  --signal:#4FBFA3; --signal-soft:#13302A;
+  --alarm:#E08A6E; --alarm-soft:#33211B;
+  --warn:#D6A94A; --warn-soft:#2E2716;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:15.5px;line-height:1.62;
+  -webkit-font-smoothing:antialiased}
+.doc{max-width:940px;margin:0 auto;padding:0 28px 88px}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.2;text-wrap:balance;margin:0}
+p{margin:0}
+code{font-family:var(--mono);font-size:.9em;background:var(--sunk);padding:1px 5px;border-radius:2px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* document header */
+.dochead{padding:56px 0 0}
+.doctype{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--signal)}
+h1{font-size:clamp(30px,4.6vw,44px);font-weight:500;letter-spacing:-.02em;margin:14px 0 0}
+.summary{font-family:var(--display);font-size:19px;color:var(--graphite);max-width:62ch;margin-top:14px;line-height:1.5}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;
+  border:1px solid var(--rule);border-radius:3px;margin:32px 0 0;background:var(--surface);overflow:hidden}
+.meta div{padding:14px 16px;border-right:1px solid var(--rule)}
+.meta div:last-child{border-right:0}
+.meta dt{font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--graphite)}
+.meta dd{margin:6px 0 0;font-size:14px;font-weight:500}
+.status{display:inline-flex;align-items:center;gap:6px}
+.status::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--signal)}
+
+section{margin-top:52px}
+h2{font-size:15px;font-family:var(--body);font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink);padding-bottom:9px;border-bottom:2px solid var(--ink);margin-bottom:22px}
+h3{font-size:19px;font-weight:600;margin:28px 0 9px}
+h3:first-of-type{margin-top:0}
+h4{font-family:var(--body);font-size:13px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--graphite);margin:22px 0 8px}
+.prose{max-width:68ch}
+.prose p + p{margin-top:14px}
+
+/* requirement rows - not cards, just rules */
+.reqs{display:flex;flex-direction:column;border-top:1px solid var(--rule)}
+.req{display:grid;grid-template-columns:62px 1fr 88px;gap:16px;padding:16px 0;
+  border-bottom:1px solid var(--rule);align-items:start}
+.req .id{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--faint);padding-top:2px}
+.req .body strong{display:block;font-size:15.5px;margin-bottom:5px}
+.req .body p{color:var(--graphite);font-size:14.5px}
+.req .ac{font-family:var(--mono);font-size:12.5px;color:var(--signal);margin-top:7px;display:block;
+  padding-left:11px;border-left:2px solid var(--signal-soft)}
+.pri{font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;
+  padding:3px 7px;border-radius:2px;font-weight:700;text-align:center;white-space:nowrap}
+.pri.p0{background:var(--alarm-soft);color:var(--alarm)}
+.pri.p1{background:var(--warn-soft);color:var(--warn)}
+.pri.p2{background:var(--sunk);color:var(--graphite)}
+
+.tblwrap{overflow-x:auto;border:1px solid var(--rule);border-radius:3px;background:var(--surface)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--graphite);font-weight:500;background:var(--sunk);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.good{color:var(--signal);font-weight:600}
+.bad{color:var(--alarm);font-weight:600}
+tr.chosen td{background:var(--signal-soft)}
+tr.chosen td:first-child{box-shadow:inset 3px 0 0 var(--signal)}
+
+.chip{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;
+  padding:3px 7px;border-radius:2px;font-weight:600;white-space:nowrap}
+.chip.no{background:var(--alarm-soft);color:var(--alarm)}
+.chip.yes{background:var(--signal-soft);color:var(--signal)}
+.chip.open{background:var(--warn-soft);color:var(--warn)}
+
+ol.goals,ul.goals{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:9px;max-width:68ch}
+li{padding-left:2px}
+li strong{font-weight:600}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+@media (max-width:760px){.split{grid-template-columns:1fr;gap:28px}
+  .req{grid-template-columns:48px 1fr;gap:12px}
+  .req .pri{grid-column:2;justify-self:start;margin-top:6px}}
+
+.note{background:var(--sunk);border:1px solid var(--rule);border-left:3px solid var(--signal);
+  padding:15px 18px;border-radius:3px;margin:20px 0;font-size:14.5px;max-width:68ch}
+.note.risk{border-left-color:var(--alarm)}
+footer{border-top:1px solid var(--rule);margin-top:68px;padding-top:26px;
+  font-family:var(--mono);font-size:12px;color:var(--graphite);line-height:1.8;max-width:70ch}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="doc">
+
+<div class="dochead">
+  <span class="doctype">Product requirements document</span>
+  <h1>Channel Discovery Replatform</h1>
+  <p class="summary">Replace the browser-scraping fleet behind Telegram channel discovery with a managed rendering API, cutting fixed infrastructure cost by ~92% without losing the search results analysts rely on.</p>
+  <dl class="meta">
+    <div><dt>Owner</dt><dd>Rohan Sunwar</dd></div>
+    <div><dt>Status</dt><dd><span class="status">Shipped</span></dd></div>
+    <div><dt>Last updated</dt><dd>9 Sep 2026</dd></div>
+    <div><dt>Product</dt><dd>Darkmap</dd></div>
+    <div><dt>Surface</dt><dd>Channel discovery</dd></div>
+  </dl>
+</div>
+
+<section>
+  <h2>1 &middot; Problem</h2>
+  <div class="prose">
+    <p>Darkmap turns an analyst&rsquo;s search term into a ranked list of Telegram channels likely to be leaking data about it. Discovery runs six tuned search queries against a curated Google Programmable Search Engine, two result pages each &mdash; <strong>twelve requests per search</strong>.</p>
+    <p>Google blocks repeated automated access, and measurement puts the limit at roughly <strong>10&ndash;15 requests per IP address</strong>. A single search therefore nearly exhausts one address. The platform solved this by spreading requests across six containerised services and eighteen tasks, each with its own public address behind its own load balancer.</p>
+    <p>That architecture is correct for the constraint and badly mis-sized for the traffic. It was built for a product doing thousands of searches; it serves <strong>3.5 per day</strong>.</p>
+  </div>
+  <div class="tblwrap" style="margin-top:22px">
+    <table>
+      <thead><tr><th>Signal</th><th class="num">Measured</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>Infrastructure cost, 30 days</td><td class="num bad">$242</td><td>AWS Cost Explorer</td></tr>
+        <tr><td>Searches served, same period</td><td class="num">106</td><td>CloudWatch invocations</td></tr>
+        <tr><td>Cost per search</td><td class="num bad">$2.05</td><td>Derived</td></tr>
+        <tr><td>Share of cost that is fixed</td><td class="num bad">~100%</td><td>Load balancers bill hourly regardless of use</td></tr>
+        <tr><td>Availability between searches</td><td class="bad">Returns nothing</td><td>Idle-shutdown scales to zero; nothing restarts it</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note risk">
+    <strong>The availability finding reframed the project.</strong> An idle-shutdown scales the fleet to zero after 30 minutes. No code path restarts it &mdash; verified across the backend, both clients and their built bundles. At 3.5 searches/day the fleet is cold most of the time, so the incumbent&rsquo;s &ldquo;3-second&rdquo; latency describes a state users rarely encounter. This moved latency from a hard requirement to a trade-off.
+  </div>
+</section>
+
+<section>
+  <h2>2 &middot; Goals &amp; non-goals</h2>
+  <div class="split">
+    <div>
+      <h4>Goals</h4>
+      <ol class="goals">
+        <li><strong>Eliminate fixed cost.</strong> Discovery spend should scale with usage, not with pre-provisioned capacity.</li>
+        <li><strong>Preserve result quality.</strong> Analysts must not lose channels they would previously have found.</li>
+        <li><strong>Remove the CAPTCHA class of failure</strong> rather than continue paying to work around it.</li>
+        <li><strong>Keep the product available</strong> without a manual warm-up step.</li>
+        <li><strong>Reduce operational surface</strong> &mdash; fewer components to maintain, patch and reason about.</li>
+      </ol>
+    </div>
+    <div>
+      <h4>Non-goals</h4>
+      <ul class="goals">
+        <li><strong>Not improving on 3s warm latency.</strong> A managed renderer is slower per request. Accepted deliberately &mdash; see &sect;6.</li>
+        <li><strong>Not re-tuning the six search queries.</strong> They are the product&rsquo;s accumulated IP and must pass through unchanged, quirks included.</li>
+        <li><strong>Not changing the API contract.</strong> Any client change widens blast radius for no user benefit.</li>
+        <li><strong>Not fixing Telegram message retrieval.</strong> Separately broken (expired sessions, returns 502). Out of scope, tracked independently.</li>
+        <li><strong>Not migrating the AI ranking layer.</strong> Works well; untouched.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>3 &middot; Requirements</h2>
+  <div class="reqs">
+    <div class="req"><div class="id">R1</div><div class="body">
+      <strong>Identical response contract</strong>
+      <p>The replacement returns the same shape as the incumbent so no client changes are needed.</p>
+      <span class="ac">AC: response contains <code>channel_names</code> and <code>channels[]</code> with <code>name</code>, <code>title</code>, <code>description</code>, <code>url</code>; ordering consistent between both keys.</span>
+    </div><span class="pri p0">P0</span></div>
+
+    <div class="req"><div class="id">R2</div><div class="body">
+      <strong>No loss of security-relevant channels</strong>
+      <p>Coverage is judged on the channels analysts act on &mdash; breach forums, leak brokers &mdash; not raw result counts, which include news and exam-prep noise the ranker already discards.</p>
+      <span class="ac">AC: for a baseline query set, 100% of security-relevant channels found by the incumbent are returned. Verified against a captured pre-migration baseline.</span>
+    </div><span class="pri p0">P0</span></div>
+
+    <div class="req"><div class="id">R3</div><div class="body">
+      <strong>Search queries preserved verbatim</strong>
+      <p>Includes known quirks &mdash; curly quotation marks, a missing space, a regex branch that collapses multi-word terms &mdash; all tuned or tolerated deliberately.</p>
+      <span class="ac">AC: automated test asserts each query string byte-for-byte, including quirks.</span>
+    </div><span class="pri p0">P0</span></div>
+
+    <div class="req"><div class="id">R4</div><div class="body">
+      <strong>Terms containing reserved characters must work</strong>
+      <p>An ampersand in a term (<code>AT&amp;T</code>) previously truncated the query, so the engine silently searched for <code>"AT</code> and returned confident, wrong results. This class of bug must not return.</p>
+      <span class="ac">AC: <code>AT&amp;T</code> returns channels whose descriptions mention AT&amp;T; test asserts the URL carries the encoded character and no fragment.</span>
+    </div><span class="pri p0">P0</span></div>
+
+    <div class="req"><div class="id">R5</div><div class="body">
+      <strong>Every channel carries a description</strong>
+      <p>The AI ranker scores on the result snippet. Missing descriptions silently degrade ranking rather than failing loudly.</p>
+      <span class="ac">AC: <code>withDescription</code> equals total channel count on every search; logged per request.</span>
+    </div><span class="pri p0">P0</span></div>
+
+    <div class="req"><div class="id">R6</div><div class="body">
+      <strong>Instant rollback</strong>
+      <p>Reverting must not require a deploy or an infrastructure change.</p>
+      <span class="ac">AC: unsetting two environment variables restores the previous upstream; no code change.</span>
+    </div><span class="pri p0">P0</span></div>
+
+    <div class="req"><div class="id">R7</div><div class="body">
+      <strong>Predictable latency under the gateway ceiling</strong>
+      <p>Requests run in parallel, so total latency equals the slowest one, and the vendor&rsquo;s per-request time varies 3&ndash;19s. Variance, not the median, is the user-facing problem.</p>
+      <span class="ac">AC: p95 per search comfortably under the 29s API gateway timeout; spread narrower than the incumbent&rsquo;s.</span>
+    </div><span class="pri p1">P1</span></div>
+
+    <div class="req"><div class="id">R8</div><div class="body">
+      <strong>Transport failures must not silently drop results</strong>
+      <p>~1.7% of calls fail at transport level. A dropped request costs channels with no visible error.</p>
+      <span class="ac">AC: per-request retry; failure count logged per search; a failed request never returns a partial set as if complete.</span>
+    </div><span class="pri p1">P1</span></div>
+
+    <div class="req"><div class="id">R9</div><div class="body">
+      <strong>Support the advanced-search path</strong>
+      <p>One query is built at runtime from user-supplied include/exclude keywords rather than a fixed template.</p>
+      <span class="ac">AC: presence of keyword parameters switches to the dynamic query; contract unchanged.</span>
+    </div><span class="pri p1">P1</span></div>
+
+    <div class="req"><div class="id">R10</div><div class="body">
+      <strong>No public unauthenticated compute</strong>
+      <p>Any endpoint that spends money must require a credential.</p>
+      <span class="ac">AC: requests without or with an incorrect key return 403.</span>
+    </div><span class="pri p1">P1</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>4 &middot; Options considered</h2>
+  <div class="prose">
+    <p>Five approaches were evaluated against a captured baseline of live results. The decisive finding was structural:</p>
+  </div>
+  <div class="note">
+    <strong>Anything that renders our curated search engine preserves the results. Anything that queries Google generally does not.</strong> Our engine is restricted to a handful of Telegram directory sites, and that curation is the asset. A general web-search API reproduced only 33 of 72 channels &mdash; and adding result pages flattened the overlap while piling on irrelevant channels, so it was not fixable by paging.
+  </div>
+  <div class="tblwrap" style="margin-top:20px">
+    <table>
+      <thead><tr><th>Option</th><th class="num">Cost / mo</th><th class="num">Latency</th><th>Coverage</th><th>Verdict</th></tr></thead>
+      <tbody>
+        <tr><td>Official JSON API for the same engine</td><td class="num">~$0&ndash;5</td><td class="num">~0.5s</td><td>Identical</td><td><span class="chip no">Unavailable</span> Closed to new customers; EOL Jan 2027</td></tr>
+        <tr><td>General web-search API</td><td class="num">~$2</td><td class="num good">4.3s</td><td class="bad">33 / 72</td><td><span class="chip no">Rejected</span> Wrong index; fails R2</td></tr>
+        <tr><td>Own scraper + static proxy pool</td><td class="num">$30&ndash;56</td><td class="num good">~3s</td><td>Identical</td><td><span class="chip no">Rejected</span> IPs degraded 0% &rarr; 90% blocked after ~900 requests; doesn&rsquo;t scale with concurrency</td></tr>
+        <tr><td>Alternative rendering vendor</td><td class="num">~$119</td><td class="num">~7&ndash;8s</td><td>Identical</td><td><span class="chip no">Rejected</span> ~2s faster than chosen option for 6&times; the price</td></tr>
+        <tr class="chosen"><td><strong>Managed rendering API</strong></td><td class="num good">~$20</td><td class="num">12&ndash;14s</td><td class="good">13 / 13 security-relevant</td><td><span class="chip yes">Selected</span> Meets every P0; cost scales with use</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>5 &middot; Decision log</h2>
+  <div class="tblwrap">
+    <table>
+      <thead><tr><th>Decision</th><th>Rationale</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Judge coverage on security-relevant channels, not totals</strong></td><td>Raw overlap was 0.58 while security-relevant coverage was 13/13. The gap was news, sports and exam-prep channels the ranker scores near zero and the client never shows. Optimising raw overlap would have rejected the right answer.</td></tr>
+        <tr><td><strong>Keep the response contract frozen</strong></td><td>Zero client changes, so rollback is an environment variable and the blast radius is one service.</td></tr>
+        <tr><td><strong>Use the query-string URL form, not the fragment form</strong></td><td>The vendor URL-decodes before navigating, so an ampersand inside a fragment truncated the query &mdash; silently reintroducing a previously-fixed bug (R4). The query-string form has no fragment to mangle.</td></tr>
+        <tr><td><strong>Hedge slow requests instead of buying concurrency</strong></td><td>No queueing existed to remove: 10 requests, 10 workers, zero rate-limit errors. A higher tier would have bought 1&ndash;2s for $30/mo. Duplicating stalled requests cut the spread from 10&ndash;20s to 12.6&ndash;14.2s for ~$0.40/mo.</td></tr>
+        <tr><td><strong>Standard library only, no browser</strong></td><td>Removes the container image, the registry dependency and the compiled-parser build step. Cold start measured at 143ms; deploys are a plain archive.</td></tr>
+        <tr><td><strong>Snapshot before decommissioning</strong></td><td>Full configuration of the retired fleet is committed, with a note that its templates pin older task revisions than were live &mdash; rebuilding from them naively would downgrade.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Explicitly rejected scope</h3>
+  <div class="tblwrap">
+    <table>
+      <thead><tr><th>Proposal</th><th>Why not</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Cache results in Redis</strong><br><span class="mono" style="font-size:12px;color:var(--graphite)">would save ~12s on repeats, free</span></td><td>Results are sorted by recency and this is threat intelligence. A cache hit is stale by construction; &ldquo;what was leaking two hours ago&rdquo; is a different product. <span class="chip no">Product call</span></td></tr>
+        <tr><td><strong>Move AI ranking off the critical path</strong><br><span class="mono" style="font-size:12px;color:var(--graphite)">would save ~6s of perceived wait</span></td><td>The client immediately fetches message history for the ranked top ten. An unranked response makes it fetch the wrong ten and visibly reshuffle. Moves cost rather than removing it. <span class="chip no">Breaks client</span></td></tr>
+        <tr><td><strong>Upgrade the vendor plan</strong></td><td>Buys concurrency; no queueing exists. Would not change per-request latency. <span class="chip no">No effect</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>6 &middot; Success metrics</h2>
+  <div class="tblwrap">
+    <table>
+      <thead><tr><th>Metric</th><th class="num">Baseline</th><th class="num">Target</th><th class="num">Actual</th><th>Result</th></tr></thead>
+      <tbody>
+        <tr><td>Infrastructure cost / month</td><td class="num">$242</td><td class="num">&lt; $40</td><td class="num good">~$20</td><td class="good">Met</td></tr>
+        <tr><td>Cost per search</td><td class="num">$2.05</td><td class="num">&lt; $0.05</td><td class="num good">&lt; $0.01</td><td class="good">Met</td></tr>
+        <tr><td>Security-relevant channel coverage</td><td class="num">13 / 13</td><td class="num">13 / 13</td><td class="num good">13 / 13</td><td class="good">Met</td></tr>
+        <tr><td>Description coverage</td><td class="num">100%</td><td class="num">100%</td><td class="num good">100%</td><td class="good">Met</td></tr>
+        <tr><td>CAPTCHA rate</td><td class="num">n/a</td><td class="num">0</td><td class="num good">0 / 120+</td><td class="good">Met</td></tr>
+        <tr><td>Availability without warm-up</td><td class="bad">No</td><td>Yes</td><td class="good">Yes</td><td class="good">Met</td></tr>
+        <tr><td>p95 latency per search</td><td class="num">~3s warm / n/a cold</td><td class="num">&lt; 20s</td><td class="num">12.8s</td><td class="good">Met</td></tr>
+        <tr><td>Median latency, warm</td><td class="num good">~3s</td><td class="num">&mdash;</td><td class="num bad">~12s</td><td class="bad">Regressed &mdash; accepted</td></tr>
+        <tr><td>Components to operate</td><td class="num">30+</td><td class="num">&lt; 5</td><td class="num good">2</td><td class="good">Met</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note">
+    <strong>On the accepted regression.</strong> Warm-path latency went from ~3s to ~12s. This was signed off because the warm path is rare &mdash; the fleet sat at zero between searches with no automatic restart, so the realistic comparison was 12s versus no result at all. Variance was treated as the real requirement and improved: the spread narrowed from 10&ndash;20s to 12.6&ndash;14.2s.
+  </div>
+</section>
+
+<section>
+  <h2>7 &middot; Risks</h2>
+  <div class="tblwrap">
+    <table>
+      <thead><tr><th>Risk</th><th>Severity</th><th>Mitigation</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Third-party dependency.</strong> Discovery now depends on one vendor; previously self-contained.</td><td><span class="chip open">High</span></td><td>Search queries, ranking and contract are untouched, so swapping vendors is a configuration change. Two alternatives already benchmarked against the same baseline.</td></tr>
+        <tr><td><strong>No infrastructure rollback.</strong> The fleet is deleted; the environment-variable switch now has one destination.</td><td><span class="chip open">Medium</span></td><td>Full configuration snapshot committed with rebuild instructions and a warning about stale task-definition pins.</td></tr>
+        <tr><td><strong>Silent result degradation.</strong> A vendor or markup change could return empty pages that look like &ldquo;no results&rdquo;.</td><td><span class="chip open">Medium</span></td><td>Parser falls back to a looser extraction rather than returning nothing; per-search counts logged; automated test asserts card boundaries.</td></tr>
+        <tr><td><strong>Latency at higher concurrency.</strong> Ten simultaneous users means 120 concurrent requests.</td><td><span class="chip open">Low</span></td><td>Vendor manages the address pool and retries internally, so concurrency is absorbed rather than pre-bought. Untested at that load; current traffic is 3.5 searches/day.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>8 &middot; Rollout</h2>
+  <ol class="goals" style="max-width:72ch">
+    <li><strong>Baseline capture.</strong> Record live results for a query set covering a common term, a term with a reserved character, and a multi-word term exercising the regex branch.</li>
+    <li><strong>Build in parallel.</strong> New function deployed alongside the fleet on a new route. No existing resource modified; all four incumbent routes verified still healthy afterwards.</li>
+    <li><strong>Verify against baseline.</strong> Contract, coverage, description completeness, the reserved-character case and the advanced path, then end-to-end through the real service including AI ranking.</li>
+    <li><strong>Cut over by configuration.</strong> Two environment variables switch the upstream. Rollback is removing them.</li>
+    <li><strong>Observe in production.</strong> Real searches; confirm the log line reports the new upstream, full description coverage and expected timing.</li>
+    <li><strong>Decommission.</strong> Snapshot, then delete services, load balancers, target groups, the idle-shutdown function, its scheduler, three alarms and the unauthenticated endpoint. Re-verify the product after each step.</li>
+  </ol>
+  <div class="note">
+    <strong>Found during decommissioning.</strong> A cost review scoped to one AWS region had missed a load balancer in another, live since August 2024 with every target unhealthy and no tasks behind it &mdash; <strong>$25.25/month for 13 months</strong>. Also removed: a public unauthenticated endpoint that started 18 billable containers on request, and 39 unused container repositories. Cost reviews are now explicitly all-region.
+  </div>
+</section>
+
+<section>
+  <h2>9 &middot; Open items</h2>
+  <ul class="goals">
+    <li><span class="chip open">Open</span> &nbsp;Something external still calls the retired start endpoint &mdash; not the product; neither client references it. Harmless now, origin unidentified.</li>
+    <li><span class="chip open">Open</span> &nbsp;Credentials and session files remain baked into a retained container image. Rotate with the Telegram session work.</li>
+    <li><span class="chip open">Open</span> &nbsp;Telegram message retrieval still returns 502 on expired sessions. Separate track, and now the largest remaining gap in the user journey.</li>
+    <li><span class="chip open">Open</span> &nbsp;Behaviour above ~10 concurrent users is modelled, not measured.</li>
+  </ul>
+</section>
+
+<footer>
+  Figures measured from AWS Cost Explorer, CloudWatch and production logs, August&ndash;September 2026. Coverage claims are diffs against a captured pre-migration baseline, not estimates. Vendor names omitted; the evaluation, not the vendor, is the transferable part.
+</footer>
+
+</div>

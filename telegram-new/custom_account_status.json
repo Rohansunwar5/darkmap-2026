@@ -1,0 +1,66 @@
+{
+    "active": [
+        {
+            "session_id": "18",
+            "phone_number": "19802862688",
+            "username": null
+        },
+        {
+            "session_id": "13",
+            "phone_number": "919548867331",
+            "username": "Mayank008m"
+        },
+        {
+            "session_id": "8",
+            "phone_number": "919837041129",
+            "username": "shikhersharmaa"
+        },
+        {
+            "session_id": "9",
+            "phone_number": "918449646583",
+            "username": null
+        },
+        {
+            "session_id": "6",
+            "phone_number": "917417103878",
+            "username": null
+        },
+        {
+            "session_id": "4",
+            "phone_number": "917465063878",
+            "username": null
+        },
+        {
+            "session_id": "7",
+            "phone_number": "919012704275",
+            "username": "Shikhar1301"
+        },
+        {
+            "session_id": "3",
+            "phone_number": "916398304385",
+            "username": null
+        },
+        {
+            "session_id": "12",
+            "phone_number": "917456875104",
+            "username": null
+        },
+        {
+            "session_id": "17",
+            "phone_number": "17737038467",
+            "username": null
+        },
+        {
+            "session_id": "15",
+            "phone_number": "917417219383",
+            "username": "Kanchansrivastavaa"
+        },
+        {
+            "session_id": "14",
+            "phone_number": "917060022669",
+            "username": "srivastavaoffice"
+        }
+    ],
+    "dead": [],
+    "not_found": []
+}

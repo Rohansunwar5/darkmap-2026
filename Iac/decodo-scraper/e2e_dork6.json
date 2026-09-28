@@ -1,0 +1,55 @@
+{
+  "channel_names": [
+    "forensicsdigest",
+    "taxtmi",
+    "astra_bot_channel",
+    "cyberdosti4c",
+    "lawbhoomi",
+    "ieofficial",
+    "indohaxsec"
+  ],
+  "channels": [
+    {
+      "name": "forensicsdigest",
+      "title": "Forensics Digest – TelegramForensics Digest – Telegram",
+      "description": "Aug 23, 2026 ... An in-depth look at the recent data breach at Bank of Baroda. This ... FSL Delhi has released the Draft Recruitment Rules for the post of Senior ...",
+      "url": "https://t.me/s/forensicsdigest?before=1508"
+    },
+    {
+      "name": "taxtmi",
+      "title": "Tax Updates – TelegramTax Updates – Telegram",
+      "description": "Jun 10, 2025 ... Confidential data breach by bank exposes money laundering; criminal proceedings initiated. Breach of bank secrecy led to collection of financial information ...",
+      "url": "https://t.me/s/taxtmi/14284?q=%23FinancialCrime"
+    },
+    {
+      "name": "astra_bot_channel",
+      "title": "Astra OSINT Bot Updates - Статистика и аналитика ... - TelemetrioAstra OSINT Bot Updates - Статистика и аналитика ... - Telemetrio",
+      "description": "Aug 30, 2026 ... ... Delhi - /pak 03001234567 Premium & Account: - /buy_premium - /credits ... 9. NEW SERVICE ADDED Service Type: ➢ Data Breach Lookup Details Provided ...",
+      "url": "https://telemetr.io/ru/channels/3273543438-astra_bot_channel"
+    },
+    {
+      "name": "cyberdosti4c",
+      "title": "CyberDost – TelegramCyberDost – Telegram",
+      "description": "Jul 7, 2026 ... Kya aap jaante hain ki sirf ek data breach aapke multiple online accounts ko risk mein daal sakta hai? ... •Delhi: Inter-state cyber fraud syndicates पर ...",
+      "url": "https://t.me/s/cyberdosti4c/3976?q=%23StayCyberSafe"
+    },
+    {
+      "name": "lawbhoomi",
+      "title": "LawBhoomi – TelegramLawBhoomi – Telegram",
+      "description": "Aug 23, 2025 ... → Data Breach, Enforcement, and Compliance → Testamentary & Authoritative ... Special Internship Drive-2025 at Delhi State Legal Service Authority [100 Seats]: ...",
+      "url": "https://telegram.me/s/lawbhoomi?before=5177"
+    },
+    {
+      "name": "ieofficial",
+      "title": "Interesting Engineering – TelegramInteresting Engineering – Telegram",
+      "description": "May 19, 2025 ... ☀️ From Death Valley to Delhi ... Coinbase refuses $20M ransom demand after insider data breach, offers same amount as bounty to catch attackers amid SEC ...",
+      "url": "https://t.me/s/ieofficial?before=9419"
+    },
+    {
+      "name": "indohaxsec",
+      "title": "IndoHaxSec - Estadísticas y analítica del canal de Telegram ...IndoHaxSec - Estadísticas y analítica del canal de Telegram ...",
+      "description": "May 16, 2025 ... is a travel and visa services company based in New Delhi, India, which has been in operation since 1989. ... THIS DATABASE LEAK IS A FORM OF INDOHAXSEC SUPPORT ...",
+      "url": "https://telemetr.io/es/channels/1982208740-indohaxsec/posts"
+    }
+  ]
+}

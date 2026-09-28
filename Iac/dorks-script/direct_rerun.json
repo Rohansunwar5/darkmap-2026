@@ -1,0 +1,785 @@
+[
+  {
+    "term": "delhi",
+    "dork": 3,
+    "query": "\"delhi\" AND \"leak\" OR “leaked” OR “hack” OR “hacked” OR “attack” OR “attacked” -telegraph -news",
+    "api": null,
+    "scraper": [
+      "AAAAAErLbMHJm6pE9BuK9g",
+      "DGPIndia",
+      "GuruBhaiSattaFree",
+      "Indopathshala",
+      "RankersGurukulLive",
+      "SattaKing9292",
+      "Smartnaukri",
+      "TelanganaToday",
+      "acadla",
+      "angrysaffron",
+      "biotecnika",
+      "camonk8",
+      "cbtfarnavtips",
+      "cpimllib",
+      "cyberdosti4c",
+      "edutaplearning",
+      "fantasypanditg",
+      "hustleforssc",
+      "jeetranasirgs",
+      "lootwithjd",
+      "meghupdates",
+      "mrunalorg",
+      "mymahabharti",
+      "q3iA3SmWsAZlNTRl",
+      "rbe_s",
+      "rs6uR_odSVZkY2Nl",
+      "smartlearningacademy",
+      "ssccult",
+      "stripedung"
+    ],
+    "jaccard": null,
+    "api_ms": 0,
+    "scraper_ms": 7238.7502000019595,
+    "quota": 0,
+    "api_channels": null,
+    "scraper_channels": [
+      {
+        "name": "cbtfarnavtips",
+        "title": "CBTF ARNAV – Telegram",
+        "description": "12 hours ago ... ... attack and fearless batting. Canada will aim to put up a tough fight ... Delhi vs Lucknow IPL 5th Match Prediction LSG vs DC 100% Sure Toss ...",
+        "url": "https://telegram.me/s/cbtfarnavtips"
+      },
+      {
+        "name": "GuruBhaiSattaFree",
+        "title": "Guru Bhai Satta Free – Telegram",
+        "description": "2 days ago ... Delhi Bazar & Shri Ganesh Special | 04-09-2026 | 4 Jodi Game Pass Ho ... ❤️Shri Ganesh leak Jodi with palat. ❤13 1. 733 views 03:08. September 7.",
+        "url": "https://t.me/s/GuruBhaiSattaFree?before=13000"
+      },
+      {
+        "name": "acadla",
+        "title": "CIVIL ENGINEERING STATION – Telegram",
+        "description": "2 days ago ... The test series is available in Offline Mode at Jaipur, Delhi, Bhopal, Patna, and 60+ locations across Rajasthan. A Home-Based OMR option is also available ...",
+        "url": "https://t.me/s/acadla"
+      },
+      {
+        "name": "cpimllib",
+        "title": "CPIML Liberation – Telegram",
+        "description": "2 days ago ... We strongly condemn the cowardly and shameful attack by Sanghi goons on Comrade Neha, AISA President, and other women protesters in Jharkhand. While meeting ...",
+        "url": "https://t.me/s/cpimllib"
+      },
+      {
+        "name": "Smartnaukri",
+        "title": "Smart naukri (NEET-UG) – Telegram",
+        "description": "3 days ago ... Delhi NCR Office Contact: 9431639316 (Calling Only) Main Branch ... PRESS RELEASE By NTA Regarding Paper Leak Report The National Testing ...",
+        "url": "https://telegram.me/s/Smartnaukri?before=13538"
+      },
+      {
+        "name": "meghupdates",
+        "title": "MEGH UPDATES",
+        "description": "4 days ago ... In Ziarat, Balochistan,aftermath visuals show the charred remains of Pakistani Frontier Corps (FC) personnel following an attack by Baloch Freedom Fighters ...",
+        "url": "https://telegram.me/s/meghupdates?before=131059"
+      },
+      {
+        "name": "fantasypanditg",
+        "title": "Fantasy Pandit – Telegram",
+        "description": "3 days ago ... Rajasthan Royals - Delhi Capitals Innings #1. Rajasthan Royals total runs of ... This clash features GT's balanced bowling attack against PBKS's explosive batting ...",
+        "url": "https://telegram.me/s/fantasypanditg?after=82742"
+      },
+      {
+        "name": "Indopathshala",
+        "title": "Indo Pathshala – Telegram",
+        "description": "3 days ago ... The foundation stone of New Delhi, south of central Delhi was laid by George V during the Delhi Durbar of 1911. ... Pulwama attack is one of the deadliest attacks ...",
+        "url": "https://telegram.me/s/Indopathshala?before=2763"
+      },
+      {
+        "name": "SattaKing9292",
+        "title": "\"Satta King 9292\" — @SattaKing9292 Telegram-kanali — TGStat",
+        "description": "3 days ago ... ... leak jodi | Fastest result update | Desawar | Gali | Faridabad | Ghaziabad | Gali | Delhi Bazar | shree Ganesh | Loss cover guarantee\" #Sattaking ...",
+        "url": "https://in.tgstat.com/uz/channel/@SattaKing9292"
+      },
+      {
+        "name": "rs6uR_odSVZkY2Nl",
+        "title": "Actress sexy video - Estadísticas y analítica del canal de Telegram",
+        "description": "3 days ago ... ... Delhi Girls WhatsApp Numbers Bikini Girls WhatsApp Numbers FOR PORN IOS ... LEAK MMS Only Fan खूब सूरत बदन Bhabhi Lover भाभी ...",
+        "url": "https://telemetr.io/es/channels/1249224237-rs6uR_odSVZkY2Nl/posts?cursor=IBQ%3D"
+      },
+      {
+        "name": "AAAAAErLbMHJm6pE9BuK9g",
+        "title": "INTERNATIONAL FIXER™ - Estadísticas y analítica del canal de ...",
+        "description": "4 days ago ... TOSS MATCH FIXING SOLO Ṯнe̴ Bяαи∂ ⃝ TOSS LEAK™. 5 ... TOSS ...",
+        "url": "https://telemetr.io/es/channels/1254845633-AAAAAErLbMHJm6pE9BuK9g/posts?cursor=IBQ="
+      },
+      {
+        "name": "stripedung",
+        "title": "BINNERS HUB - Estadísticas y analítica del canal de Telegram ...",
+        "description": "4 days ago ... ... LEAK RECORDS (DB 1) RECORD #1 Name: Shailendra Kumar Father: INDRA PAL SINGH Alt Phones: 919870897158 Region: JIO DELHI Document No ...",
+        "url": "https://telemetr.io/es/channels/3418228465-stripedung/posts"
+      },
+      {
+        "name": "cyberdosti4c",
+        "title": "CyberDost",
+        "description": "7 days ago ... Saurabh Haritesh, Sub Inspector, Cyber Crime Investigation & Digital Forensics Specialist, Delhi ... Scammers don't hack your phone first - they try to hack your ...",
+        "url": "https://t.me/s/cyberdosti4c?before=4751"
+      },
+      {
+        "name": "jeetranasirgs",
+        "title": "Jeet Rana GS – Telegram",
+        "description": "5 days ago ... Delhi Police 2026 Result Out | Delhi Police Scam EXPOSED ⚠️ Truth Revealed! ... NEET 2026 exam controversy is creating panic among students after paper leak ...",
+        "url": "https://t.me/s/jeetranasirgs?before=3086"
+      },
+      {
+        "name": "ssccult",
+        "title": "SSC CULT OFFICIAL – Telegram",
+        "description": "5 days ago ... Constable (Executive) Male and Female in Delhi Police Examination, 2025 - ... USE Hack 1. https://rrb.digialm.com//EForms/loginAction.do?subAction ...",
+        "url": "https://t.me/s/ssccult?before=2247"
+      },
+      {
+        "name": "mymahabharti",
+        "title": "MahaBharti.in™ – Telegram",
+        "description": "4 days ago ... The complete timeline of the Drug Inspector exam paper leak!! 3.47K ... Delhi High Court Bharti 2026: Delhi High Court published an ...",
+        "url": "https://telegram.me/s/mymahabharti?before=41384"
+      },
+      {
+        "name": "edutaplearning",
+        "title": "EduTap - RBI | NABARD | SEBI |FCI | EPFO – Telegram",
+        "description": "5 days ago ... • Delhi: 31 Jan & 1 Feb 2026 • Chandigarh: 7 & 8 Feb 2026 With the RBI ... Selected NABARD Grade A officer shares a simple ARD study hack: use a ...",
+        "url": "https://telegram.me/s/edutaplearning?after=49561"
+      },
+      {
+        "name": "DGPIndia",
+        "title": "Post #75285 — Gaurav Pradhan Gurukul (@DGPIndia)",
+        "description": "4 days ago ... No membership card of Delhi's old intellectual club. And that ... Or attack the numbers. Too many have chosen the second. QUESTION THE ...",
+        "url": "https://in.tgstat.com/channel/@DGPIndia/75285"
+      },
+      {
+        "name": "hustleforssc",
+        "title": "Hustle for SSC – Telegram",
+        "description": "6 days ago ... Delhi police Constable Result?? | Kbtk aayega result? # ssc ... Over Age & Govt Exams Paper Leak | दोबारा मौका मिलेगा? # ssc ...",
+        "url": "https://t.me/s/hustleforssc?q=%23ssc&before=1146"
+      },
+      {
+        "name": "camonk8",
+        "title": "CA Monk (CA Community|CA Students|CA Jobs|CA Members)",
+        "description": "6 days ago ... Resume Hack: Beat the Application Tracking System (ATS)! https://www ... Location: Delhi NCR Requirements: CA Fresher or Consultant-level ...",
+        "url": "https://t.me/s/camonk8?before=4862"
+      },
+      {
+        "name": "smartlearningacademy",
+        "title": "Vedemy (CSIR NET Life Science/GATE/DBT/ICMR/NEET) ️",
+        "description": "6 days ago ... https://indianexpress.com/article/cities/delhi/aiims-delhi-performs-indias ... CSIR -UGC-NET Exam | Paper Leak | NTA Scam | Kab tak chalega ye | Virendra ...",
+        "url": "https://t.me/s/smartlearningacademy?before=5069"
+      },
+      {
+        "name": "rbe_s",
+        "title": "RBE- REVOLUTION BY EDUCATION – Telegram",
+        "description": "6 days ago ... ... leak claims, creating panic and confusion among aspirants In this ... Delhi Police Vacancy Reduced | Constable, AWO/TPO & Driver Posts Affected ...",
+        "url": "https://t.me/s/rbe_s?before=12919"
+      },
+      {
+        "name": "lootwithjd",
+        "title": "\"Loot With JD\" — @lootwithjd Telegram-kanali — TGStat",
+        "description": "6 days ago ... Official Telegram Channel of JD Guru ji - Paytm Earning And Self Earning App - Paytm Loot Bug - Mod APK And Hack Tricks - Earning Offers - Bug Trick ...",
+        "url": "https://in.tgstat.com/uz/channel/@lootwithjd"
+      },
+      {
+        "name": "RankersGurukulLive",
+        "title": "Rankers' Gurukul Official – Telegram",
+        "description": "30 Aug 2026 ... Heart Attack से बच सकती है आपकी जान | ft. Pushpender Sir ... Delhi University Invited Reasoning Guru As Chief Guest | ft.",
+        "url": "https://t.me/s/RankersGurukulLive?q=%23viral"
+      },
+      {
+        "name": "mrunalorg",
+        "title": "Mrunal's Official Channel: General Studies, Current Affairs, Economy ...",
+        "description": "29 Aug 2026 ... Ban for NEET leak. I'm in favour of PERMANENT BAN on Telegram/Reddit/Instagram ... ‍⚖️ 27 Judges thru Exam DELHI HIGHER JUDICIAL SERVICE www ...",
+        "url": "https://telegram.me/s/mrunalorg?before=5163"
+      },
+      {
+        "name": "angrysaffron",
+        "title": "\"Angry Saffron & Treeni\" — @angrysaffron Telegram-kanali — TGStat",
+        "description": "28 Aug 2026 ... Delhi: Md Sahil and his wife Sameera have been arrested for running ... The attack came as police began action on it. Stones were also pelted at the ...",
+        "url": "https://tgstat.com/uz/channel/@angrysaffron"
+      },
+      {
+        "name": "q3iA3SmWsAZlNTRl",
+        "title": "$èx Models - Telegram kanali statistikasi va tahlili - Telemetrio",
+        "description": "27 Aug 2026 ... ... Leaked 11K College Girls Fcking 11K Desi Gang Bang ... leak videos Free premium video Hot d€si bh@bi Paid video free Vip premium Latest ...",
+        "url": "https://telemetr.io/uz/channels/2285296220-q3iA3SmWsAZlNTRl/posts"
+      },
+      {
+        "name": "biotecnika",
+        "title": "BioTecNika – Telegram",
+        "description": "26 Aug 2026 ... https://btnk.org/nii-delhi-short-term-training. Tag a friend who would love this 6-month short-term training at NII Delhi ... attack, and remove harmful pathogens ...",
+        "url": "https://t.me/s/biotecnika?q=%23Immunology&before=24923"
+      },
+      {
+        "name": "TelanganaToday",
+        "title": "Post #22764 — Telangana Today (@TelanganaToday)",
+        "description": "25 Aug 2026 ... Congress and BJP workers clashed in Vijayawada during rival protests over Rahul Gandhi's detention in Delhi amid the NEET paper leak controversy ...",
+        "url": "https://in.tgstat.com/channel/@TelanganaToday/22764"
+      }
+    ]
+  },
+  {
+    "term": "delhi",
+    "dork": 5,
+    "query": "\"delhi\" AND (\"malware\" OR \"c2\") AND (\"hack\" OR \"trojan\" OR \"leak\" OR \"stealer\") -telegraph -news",
+    "api": null,
+    "scraper": [
+      "ContactDeepak",
+      "Daily_Writeups",
+      "Gvwitmover",
+      "OfficiaLCryptoindia",
+      "PCSSaarthi",
+      "ThePundits_Official",
+      "cyber_yodha",
+      "cyberdosti4c",
+      "dkagrawal0",
+      "k8security",
+      "mppscadda",
+      "qasvus"
+    ],
+    "jaccard": null,
+    "api_ms": 0,
+    "scraper_ms": 6313.814699999057,
+    "quota": 0,
+    "api_channels": null,
+    "scraper_channels": [
+      {
+        "name": "cyberdosti4c",
+        "title": "CyberDost – Telegram",
+        "description": "13 Aug 2026 ... The 'CyberSmart Delhi' event orgainsed by Delhi Police-Southern ... #APKfiles are malware that may hack your phone and steal your personal information.",
+        "url": "https://t.me/s/cyberdosti4c?q=%23OnlineSecurity&before=2740"
+      },
+      {
+        "name": "Daily_Writeups",
+        "title": "education - Daily Writeups – Telegram",
+        "description": "31 Jul 2026 ... ⤷ Title: Best Ethical Hacking Course in Delhi with Placement Assistance ... As part of my cybersecurity capstone project, I analyzed how Trojan malware can be ...",
+        "url": "https://t.me/s/Daily_Writeups/123963?q=%23education"
+      },
+      {
+        "name": "mppscadda",
+        "title": "MPPSCADDA : Institute for MPPSC Exam in English Medium",
+        "description": "21 Jul 2026 ... What type of malware ... The historic 'Gwalior Fort' was captured from the Tomar rulers in 1518 CE during the reign of which Delhi Sultanate ruler ...",
+        "url": "https://t.me/s/mppscadda?before=34627"
+      },
+      {
+        "name": "dkagrawal0",
+        "title": "Dk agrawal – Telegram",
+        "description": "18 Jan 2026 ... In Delhi High court today. These petitioners are allowed to sit in SSC CGL ... What is the primary function of a Trojan Horse malware? Answer: It ...",
+        "url": "https://t.me/s/dkagrawal0?before=1208"
+      },
+      {
+        "name": "Gvwitmover",
+        "title": "Gv Kaksha – Telegram",
+        "description": "14 Jan 2026 ... SSC CGL MTS CHSL CPO GD DELHI POLICE RPF SI UPSI के लिए GK Series by Gv… ... What is the primary function of a Trojan Horse malware? Answer: It ...",
+        "url": "https://t.me/s/Gvwitmover?before=8019"
+      },
+      {
+        "name": "OfficiaLCryptoindia",
+        "title": "Crypto India Haveli – Telegram",
+        "description": "23 Dec 2025 ... Many calling it shady post-2024 hack. https://x.com/cryptooindia/status ... Shocking Leak: Tom Lee's Fundstrat sends private warning to investors ...",
+        "url": "https://t.me/s/OfficiaLCryptoindia?before=19732"
+      },
+      {
+        "name": "PCSSaarthi",
+        "title": "StudyIQ PCS – Telegram",
+        "description": "1 Dec 2025 ... A malware that appears to be legitimate software but, once installed ... What is the proposed number of revenue districts in Delhi after increasing them from 11?",
+        "url": "https://t.me/s/PCSSaarthi?before=22823"
+      },
+      {
+        "name": "ThePundits_Official",
+        "title": "THE PUNDITS - OFFICIAL : SSC Exams",
+        "description": "17 Nov 2025 ... SSC Exam Paper Leak 2025? | Aspirants का Future खतरे में? | Shubham ... Malware Lec 1 https://www.youtube.com/live/ELRebkJ9MP4?si=_ ...",
+        "url": "https://t.me/s/ThePundits_Official?after=7711"
+      },
+      {
+        "name": "k8security",
+        "title": "k8s (in)security – Telegram",
+        "description": "22 Apr 2025 ... Используя этот нюанс можно было решить мою таску на Hack and Learn Initiative про мисконфиги в GCP. ... Delhi - learn more at kubecon.io. Don't miss KubeCon ...",
+        "url": "https://t.me/s/k8security/358"
+      },
+      {
+        "name": "ContactDeepak",
+        "title": "Deepak Chouhan – Telegram",
+        "description": "12 Sept 2023 ... mobile hack karne wala apps download ... Diploma in Ethical Hacking | bachelor degree in ethical hacking in india ethical hacking course in delhi fees ethical ...",
+        "url": "https://t.me/s/ContactDeepak?before=941"
+      },
+      {
+        "name": "cyber_yodha",
+        "title": "Cyber Yodha – Telegram",
+        "description": "1 May 2023 ... ... malware #learncode #opensource #networksecurity #firewall #archlinux #linux ... Delhi AIIMS Server Hack: हैकर्स ने 200 करोड़ की मांग ...",
+        "url": "https://t.me/s/cyber_yodha?q=%23cyberyodha&before=517"
+      },
+      {
+        "name": "qasvus",
+        "title": "QA at Silicon Valley QASV.US – Telegram",
+        "description": "24 Nov 2020 ... Nitish Nanda | TalentBurst, Inc. Boston | Dallas | San Francisco | Miami | Milwaukee | Toronto | New Delhi Work: (415) 523-8556| Fax: (508) ...",
+        "url": "https://t.me/s/qasvus?before=663"
+      }
+    ]
+  },
+  {
+    "term": "AT&T",
+    "dork": 3,
+    "query": "\"AT&T\" AND \"leak\" OR “leaked” OR “hack” OR “hacked” OR “attack” OR “attacked” -telegraph -news",
+    "api": null,
+    "scraper": [
+      "AndroidHeadline",
+      "EchelonEyes",
+      "HaxChipper",
+      "alhagamtek",
+      "amazon_fire_deals",
+      "androidK22",
+      "androidk22",
+      "awsweekly",
+      "eaglepredict",
+      "hooliganscz1999",
+      "special_ops_lioness_2",
+      "vrpirate"
+    ],
+    "jaccard": null,
+    "api_ms": 0,
+    "scraper_ms": 6539.7707000011,
+    "quota": 0,
+    "api_channels": null,
+    "scraper_channels": [
+      {
+        "name": "androidk22",
+        "title": "اندرويد(1) اليمن (الاحترافي) – Telegram",
+        "description": "2 days ago ... أمريكا: AT&T - Verizon - T-Mobile بريطانيا: Vodafone - O2 - EE - Three ... • Cloud Attack شرح مرتب + تطبيق عملي + ملفات جاهزة. سعر الدبلوم ...",
+        "url": "https://t.me/s/androidk22?after=1942"
+      },
+      {
+        "name": "alhagamtek",
+        "title": "شروحات ‍☠️ وثغرات – Telegram",
+        "description": "3 days ago ... التصيّد الاحتيالي (Phishing Attack) كيف يتم خداعك لتسليم بياناتك دون أن ... أمريكا: AT&T - Verizon - T-Mobile بريطانيا: Vodafone - O2 - EE ...",
+        "url": "https://t.me/s/alhagamtek?before=422"
+      },
+      {
+        "name": "androidK22",
+        "title": "اندرويد(1) اليمن (الاحترافي) – Telegram",
+        "description": "2 days ago ... أمريكا: AT&T - Verizon - T-Mobile بريطانيا: Vodafone - O2 - EE - Three ... • Cloud Attack شرح مرتب + تطبيق عملي + ملفات جاهزة. سعر الدبلوم ...",
+        "url": "https://t.me/s/androidK22?before=1960"
+      },
+      {
+        "name": "vrpirate",
+        "title": "VRPirate ‍ VR игры Oculus Meta Quest 1/2/3/3s/pro – Telegram",
+        "description": "2 days ago ... ... AT&T, арена «Оракл» и многое другое; - более 12 летательных аппаратов. ❗️ ... ⬤ Acron - Attack of the Squirrels! ⬤ Accounting+ [RUS] ⬤ Yues VR FPV ...",
+        "url": "https://t.me/s/vrpirate?before=721"
+      },
+      {
+        "name": "hooliganscz1999",
+        "title": "Hooligans.cz – Telegram",
+        "description": "2 days ago ... ... AT&T Stadium after match, click here for more: https://hooligans.cz/2026/06 ... ~60 Lyon hooligans attacked them, click for more here: https ...",
+        "url": "https://t.me/s/hooliganscz1999?before=22734"
+      },
+      {
+        "name": "amazon_fire_deals",
+        "title": "Fire Deals - Amazon Best USA Deals – Telegram",
+        "description": "3 days ago ... AT&T Essentials True Wireless Bluetooth Comfort Fit Stereo in-Ear Earbuds ... Leak Proof Locking Lid, Sip & Chug, BPA Free, Holiday Gift for Him Her ...",
+        "url": "https://t.me/s/amazon_fire_deals?before=1034"
+      },
+      {
+        "name": "HaxChipper",
+        "title": "Telegram-канал \"HaxChipper\" - TGStat",
+        "description": "3 days ago ... WE, INDOHAXSEC, LEAKED MORE THAN 3.8 MILLION ISRAELI RESIDENTS' DATA TAKEN FROM GENERAL ELECTION RESULTS. THIS ATTACK IS A FORM OF OUR SUPPORT FOR PALESTINE AND ...",
+        "url": "https://tgstat.com/fa/channel/@HaxChipper"
+      },
+      {
+        "name": "eaglepredict",
+        "title": "Eagle Predict - Free Football Betting Tips and Predictions – Telegram",
+        "description": "3 days ago ... Spain bring control, quality, and that big-game confidence. Venue: AT&T Stadium, Dallas ... France have the edge in attack, but Spain won't make it easy.",
+        "url": "https://t.me/s/eaglepredict?before=5530"
+      },
+      {
+        "name": "awsweekly",
+        "title": "\"AWS Weekly\" — @awsweekly Telegram-kanali - TGStat.com",
+        "description": "5 days ago ... ▪️ AWS Interconnect last mile new partner with AT&T in gated preview ▪️ ... ▪️ Shield Advanced introduces DDoS attack flow logs ▪️ Transform ...",
+        "url": "https://tgstat.com/uz/channel/@awsweekly"
+      },
+      {
+        "name": "special_ops_lioness_2",
+        "title": "Cashout Premium Tutorials - Estadísticas y analítica del canal de ...",
+        "description": "6 days ago ... attack2 · clarification2 · cyber2 · debit2 · fbi2 · fullz2 · hacker2 · radar2 · rat2 · wealth2 ... (AT&T ISP, Datacenter, IPv6, Residential and Mobile Proxies) • ...",
+        "url": "https://telemetr.io/es/channels/1903966853-special_ops_lioness_2"
+      },
+      {
+        "name": "EchelonEyes",
+        "title": "Echelon Eyes – Telegram",
+        "description": "6 days ago ... 8. «Watchguard's 2023 Cybersecurity Predictions» 9. Fortinet: «Threat Predictions for 2023: New Attack Surfaces and Threats Emerge as Cybercrime Expands» ... AT&T ...",
+        "url": "https://telegram.me/s/EchelonEyes/2832?q=%23%D1%80%D0%B8%D1%81%D0%BA%D0%B8"
+      },
+      {
+        "name": "AndroidHeadline",
+        "title": "Android Headlines – Telegram",
+        "description": "7 days ago ... Did Intel just leak the Windows 12 release window? During theCiti 2023 Global conference, it seems that Intel may have just accidentally leaked the release ...",
+        "url": "https://t.me/s/AndroidHeadline?before=13222"
+      }
+    ]
+  },
+  {
+    "term": "AT&T",
+    "dork": 5,
+    "query": "\"AT&T\"",
+    "api": null,
+    "scraper": [
+      "BTSArchiv",
+      "DEVYEMEN",
+      "Daily_Writeups",
+      "EchelonEyes",
+      "GsmFather",
+      "Naija_Sports",
+      "PGATOUR",
+      "Prompt",
+      "airgsminfo",
+      "alseery_soft",
+      "blackterminal",
+      "bpscconceptwallah",
+      "instaforex",
+      "iphoneunlockingstore",
+      "iribnews",
+      "markettwits",
+      "nAo538m1R5UxZTU8",
+      "proxycheapcom",
+      "thebugbountyhunter",
+      "ym_yaowen"
+    ],
+    "jaccard": null,
+    "api_ms": 0,
+    "scraper_ms": 6719.506699999329,
+    "quota": 0,
+    "api_channels": null,
+    "scraper_channels": [
+      {
+        "name": "BTSArchiv",
+        "title": "Telegram channel \"BTS Archiv ̈ ️\" — @BTSArchiv — TGStat",
+        "description": "12 hours ago ... BTS at Arlington AT&T Stadium Day 1 → · BTS World Tour Arirang at Baltimore Full Concert Day -2 → · BTS at Arlington AT&T Stadium Day 2. Catalog. Channels and ...",
+        "url": "https://in.tgstat.com/channel/@BTSArchiv"
+      },
+      {
+        "name": "thebugbountyhunter",
+        "title": "Telegram channel \"The Bug Bounty Hunter\" — @thebugbountyhunter",
+        "description": "2 days ago ... The Bug Bounty Hunter. 6 Sep, 03:11. Open in Telegram Share Report. From Zero Credentials to Super Admin: An SSO Authentication Bypass on AT&T https://medium ...",
+        "url": "https://tgstat.com/channel/@thebugbountyhunter"
+      },
+      {
+        "name": "markettwits",
+        "title": "MarketTwits – Telegram",
+        "description": "21 Jul 2026 ... #GLRX Глоракс - МСФО 2025г (не подтверждено) #T AT&T - 13:30мск #BSX Boston Scientific - 13:30мск #PM Phillip Morris - 13:55мск #CME CME ...",
+        "url": "https://telegram.me/s/markettwits/116379?q=%23TSLA"
+      },
+      {
+        "name": "alseery_soft",
+        "title": "AlseerY-SofT – Telegram",
+        "description": "2 days ago ... SAMSUNG Galaxy A11 AT&T. ⚙️ [Erase FRP] ⚙️. - Name : Galaxy A11 AT&T - Model : SM-A115A - Platform : QCOM - Version : ANDROID 12. #SAMSUNG #FRP #EDL",
+        "url": "https://t.me/s/alseery_soft?q=%23EDL&before=3691"
+      },
+      {
+        "name": "proxycheapcom",
+        "title": "Proxy-Cheap.com – Telegram",
+        "description": "3 days ago ... ... AT&T related proxy issues. This situation is a fault of our ISP which couldn't fix the problems, therefor they has pulled AT&T subnets and will provide new ones ...",
+        "url": "https://t.me/s/proxycheapcom?before=75"
+      },
+      {
+        "name": "blackterminal",
+        "title": "Инвестируй с BlackTerminal – Telegram",
+        "description": "3 days ago ... Среди них Tesla, Netflix, AT&T, Intel ну и конечно наши металлурги. Обновленные цифры уже на сайте! Посмотрите, как изменились финансовые показатели и ...",
+        "url": "https://telegram.me/s/blackterminal/2209?q=%23PM"
+      },
+      {
+        "name": "nAo538m1R5UxZTU8",
+        "title": "Dating Format And Update Tools - Statistics & analytics of Telegram ...",
+        "description": "3 days ago ... FARMERS ONLY TUTS If you're on proxy use At&T If you don't have proxy use HMA vpn Make sure your device time is the same as the location of your proxy or vpn ...",
+        "url": "https://telemetr.io/en/channels/3631606494-nAo538m1R5UxZTU8"
+      },
+      {
+        "name": "GsmFather",
+        "title": "www.gsmfather.com – Telegram",
+        "description": "19 Aug 2026 ... ➡️Bulk Quantity Holders Can Contact Us For More Discount. 1418# USA AT&T - iP All Models Supported (Only Clean IMEI Tried To Unlock Wait 30 Days Supported)",
+        "url": "https://t.me/s/GsmFather?before=10346"
+      },
+      {
+        "name": "Prompt",
+        "title": "prompt AI News – Telegram",
+        "description": "4 days ago ... Companies like AT&T are increasingly using cheap, freely available artificial intelligence models over expensive ones from Anthropic and OpenAI.",
+        "url": "https://telegram.me/s/Prompt?before=388"
+      },
+      {
+        "name": "EchelonEyes",
+        "title": "Echelon Eyes – Telegram",
+        "description": "6 days ago ... AT&T: «10 Cybersecurity Predictions for 2023» 12. «Check Point Software's Cybersecurity Predictions for 2023: Expect More Global Attacks, Government ...",
+        "url": "https://telegram.me/s/EchelonEyes/2832?q=%23%D1%80%D0%B8%D1%81%D0%BA%D0%B8"
+      },
+      {
+        "name": "iphoneunlockingstore",
+        "title": "iPhoneUnlockingStore – Telegram",
+        "description": "6 days ago ... AT&T MEXICO – PREMIUM NETWORK UNLOCK ⚡️ Fast • Clean • Premium Route All iPhone Generic Models Supported ✔️ Premium IMEI Route ✔️ Stable & Reliable",
+        "url": "https://telegram.me/s/iphoneunlockingstore?before=178"
+      },
+      {
+        "name": "airgsminfo",
+        "title": "Telegram channel \"AirGSM - Worldwide Services Unlock GSM\"",
+        "description": "29 Aug 2026 ... AT&T SEMI‑PREMIUM UNLOCK – DIRECT SOURCE ⚡️ SERVICE BACK STABLE NOW SEND ORDER NOW – FAST... USA T-Mobile Premium Network Unlock Service ...",
+        "url": "https://tgstat.com/channel/@airgsminfo"
+      },
+      {
+        "name": "DEVYEMEN",
+        "title": "محمد غراب ـ MOHAMED GHORAB – Telegram",
+        "description": "28 Aug 2026 ... SM-A115U AT&T-CHA-CCT-BAA-PCT SM-A037U AT&T-CHA-CCT-BAA-PCT SM-A037U1 AT&T-CHA-CCT-BAA-PCT SM-A025U AT&T-CHA-CCT-BAA-PCT SM-A025U1 AT&T ...",
+        "url": "https://t.me/s/DEVYEMEN?q=%23_PRO&before=3644"
+      },
+      {
+        "name": "PGATOUR",
+        "title": "PGA Tour – Telegram",
+        "description": "28 Aug 2026 ... In the final round of the 2022 AT&T Byron Nelson, Hideki Matsuyama shot a 10-under 62, getting to 24-under par to end the tournament, finishing in a tie for ...",
+        "url": "https://t.me/s/PGATOUR?before=105"
+      },
+      {
+        "name": "iribnews",
+        "title": "خبرگزاری صداوسیما – Telegram",
+        "description": "27 Aug 2026 ... ... AT&T ارتش رژیم کودک‌کش را در بن گورین و حیفا هدف حمله پهپاد‌های انهدامی قرار دادند. مرکز نرم افزار صنعتی زیمنس در مناطق مرکزی سرزمین‌های اشغالی (در نزدیکی ...",
+        "url": "https://telegram.me/s/iribnews?before=327923"
+      },
+      {
+        "name": "ym_yaowen",
+        "title": "YM 要闻– Telegram",
+        "description": "18 Aug 2026 ... 12月1日起，所有AT&T家庭宽带套餐统一上调5美元/月，三年累计涨幅或达15美元。 官方称涨价为抵消运营成本上升，但上季净利49亿美元，全年利润123亿美元。",
+        "url": "https://t.me/s/ym_yaowen/9760?q=%23at_t"
+      },
+      {
+        "name": "bpscconceptwallah",
+        "title": "BPSC Concept Wallah – Telegram",
+        "description": "8 Aug 2026 ... (a) एटीएंडटी (AT&T). 12%. (b) टी-मोबाइल. 16%. (c) वेरिजॉन. 47%. (d) वोडाफोन. 1%. (e) प्रयास नहीं किया गया. 1.15K ...",
+        "url": "https://telegram.me/s/bpscconceptwallah?before=19934"
+      },
+      {
+        "name": "Daily_Writeups",
+        "title": "Daily Writeups – Telegram",
+        "description": "30 Jul 2026 ... Title: Arris BGW210-700 Authentication Bypass Leaks AT&T Gateway WiFi Passwords ( CVE - 2026 - 16771 )",
+        "url": "https://t.me/s/Daily_Writeups/125020?q=%23CVE_2026_16771"
+      },
+      {
+        "name": "instaforex",
+        "title": "InstaForex | InstaTrade Official - Forex & Crypto Trading – Telegram",
+        "description": "15 Jul 2026 ... Major deals and events: AT&T, French crisis, US tariffs vs India, and IBM /AMD's quantum era 1️⃣ AT&T invests $23B in 5G – the biggest ...",
+        "url": "https://telegram.me/s/instaforex?q=%23IBM&before=5998"
+      },
+      {
+        "name": "Naija_Sports",
+        "title": "Post #3970 — Naija Sports Hub (@Naija_Sports) - TGStat.com",
+        "description": "14 Jul 2026 ... ... AT&T Stadium on Tuesday. M... — Post on TGStat. ... Spain are through to the 2026 FIFA World Cup final after a commanding 2-0 victory over France ...",
+        "url": "https://tgstat.com/channel/@Naija_Sports/3970"
+      }
+    ]
+  },
+  {
+    "term": "delhi police",
+    "dork": 3,
+    "query": "\"delhi police\" AND \"leak\" OR “leaked” OR “hack” OR “hacked” OR “attack” OR “attacked” -telegraph -news",
+    "api": null,
+    "scraper": [
+      "Extraknowledgeinhindi",
+      "GopalSir_Eng",
+      "SDV_BOTz",
+      "abhinaymaths",
+      "angrysaffron",
+      "cyberdosti4c",
+      "hustleforssc",
+      "jeetranasirgs",
+      "mathsbyadityaranjanasirofficial1",
+      "meghupdates",
+      "rbe_s",
+      "simplicrackwithalok",
+      "ssccult",
+      "sscexamabhinaymaths"
+    ],
+    "jaccard": null,
+    "api_ms": 0,
+    "scraper_ms": 6045.085400000971,
+    "quota": 0,
+    "api_channels": null,
+    "scraper_channels": [
+      {
+        "name": "Extraknowledgeinhindi",
+        "title": "Extra Knowledge In Hindi – Telegram",
+        "description": "2 days ago ... ... Leak 2026,BSF HCM Written Exam Cancel 2026,ki ... Delhi Police Constable Physical New Date 2026|Delhi Police Physical New Date|Delhi Police Admit Card.",
+        "url": "https://t.me/s/Extraknowledgeinhindi?before=3551"
+      },
+      {
+        "name": "GopalSir_Eng",
+        "title": "Gopal Verma English – Telegram",
+        "description": "5 days ago ... Delhi Police Constable Driver Result List-II. ❤16 8. 27.7K views 06:10 ... Neet paper Leak 2026 | Gopal Verma #neet #scam #careerwill. NEET 2026 ...",
+        "url": "https://t.me/s/GopalSir_Eng?before=8011"
+      },
+      {
+        "name": "meghupdates",
+        "title": "MEGH UPDATES - Telegram Messenger",
+        "description": "2 days ago ... Some handles are deliberately sharing cropped videos to create a false agenda against the Delhi Police. STRICT ACTION must be taken against such ...",
+        "url": "https://telegram.me/s/meghupdates?before=127969"
+      },
+      {
+        "name": "abhinaymaths",
+        "title": "\"Abhinay maths\" — @abhinaymaths Telegram-kanali — TGStat",
+        "description": "3 days ago ... Reverse Remainder Hack 5 सेकंड में Answer | Maths Magic Trick | Abhinay Sharma ... Delhi Police Constable Admit Card Out https://sscnr.nic.in/newlook ...",
+        "url": "https://in.tgstat.com/uz/channel/@abhinaymaths"
+      },
+      {
+        "name": "simplicrackwithalok",
+        "title": "Simplicrack – Telegram",
+        "description": "3 days ago ... Are you preparing for SSC CGL (Tier-2), CHSL, Railway (NTPC/Group D), or Delhi Police? ... The Trick: Scammers post \"leaked\" papers on Telegram by ...",
+        "url": "https://t.me/s/simplicrackwithalok?before=2539"
+      },
+      {
+        "name": "cyberdosti4c",
+        "title": "CyberDost – Telegram",
+        "description": "6 days ago ... Join RJ Richa Sharma in conversation with Shri Manoj Kumar, ACP IFSO, Special Cell, Delhi Police ... Scammers don't hack your phone first - they try to hack your ...",
+        "url": "https://t.me/s/cyberdosti4c?before=4733"
+      },
+      {
+        "name": "jeetranasirgs",
+        "title": "Jeet Rana GS – Telegram",
+        "description": "5 days ago ... Delhi Police 2026 Result Out | Delhi Police Scam EXPOSED ⚠️ Truth Revealed! ... NEET 2026 exam controversy is creating panic among students after paper leak ...",
+        "url": "https://t.me/s/jeetranasirgs?before=3086"
+      },
+      {
+        "name": "SDV_BOTz",
+        "title": "SDV 𝙱𝙾𝚃𝚂 codes – Telegram",
+        "description": "5 days ago ... Delhi Police has granted permission to the Cockroach Janata Party to hold a ... He will Guide you for your college journey or Choices. ❤14 1. 7.62K views ...",
+        "url": "https://t.me/s/SDV_BOTz?before=766"
+      },
+      {
+        "name": "ssccult",
+        "title": "SSC CULT OFFICIAL – Telegram",
+        "description": "5 days ago ... Constable (Executive) Male and Female in Delhi Police Examination, 2025 - ... USE Hack 1. https://rrb.digialm.com//EForms/loginAction.do?subAction ...",
+        "url": "https://t.me/s/ssccult?before=2247"
+      },
+      {
+        "name": "hustleforssc",
+        "title": "Hustle for SSC – Telegram",
+        "description": "6 days ago ... Delhi police Constable Result?? | Kbtk aayega result? # ssc ... Over Age & Govt Exams Paper Leak | दोबारा मौका मिलेगा? # ssc ...",
+        "url": "https://t.me/s/hustleforssc?q=%23ssc&before=1146"
+      },
+      {
+        "name": "rbe_s",
+        "title": "RBE- REVOLUTION BY EDUCATION – Telegram",
+        "description": "6 days ago ... ... leak claims, creating panic and confusion among aspirants In this ... Delhi Police Vacancy Reduced | Constable, AWO/TPO & Driver Posts Affected ...",
+        "url": "https://t.me/s/rbe_s?before=12919"
+      },
+      {
+        "name": "mathsbyadityaranjanasirofficial1",
+        "title": "MATHS BY ADITYA RANJAN SIR OFFICIAL",
+        "description": "7 days ago ... कौन है वो || Amit सर के पीछे ये कौन पड़ गया || #shorts #attack... ... DELHI POLICE CONSTABLE EXAM DATE EXTEND. 2.",
+        "url": "https://t.me/s/mathsbyadityaranjanasirofficial1?before=398"
+      },
+      {
+        "name": "angrysaffron",
+        "title": "\"Angry Saffron & Treeni\" — @angrysaffron Telegram-kanali — TGStat",
+        "description": "28 Aug 2026 ... Delhi: Md Sahil and his wife Sameera have been arrested for running logistics for an ISI-backed Pakistani spy network since 2024, per Delhi Police Special Cell.",
+        "url": "https://tgstat.com/uz/channel/@angrysaffron"
+      },
+      {
+        "name": "sscexamabhinaymaths",
+        "title": "SSC - ABHINAY MATHS – Telegram",
+        "description": "24 Aug 2026 ... ... Delhi Police SI Kaise Bane? Abhinay Sharma. SSC CPO AIR 5 Interview | SSC CPO ... Leak Scam | NEET Paper Leak 2026 | Abhinay Sir on Anjana Om Kashyap",
+        "url": "https://t.me/s/sscexamabhinaymaths?q=%23AbhinaySharma"
+      }
+    ]
+  },
+  {
+    "term": "delhi police",
+    "dork": 5,
+    "query": "\"delhi police\"",
+    "api": null,
+    "scraper": [
+      "DelhiPoliceOfficial",
+      "Government_Jobs_Sarkari_Naukri",
+      "SandeepSirRwa",
+      "SarkariNetworkOfficial",
+      "bihar_police_delhi_constable_up",
+      "eztyping",
+      "govt_jobs_prepp",
+      "haryana_jobs_in",
+      "mntrastudy",
+      "qmaths",
+      "sarkaridisha",
+      "study91"
+    ],
+    "jaccard": null,
+    "api_ms": 0,
+    "scraper_ms": 6543.013500002417,
+    "quota": 0,
+    "api_channels": null,
+    "scraper_channels": [
+      {
+        "name": "haryana_jobs_in",
+        "title": "Sarkari Job Updates – Telegram",
+        "description": "2 days ago ... Platform · Apply Last Date Today (04.09. · ✓ Bank of Baroda Recruitment 2026: Wealth Executive & Credit Analyst (1100 Posts) · ✓ SBI Bank SCO Recruitment 2026 ...",
+        "url": "https://telegram.me/s/haryana_jobs_in"
+      },
+      {
+        "name": "SarkariNetworkOfficial",
+        "title": "Sarkari Network (SarkariNetwork.Com) – Telegram",
+        "description": "2 days ago ... EMRS Teaching and Non-Teaching (Principal Post) Tier-II Exam Result 2026 · KVS/ NVS Various Teaching Vacancies Tier-II Exam Result · *Delhi Police Constable New ...",
+        "url": "https://telegram.me/s/SarkariNetworkOfficial?before=20959"
+      },
+      {
+        "name": "Government_Jobs_Sarkari_Naukri",
+        "title": "Government Jobs Alert Sarkari Naukri – Telegram",
+        "description": "2 days ago ... SSC Delhi Police Head Constable AWO/TPO Result 2025 Out! ... https://govtjobsalert.in/ssc-delhi-police-head-constable-recruitment-2025/ · ✓ Whatsapp ...",
+        "url": "https://telegram.me/s/Government_Jobs_Sarkari_Naukri?before=8285"
+      },
+      {
+        "name": "govt_jobs_prepp",
+        "title": "Prepp: Sarkari Exam Prep App – Telegram",
+        "description": "3 days ago ... Delhi Police Constable 2023: Final Result, Merit List & Cutoff Out https://prepp.in/delhi-police-exam · Prepp. Delhi Police Recruitment - Delhi-Police. Follow ...",
+        "url": "https://telegram.me/s/govt_jobs_prepp?after=17544"
+      },
+      {
+        "name": "sarkaridisha",
+        "title": "Sarkari Disha – Telegram",
+        "description": "2 days ago ... SSC Delhi Police Constable Recruitment 2025 Result for 7565 Posts Staff Selection Commission SSC Delhi Police Constable Executive Result 2026 […] 130 views ...",
+        "url": "https://telegram.me/s/sarkaridisha?before=11850"
+      },
+      {
+        "name": "DelhiPoliceOfficial",
+        "title": "Delhi Police – Telegram",
+        "description": "4 days ago ... Delhi Police · https://x.com/DelhiPolice/status/2091476316822663447?s=20 · X (formerly Twitter). Delhi Police (@DelhiPolice) on X. Team of NDR @CrimeBranchDP ...",
+        "url": "https://t.me/s/DelhiPoliceOfficial?before=6157"
+      },
+      {
+        "name": "mntrastudy",
+        "title": "Study Mantra Education (( OFFICIAL )) – Telegram",
+        "description": "3 days ago ... \"Study Mantra Education\" helps aspirants throughout in your preparation journey of All HSSC EXAMS, HTET/CTET, DELHI POLICE, SSC, MTS/CHSL/CGL, RPF, RAILWAY ...",
+        "url": "https://telegram.me/s/mntrastudy?before=35396"
+      },
+      {
+        "name": "SandeepSirRwa",
+        "title": "Sandeep Sir Rwa – Telegram",
+        "description": "4 days ago ... Welcome to Delhi Police Reasoning Classes 2025! In this session, Sandeep Sir will guide you through the Classification section… ❤135 5 4.",
+        "url": "https://t.me/s/SandeepSirRwa?before=238"
+      },
+      {
+        "name": "eztyping",
+        "title": "EzTyping | Ez Typing – Telegram",
+        "description": "5 days ago ... Delhi Police HCM Exam added with marking scheme. ❤9 4. 4.23K views 10:53. January 8. EzTyping | Ez Typing. For any issues/ suggestions https://eztyping.com ...",
+        "url": "https://telegram.me/s/eztyping?before=343"
+      },
+      {
+        "name": "qmaths",
+        "title": "Post #8957 — Qmaths (@qmaths)",
+        "description": "5 days ago ... SSC DP HC Ministerial 2025 Corrigendum Head Constable (Ministerial) in Delhi Police Examination, 2025: Corrigendum- Conduct of PE and MT ...",
+        "url": "https://in.tgstat.com/channel/@qmaths/8957"
+      },
+      {
+        "name": "study91",
+        "title": "Study 91 official™ © – Telegram",
+        "description": "7 days ago ... delhi police constable mock test,delhi police previous year paper, delhi police online course , delhi police constable exam notes, delhi police constable ex...",
+        "url": "https://t.me/s/study91?before=1901"
+      },
+      {
+        "name": "bihar_police_delhi_constable_up",
+        "title": "BIHAR UP SI DELHI POLICE CONSTABLE GK GS - Telemetrio",
+        "description": "7 days ago ... BIHAR UP SI DELHI POLICE CONSTABLE GK GS. black-icon. Kanalga Telegram'da o'tish. Best Exam Study ...",
+        "url": "https://telemetr.io/uz/channels/1654868772-bihar_police_delhi_constable_up"
+      }
+    ]
+  }
+]

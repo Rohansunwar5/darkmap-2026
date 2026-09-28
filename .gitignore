@@ -1,0 +1,51 @@
+# secrets
+.env
+.env.*
+!.env.example
+*.session
+*.session-journal
+*.pem
+*.key
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# deps / build output
+node_modules/
+venv/
+.venv/
+*-venv/
+__pycache__/
+*.pyc
+dist/
+build/
+.terraform/
+
+# local tooling / junk
+prototype-made/work/
+*.log
+.DS_Store
+Thumbs.db
+~$*
+
+# data / opaque bundles
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.zip
+
+# ponytail: files with hardcoded live credentials, kept local-only. Move secrets to env vars to un-ignore.
+Iac/Channel_links_Extraction/dork4-extracted/Telethon_session_gen.ipynb
+Iac/dorks-script/dork-dockers/connect.py
+telegram-new/check_custom_accounts.py
+telegram-new/telegram-backup/telethondynamo.py
+client/Darkmap-2025/api/payment_server.js
+telegram-new/telegram-premium-server/src/scripts/migrate-telegram-accounts.ts
+tgdev/app.py
+tgdev/hack.py
+darkwebscrapper/ok.js
+
+# generated
+graphify-out/

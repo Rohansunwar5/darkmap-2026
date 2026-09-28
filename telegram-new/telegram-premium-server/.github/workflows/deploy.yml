@@ -1,0 +1,64 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to EC2 via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          port: ${{ secrets.VPS_PORT }}
+          script: |
+            export NVM_DIR="$HOME/.nvm"
+            source "$NVM_DIR/nvm.sh"
+
+            # --- Local Redis --------------------------------------------------
+            if ! command -v redis-server &> /dev/null; then
+              echo "Installing Redis..."
+              sudo apt-get update -qq
+              sudo apt-get install -y -qq redis-server
+            else
+              echo "Redis already installed"
+            fi
+
+            # Ensure Redis is running with minimal config
+            if ! pgrep redis-server &> /dev/null; then
+              echo "Starting Redis..."
+              sudo sed -i 's/^bind 127.0.0.1 -::1/bind 127.0.0.1/' /etc/redis/redis.conf
+              sudo sed -i 's/^supervised .*/supervised no/' /etc/redis/redis.conf
+              sudo redis-server /etc/redis/redis.conf --daemonize yes
+            else
+              echo "Redis already running"
+            fi
+            # ------------------------------------------------------------------
+
+            # Fail the deploy on any error below — never reload PM2 onto a
+            # broken build (a missing-module dist crash-loops the server).
+            set -e
+
+            cd ~/telegram-premium
+            git fetch origin
+            git reset --hard origin/main
+            npm install
+            # Typecheck GATE: abort before touching dist if types don't compile,
+            # so the running process keeps serving the last-good build.
+            npx tsc --noEmit
+            npm run build
+
+            # Reload via the ecosystem file. startOrReload honours the file's
+            # kill_timeout (30s) and wait_ready, so the OLD process fully
+            # disconnects every decoy session from Telegram before the NEW one
+            # connects. This clean handoff is what prevents AUTH_KEY_DUPLICATED.
+            # (The previous `pm2 stop && sleep 5 && pm2 start` force-killed the
+            # process after ~1.6s, mid-disconnect, causing the duplicate keys.)
+            pm2 startOrReload ecosystem.config.js --update-env
+            pm2 save

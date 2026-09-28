@@ -1,0 +1,67 @@
+{
+  "request": {
+    "path": "/instagram/profile",
+    "params": {
+      "username": "zz_no_such_handle_0923"
+    },
+    "url": "https://api.scrapingdog.com/instagram/profile?username=zz_no_such_handle_0923"
+  },
+  "status": 200,
+  "ms": 943,
+  "headers": {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, multipart/form-data",
+    "access-control-allow-methods": "HEAD,GET,POST,DELETE,OPTIONS,PUT",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a3f94d94bca2e8eb-BOM",
+    "connection": "keep-alive",
+    "content-encoding": "br",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 23 Sep 2026 11:45:26 GMT",
+    "etag": "W/\"2c9-gI2MpuXb0nhSwHkA70KMUzihT4Q\"",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=tVF1GCkYraOsEoImrnJeEx6i9eOUvgWjO0%2FzULqVof%2FoQ6be1GFIr7v5GenYzUFV4Ffryvgc2vf9R4LUj1QRv7Eg9e5%2Bg1ETyvqQ7q3OYCY8QT5%2F2HgTWR2SsaSvD2FHLAChde1nq10SUklJX826g7M%3D\"}]}",
+    "server": "cloudflare",
+    "transfer-encoding": "chunked",
+    "x-frame-options": "sameorigin, SAMEORIGIN",
+    "x-powered-by": "Express"
+  },
+  "json": {
+    "username": null,
+    "profile_id": null,
+    "full_name": null,
+    "bio": null,
+    "followers_count": null,
+    "following_count": null,
+    "bio_links": [],
+    "profile_pic_url": null,
+    "profile_pic_url_hd": null,
+    "is_business_account": null,
+    "is_professional_account": null,
+    "is_supervision_enabled": null,
+    "is_supervised_by_viewer": null,
+    "is_supervised_user": null,
+    "is_joined_recently": null,
+    "business_email": null,
+    "business_phone_number": null,
+    "business_category_name": null,
+    "overall_category_name": null,
+    "category_enum": null,
+    "category_name": null,
+    "is_private": null,
+    "is_verified": null,
+    "pinned_channels_list_count": null,
+    "highlight_reel_count": null,
+    "video_timeline": {
+      "count": null,
+      "videos": []
+    },
+    "related_profiles": [],
+    "owner_to_timeline_media": {
+      "count": null,
+      "media": []
+    }
+  }
+}

@@ -1,0 +1,30 @@
+[
+ [
+  {
+   "doc_type": "account",
+   "handle": "Brand.Help"
+  },
+  "account:brand.help"
+ ],
+ [
+  {
+   "doc_type": "post",
+   "instagram_url": "https://www.instagram.com/brand/reel/ABC/"
+  },
+  "post:ABC"
+ ],
+ [
+  {
+   "doc_type": "post",
+   "instagram_url": "https://www.instagram.com/p/ABC"
+  },
+  "post:ABC"
+ ],
+ [
+  {
+   "doc_type": "account",
+   "handle": null
+  },
+  "account:"
+ ]
+]

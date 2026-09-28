@@ -1,0 +1,290 @@
+[
+ {
+  "source": "tests/test_advanced_alerts.py::test_extracts_investigation_pivots",
+  "args": [
+   "Pay winner@okhdfcbank or 0x52908400098527886E0F7030069857D2E4169EE7. Call +91 98765 43210 and download https://bad.example/app.apk"
+  ],
+  "result": {
+   "hashtag": [],
+   "mention": [],
+   "url": [
+    "https://bad.example/app.apk"
+   ],
+   "email": [],
+   "payment": [],
+   "upi": [
+    "winner@okhdfcbank"
+   ],
+   "crypto_wallet": [
+    "0x52908400098527886E0F7030069857D2E4169EE7"
+   ],
+   "phone": [
+    "+919876543210"
+   ],
+   "download": [
+    "https://bad.example/app.apk"
+   ],
+   "telegram": []
+  }
+ },
+ {
+  "source": "tests/test_extract_normalize.py::test_extract_entities",
+  "args": [
+   "Win now! visit https://bit.ly/abc and www.lumi-outlet.xyz #Giveaway @luminaire contact help@evil.top cashapp $lumiclaims"
+  ],
+  "result": {
+   "hashtag": [
+    "giveaway"
+   ],
+   "mention": [
+    "luminaire"
+   ],
+   "url": [
+    "https://bit.ly/abc",
+    "www.lumi-outlet.xyz"
+   ],
+   "email": [
+    "help@evil.top"
+   ],
+   "payment": [
+    "cashapp"
+   ],
+   "upi": [],
+   "crypto_wallet": [],
+   "phone": [],
+   "download": [],
+   "telegram": []
+  }
+ },
+ {
+  "source": "tests/test_extract_normalize.py::test_extracts_bare_telegram_invite",
+  "args": [
+   "Join our Lenskart loot deal channel: t.me/lenskart_loot"
+  ],
+  "result": {
+   "hashtag": [],
+   "mention": [],
+   "url": [
+    "t.me/lenskart_loot"
+   ],
+   "email": [],
+   "payment": [],
+   "upi": [],
+   "crypto_wallet": [],
+   "phone": [],
+   "download": [],
+   "telegram": []
+  }
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "हिंदी ऑफर! Luminaire loot deal पर जाएं https://luminaire-offer.xyz/claim?x=1. UPI: pay.me@ybl फोन: +91 98765 43210"
+  ],
+  "result": {
+   "hashtag": [],
+   "mention": [],
+   "url": [
+    "https://luminaire-offer.xyz/claim?x=1"
+   ],
+   "email": [],
+   "payment": [
+    "upi"
+   ],
+   "upi": [
+    "pay.me@ybl"
+   ],
+   "crypto_wallet": [],
+   "phone": [
+    "+919876543210"
+   ],
+   "download": [],
+   "telegram": []
+  }
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "😀 FREE CASH 😀 join t.me/lootchannel_01 or Telegram: @scamchannel now!!"
+  ],
+  "result": {
+   "hashtag": [],
+   "mention": [
+    "scamchannel"
+   ],
+   "url": [
+    "t.me/lootchannel_01"
+   ],
+   "email": [],
+   "payment": [],
+   "upi": [],
+   "crypto_wallet": [],
+   "phone": [],
+   "download": [],
+   "telegram": [
+    "scamchannel"
+   ]
+  }
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "nbsp www.example-shop.store and​zero-width https://bit.ly/abc)"
+  ],
+  "result": {
+   "hashtag": [],
+   "mention": [],
+   "url": [
+    "www.example-shop.store",
+    "https://bit.ly/abc"
+   ],
+   "email": [],
+   "payment": [],
+   "upi": [],
+   "crypto_wallet": [],
+   "phone": [],
+   "download": [],
+   "telegram": []
+  }
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "Full-width phone １２３４５６７８９０ and ETH 0x52908400098527886E0F7030069857D2E4169EE7 and BTC 1BoatSLRHtKNngkdXEeobR76b53LETtpyT"
+  ],
+  "result": {
+   "hashtag": [],
+   "mention": [],
+   "url": [],
+   "email": [],
+   "payment": [],
+   "upi": [],
+   "crypto_wallet": [
+    "1BoatSLRHtKNngkdXEeobR76b53LETtpyT",
+    "0x52908400098527886E0F7030069857D2E4169EE7"
+   ],
+   "phone": [
+    "１２３４５６７８９０"
+   ],
+   "download": [],
+   "telegram": []
+  }
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "Email me: Ünïcode.Name@exämple.com or SUPPORT@Brand.COM, cashapp $bigwin99, paypal.me/brand-help"
+  ],
+  "result": {
+   "hashtag": [],
+   "mention": [],
+   "url": [],
+   "email": [
+    "ünïcode.name@exämple.com",
+    "support@brand.com"
+   ],
+   "payment": [
+    "cashapp",
+    "paypal.me/brand-help"
+   ],
+   "upi": [],
+   "crypto_wallet": [],
+   "phone": [],
+   "download": [],
+   "telegram": []
+  }
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "Download https://files.example.com/app.APK?ref=ig and www.mirror.net/setup.exe."
+  ],
+  "result": {
+   "hashtag": [],
+   "mention": [],
+   "url": [
+    "https://files.example.com/app.APK?ref=ig",
+    "www.mirror.net/setup.exe"
+   ],
+   "email": [],
+   "payment": [],
+   "upi": [],
+   "crypto_wallet": [],
+   "phone": [],
+   "download": [
+    "https://files.example.com/app.APK?ref=ig",
+    "www.mirror.net/setup.exe"
+   ],
+   "telegram": []
+  }
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "Line\rbreak www.a.com second http://b.net"
+  ],
+  "result": {
+   "hashtag": [],
+   "mention": [],
+   "url": [
+    "www.a.com",
+    "http://b.net"
+   ],
+   "email": [],
+   "payment": [],
+   "upi": [],
+   "crypto_wallet": [],
+   "phone": [],
+   "download": [],
+   "telegram": []
+  }
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "#Brand #brand_2026 #ÉTÉ @Brand.Official @brand. @x"
+  ],
+  "result": {
+   "hashtag": [
+    "brand",
+    "brand_2026",
+    "été"
+   ],
+   "mention": [
+    "brand.official",
+    "brand",
+    "x"
+   ],
+   "url": [],
+   "email": [],
+   "payment": [],
+   "upi": [],
+   "crypto_wallet": [],
+   "phone": [],
+   "download": [],
+   "telegram": []
+  }
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "HTTPS://EXAMPLE.COM/PATH, email: a@b, phone 1234567, tron TRX9ZJEfZ7Lc5xX6vKm8tQzG4wYhXk3p2a"
+  ],
+  "result": {
+   "hashtag": [],
+   "mention": [],
+   "url": [
+    "HTTPS://EXAMPLE.COM/PATH"
+   ],
+   "email": [],
+   "payment": [],
+   "upi": [],
+   "crypto_wallet": [
+    "TRX9ZJEfZ7Lc5xX6vKm8tQzG4wYhXk3p2a"
+   ],
+   "phone": [],
+   "download": [],
+   "telegram": []
+  }
+ }
+]

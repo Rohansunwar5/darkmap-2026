@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Node
+node_modules/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+auth/

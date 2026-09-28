@@ -1,0 +1,49 @@
+{
+  "account": {
+    "id": "17841400000000001",
+    "handle": "luminaire",
+    "platform": "instagram",
+    "display_name": "Luminaire",
+    "biography": "Official Luminaire account. Lighting design since 1998. Shop: luminaire.com",
+    "external_url": "https://luminaire.com",
+    "is_verified": true,
+    "is_business": true,
+    "followers_count": 842310,
+    "follows_count": 122,
+    "media_count": 1840,
+    "created_at": "2012-03-04T10:00:00Z"
+  },
+  "posts": [
+    {
+      "id": "18000000000000101",
+      "shortcode": "CxLum001",
+      "post_type": "post",
+      "permalink": "https://www.instagram.com/p/CxLum001/",
+      "caption": "The Aurora Series is here. Designed in Copenhagen, built to last. #luminaire #aurora",
+      "timestamp": "2024-05-02T09:15:00Z",
+      "like_count": 18422,
+      "comment_count": 312,
+      "media": [
+        {"media_type": "image", "media_url": "https://cdn.luminaire.com/a1.jpg", "width": 1080, "height": 1350, "mime_type": "image/jpeg", "byte_size": 482113}
+      ],
+      "comments": [
+        {"id": "1901", "author_handle": "designfan", "text": "Beautiful piece", "like_count": 12, "timestamp": "2024-05-02T10:00:00Z"}
+      ]
+    },
+    {
+      "id": "18000000000000102",
+      "shortcode": "CxLum002",
+      "post_type": "reel",
+      "permalink": "https://www.instagram.com/reel/CxLum002/",
+      "caption": "Behind the studio: how the Aurora pendant is assembled. #luminaire #madeindenmark",
+      "timestamp": "2024-05-11T14:40:00Z",
+      "like_count": 51022,
+      "comment_count": 640,
+      "view_count": 903221,
+      "media": [
+        {"media_type": "video", "media_url": "https://cdn.luminaire.com/a2.mp4", "width": 1080, "height": 1920, "duration_seconds": 28.4, "mime_type": "video/mp4"}
+      ],
+      "comments": []
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "request": {
+    "path": "/instagram/profile",
+    "params": {
+      "username": "nike"
+    },
+    "url": "https://api.scrapingdog.com/instagram/profile?username=nike"
+  },
+  "status": 403,
+  "ms": 253,
+  "headers": {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, multipart/form-data",
+    "access-control-allow-methods": "HEAD,GET,POST,DELETE,OPTIONS,PUT",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a3f94d9a999fe8eb-BOM",
+    "connection": "keep-alive",
+    "content-encoding": "br",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 23 Sep 2026 11:45:26 GMT",
+    "etag": "W/\"5b-/MVsHNbXMu/qk7CnmKD6jsl+Iys\"",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=hiXy3PainBMhWr30dUkpEqmYEtA8b%2BbEIZxw2C%2FlE7O9h09EFfXHsIFTGc6CjTtEQhOMhEU%2BBpGRXBDdi5I9uMTNoFs2%2F%2F4fNWgxwRggvUMeg2gh6lz9nQmeEtpvLVQMyWGy6dUp1eDfNlDV0Uttga4%3D\"}]}",
+    "server": "cloudflare",
+    "transfer-encoding": "chunked",
+    "x-frame-options": "sameorigin",
+    "x-powered-by": "Express"
+  },
+  "json": {
+    "message": "Unauthorized request, please make sure your API key is valid.",
+    "success": false
+  }
+}

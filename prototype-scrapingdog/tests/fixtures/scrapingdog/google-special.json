@@ -1,0 +1,112 @@
+{
+  "request": {
+    "path": "/google",
+    "params": {
+      "query": "site:instagram.com \"nike\" \"A&B\" #tag",
+      "results": 10,
+      "country": "in",
+      "language": "en",
+      "page": 0
+    },
+    "url": "https://api.scrapingdog.com/google?query=site%3Ainstagram.com+%22nike%22+%22A%26B%22+%23tag&results=10&country=in&language=en&page=0"
+  },
+  "status": 200,
+  "ms": 1429,
+  "headers": {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, multipart/form-data",
+    "access-control-allow-methods": "HEAD,GET,POST,DELETE,OPTIONS,PUT",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a3f94d6ed9e8e8eb-BOM",
+    "connection": "keep-alive",
+    "content-encoding": "br",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 23 Sep 2026 11:45:20 GMT",
+    "etag": "W/\"c0a-P9sSlGZZPFC4sGOW5iFAFtEKG9w\"",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=O2UHTGnI1g8%2FhC8X%2FQYzBxk9RHCsiUfvItOMTeGU9J6CRs8Zis2GC5ynaTVvOBjmre9izaCG1OJdDir87opSAqxMeK8TBOigw1xDqzpt9psCvREnpv6qNFC4Vkd1TQyS0CdNUelq%2B2kJFpzV2ZTvMXU%3D\"}]}",
+    "server": "cloudflare",
+    "transfer-encoding": "chunked",
+    "vary": "Accept-Encoding",
+    "x-frame-options": "sameorigin, SAMEORIGIN",
+    "x-powered-by": "Express"
+  },
+  "json": {
+    "search_information": {
+      "query_displayed": "site:instagram.com \"nike\" \"A&B\" #tag",
+      "organic_results_state": "Results for exact spelling"
+    },
+    "total_time_taken": 1.17,
+    "peopleAlsoAskedFor": [],
+    "organic_results": [
+      {
+        "title": "ehsas nahi tujhko main pyar karu kitna ....... . . . #shoot #tag #TopFans",
+        "displayed_link": "https://www.instagram.com › reel",
+        "snippet": "#shoot #tag #TopFans · View all 17 ... Nike Swoosh logo 12. asmaul_tv_10k's profile ... VIVO Y300 5G A&B Golakderaima West Bengal Jun 24, 2026 / 19:19 ...",
+        "link": "https://www.instagram.com/reel/DY_ar3oz0tX/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 1,
+        "page_rank": 1
+      },
+      {
+        "title": "Daniel ☀️ (@danielson575) • Instagram photos and videos",
+        "displayed_link": "https://www.instagram.com › danielson575",
+        "snippet": "#thankyou @foolishfool91 #aboveandbeyond #a&b #yougottogo ... #Deth #MacMiller #Swag #Weed #BlazeIt #SnapBack #Nike #Cig ...",
+        "link": "https://www.instagram.com/danielson575/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 2,
+        "page_rank": 2
+      },
+      {
+        "title": "இன்னுமா என்ன தெரில.. .... #newtrend #villupuram #coolie ...",
+        "displayed_link": "https://www.instagram.com › Reels",
+        "snippet": "... tag #gym · prasad_joy_. ❤️. August 19, 2025. Transcript ... KILVELUR a&b gym ☠️☠️☠️☠️ ... NIKE. unicorn.8592394's profile picture.",
+        "link": "https://www.instagram.com/p/DNiz1iOzHlR/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 3,
+        "page_rank": 3
+      },
+      {
+        "title": "#225batonrouge #legend @lsubaseball @southernu_br - Instagram",
+        "displayed_link": "https://www.instagram.com › ...",
+        "snippet": "... A&B STAY INCLUDED PERFORMING LIVE 2800MISTA ... #Tag #entrepreneur #subscribe ... EVERYBODY GOTTA EAT NIKE. squadtvdigital's profile picture · squadtvdigital. •.",
+        "link": "https://www.instagram.com/p/DbaI-87J531/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 4,
+        "page_rank": 4
+      },
+      {
+        "title": "BOTH #reel#explore#writer - Instagram",
+        "displayed_link": "https://www.instagram.com › reel › DdYKNHBJt1-",
+        "snippet": "Current situation Me nike kabutar ko hatao       Sale bhikari logggg ... Option (C) A&B. utkarsh_d2. Neele kabutar bhatke hue h, hare ...",
+        "date": "6 days ago",
+        "link": "https://www.instagram.com/reel/DdYKNHBJt1-/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 5,
+        "page_rank": 5
+      },
+      {
+        "title": "\"القطعة دي معندناش منها غير واحدة... \" استوكات أوروبي أصلي، تيشيرت ...",
+        "displayed_link": "https://www.instagram.com › reel",
+        "snippet": "#foryou #edit #ملابس #fashionstore #fypage · View all 3 comments · July 8. Transcript. وما لي الا. OCR. A&B Store. ... nike #gant #jordan #small.",
+        "date": "3 Jul 2026",
+        "link": "https://www.instagram.com/reel/DaVk9KZkbyD/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 6,
+        "page_rank": 6
+      }
+    ],
+    "dmca_message": {
+      "text": "",
+      "links": []
+    },
+    "pagination": {
+      "page_no": {}
+    },
+    "scrapingdog_pagination": {
+      "page_no": {}
+    }
+  }
+}

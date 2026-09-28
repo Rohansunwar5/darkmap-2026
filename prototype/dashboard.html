@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DarkMap Signal Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+  html { color-scheme: light dark; }
+  body { margin: 0; }
+  img { max-width: 100%; }
+  [hidden] { display: none !important; }
+
+  :root {
+    --ground:#f3f5f6; --surface:#fff; --surface-sunk:#e9edef;
+    --line:#d2dadd; --line-soft:#e2e8ea;
+    --ink:#101619; --ink-2:#43535a; --ink-3:#6d7f87;
+    --accent:#00707a; --accent-soft:#dff0f1; --accent-line:#9ccbcf;
+    --sev-crit:#c0362c; --sev-crit-bg:#fae6e4;
+    --sev-high:#a8540d; --sev-high-bg:#fceee0;
+    --sev-med:#7a600a;  --sev-med-bg:#f8f0d8;
+    --sev-low:#5a6b7c;  --sev-low-bg:#e7ecef;
+    --ok:#1f7a4d; --ok-bg:#e0f0e7;
+    --radius:7px; --shadow:0 1px 2px rgba(16,22,25,.06),0 4px 14px rgba(16,22,25,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:#0d1316; --surface:#151d21; --surface-sunk:#0a1013;
+      --line:#2a3840; --line-soft:#1f2b31;
+      --ink:#eaf1f3; --ink-2:#a8bcc4; --ink-3:#7b929c;
+      --accent:#3fc8d4; --accent-soft:#10353a; --accent-line:#26606a;
+      --sev-crit:#f08379; --sev-crit-bg:#3a1a18;
+      --sev-high:#e8a054; --sev-high-bg:#382414;
+      --sev-med:#d8bc55;  --sev-med-bg:#332c10;
+      --sev-low:#9db0bd;  --sev-low-bg:#1d272d;
+      --ok:#4fbb85; --ok-bg:#123023;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 16px rgba(0,0,0,.3);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:#0d1316; --surface:#151d21; --surface-sunk:#0a1013;
+    --line:#2a3840; --line-soft:#1f2b31;
+    --ink:#eaf1f3; --ink-2:#a8bcc4; --ink-3:#7b929c;
+    --accent:#3fc8d4; --accent-soft:#10353a; --accent-line:#26606a;
+    --sev-crit:#f08379; --sev-crit-bg:#3a1a18;
+    --sev-high:#e8a054; --sev-high-bg:#382414;
+    --sev-med:#d8bc55;  --sev-med-bg:#332c10;
+    --sev-low:#9db0bd;  --sev-low-bg:#1d272d;
+    --ok:#4fbb85; --ok-bg:#123023;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 4px 16px rgba(0,0,0,.3);
+  }
+
+  * { box-sizing:border-box; }
+  body {
+    background:var(--ground); color:var(--ink);
+    font-family:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:14px; line-height:1.5; -webkit-font-smoothing:antialiased;
+  }
+  .mono { font-family:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace; }
+  .num  { font-variant-numeric:tabular-nums; }
+  .wrap { max-width:1280px; margin:0 auto; padding-inline:16px; padding-block:0 56px; }
+
+  .masthead { display:flex; flex-wrap:wrap; align-items:baseline; gap:10px 14px; padding-block:22px 16px; border-bottom:1px solid var(--line); }
+  .logo { font-weight:700; font-size:17px; letter-spacing:-.015em; display:flex; align-items:center; gap:8px; }
+  .logo .dot { width:9px; height:9px; border-radius:50%; background:var(--accent); flex:none; box-shadow:0 0 0 3px var(--accent-soft); }
+  .module { font-size:11px; text-transform:uppercase; letter-spacing:.1em; color:var(--ink-3); font-weight:600; padding-left:14px; border-left:1px solid var(--line); }
+  .masthead .spacer { flex:1 1 auto; }
+  .modepill { font-size:10.5px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; padding:3px 9px; border-radius:999px; border:1px solid var(--line); color:var(--ink-3); background:var(--surface); }
+  .modepill.live { background:var(--ok-bg); color:var(--ok); border-color:var(--ok); }
+
+  .searchbar { display:flex; flex-wrap:wrap; gap:10px; padding-block:18px 8px; }
+  .field { flex:1 1 320px; display:flex; align-items:center; gap:10px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:0 12px; transition:border-color .12s, box-shadow .12s; }
+  .field:focus-within { border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft); }
+  .field svg { flex:none; color:var(--ink-3); }
+  .field input { flex:1; border:0; background:none; outline:none; color:var(--ink); font:500 15px/1 "IBM Plex Sans",sans-serif; padding:12px 0; min-width:0; }
+  .field input::placeholder { color:var(--ink-3); font-weight:400; }
+  button { font-family:inherit; cursor:pointer; border-radius:var(--radius); transition:background .12s,border-color .12s,color .12s; }
+  button:focus-visible, input:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .btn-go { background:var(--accent); color:#fff; border:1px solid var(--accent); font-weight:600; font-size:14px; padding:0 22px; min-height:44px; }
+  :root[data-theme="dark"] .btn-go { color:#06191c; }
+  @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .btn-go { color:#06191c; } }
+  .btn-go[disabled] { opacity:.55; cursor:progress; }
+
+  .examples { display:flex; flex-wrap:wrap; gap:6px; align-items:center; font-size:12px; color:var(--ink-3); padding-bottom:14px; }
+  .ex { background:var(--surface); border:1px solid var(--line-soft); border-radius:999px; padding:3px 10px; color:var(--ink-2); font-size:12px; cursor:pointer; }
+  .ex:hover { border-color:var(--accent); color:var(--accent); }
+
+  .verdict { display:flex; gap:10px; align-items:flex-start; padding:11px 14px; border-radius:var(--radius); border:1px solid var(--line); background:var(--surface); margin-bottom:14px; font-size:13px; color:var(--ink-2); box-shadow:var(--shadow); }
+  .verdict.pass { border-color:var(--ok); background:var(--ok-bg); color:var(--ink); }
+  .verdict.fail { border-color:var(--sev-crit); background:var(--sev-crit-bg); color:var(--ink); }
+  .verdict b { display:block; color:var(--ink); font-size:11px; text-transform:uppercase; letter-spacing:.08em; margin-bottom:2px; }
+
+  .scope { display:flex; flex-wrap:wrap; gap:6px; align-items:center; font-size:12px; color:var(--ink-3); padding-bottom:14px; }
+  .scope .tag { background:var(--surface); border:1px solid var(--line-soft); border-radius:999px; padding:3px 9px; color:var(--ink-2); }
+
+  .strip { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); margin-bottom:16px; overflow:hidden; }
+  .strip-head { display:flex; flex-wrap:wrap; align-items:center; gap:8px 14px; padding:11px 14px; border-bottom:1px solid var(--line-soft); background:var(--surface-sunk); }
+  .strip-head h2 { margin:0; font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-2); }
+  .strip-head .spacer { flex:1 1 auto; }
+  .asof { font-size:12px; color:var(--ink-3); }
+  .asof b { color:var(--ink); font-weight:600; }
+  .sources { display:grid; gap:1px; background:var(--line-soft); grid-template-columns:repeat(auto-fit,minmax(196px,1fr)); }
+  .src { background:var(--surface); padding:11px 13px 12px; }
+  .src-top { display:flex; align-items:center; gap:7px; margin-bottom:7px; }
+  .src-name { font-size:12.5px; font-weight:600; }
+  .stagepill { margin-left:auto; font-size:9.5px; font-weight:700; color:var(--ink-3); border:1px solid var(--line); border-radius:4px; padding:1px 5px; }
+  .pip { width:7px; height:7px; border-radius:50%; flex:none; background:var(--ok); }
+  .pip.wait { background:var(--sev-med); } .pip.bad { background:var(--sev-crit); }
+  .src-mode { font-size:9.5px; font-weight:700; letter-spacing:.07em; text-transform:uppercase; padding:2px 6px; border-radius:4px; background:var(--accent-soft); color:var(--accent); border:1px solid var(--accent-line); display:inline-block; }
+  .src-meta { display:flex; justify-content:space-between; align-items:baseline; gap:8px; margin-top:8px; font-size:11.5px; color:var(--ink-3); }
+  .src-meta .hits { color:var(--ink); font-weight:600; }
+  .src-diag { font-size:10.5px; color:var(--ink-3); margin-top:5px; word-break:break-word; }
+  .src-diag.bad { color:var(--sev-crit); font-weight:600; }
+  .track { height:2px; background:var(--surface-sunk); border-radius:2px; overflow:hidden; margin-top:8px; }
+  .track > i { display:block; height:100%; width:0; background:var(--accent); border-radius:2px; transition:width .3s linear; }
+  @media (prefers-reduced-motion:reduce){ .track > i { transition:none; } }
+
+  details.how { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); margin-bottom:18px; box-shadow:var(--shadow); }
+  details.how > summary { cursor:pointer; list-style:none; padding:12px 14px; display:flex; align-items:center; gap:9px; font-size:12.5px; font-weight:600; color:var(--ink-2); }
+  details.how > summary::-webkit-details-marker { display:none; }
+  details.how > summary .chev { transition:transform .15s; color:var(--ink-3); }
+  details.how[open] > summary .chev { transform:rotate(90deg); }
+  details.how[open] > summary { border-bottom:1px solid var(--line-soft); }
+  .how-body { padding:4px 14px 16px; }
+  .how-body h3 { font-size:11px; text-transform:uppercase; letter-spacing:.09em; color:var(--ink-3); margin:16px 0 6px; font-weight:700; }
+  .how-body h3:first-child { margin-top:10px; }
+  .how-body p { margin:0 0 8px; color:var(--ink-2); max-width:68ch; }
+  .callout { border-left:2px solid var(--accent); padding:8px 0 8px 12px; background:var(--accent-soft); border-radius:0 var(--radius) var(--radius) 0; color:var(--ink); margin:10px 0; max-width:68ch; }
+  .how-tbl { width:100%; border-collapse:collapse; font-size:12.5px; }
+  .how-tbl th,.how-tbl td { text-align:left; padding:7px 10px 7px 0; border-bottom:1px solid var(--line-soft); vertical-align:top; }
+  .how-tbl th { color:var(--ink-3); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.06em; }
+  .how-tbl td { color:var(--ink-2); }
+  .how-tbl td:first-child { color:var(--ink); font-weight:600; white-space:nowrap; padding-right:16px; }
+  .scroll-x { overflow-x:auto; }
+
+  .kpis { display:grid; gap:10px; margin-bottom:16px; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); }
+  .kpi { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:12px 14px; }
+  .kpi .k { font-size:10.5px; text-transform:uppercase; letter-spacing:.08em; color:var(--ink-3); font-weight:600; margin-bottom:5px; }
+  .kpi .v { font-size:25px; font-weight:600; letter-spacing:-.02em; line-height:1.1; }
+  .kpi .s { font-size:11.5px; color:var(--ink-3); margin-top:3px; }
+
+  .cols { display:grid; gap:16px; grid-template-columns:minmax(0,1.45fr) minmax(0,1fr); align-items:start; }
+  @media (max-width:900px){ .cols { grid-template-columns:1fr; } }
+  .panel { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden; }
+  .panel-head { display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; padding:11px 14px; border-bottom:1px solid var(--line-soft); background:var(--surface-sunk); }
+  .panel-head h2 { margin:0; font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-2); }
+  .panel-head .spacer { flex:1 1 auto; }
+  .count { font-size:12px; color:var(--ink-3); }
+  .filters { display:flex; flex-wrap:wrap; gap:5px; padding:10px 14px; border-bottom:1px solid var(--line-soft); }
+  .chip { border:1px solid var(--line); background:var(--surface); color:var(--ink-2); font-size:11.5px; font-weight:500; padding:4px 10px; border-radius:999px; }
+  .chip[aria-pressed="true"] { background:var(--accent-soft); border-color:var(--accent-line); color:var(--accent); font-weight:600; }
+
+  .rows { display:flex; flex-direction:column; }
+  .row { display:grid; grid-template-columns:3px 42px minmax(0,1fr) auto; gap:0 11px; align-items:start; padding:0; border:0; width:100%; text-align:left; background:var(--surface); color:inherit; border-bottom:1px solid var(--line-soft); border-radius:0; font-family:inherit; }
+  .row:last-child { border-bottom:0; }
+  .row:hover { background:var(--surface-sunk); }
+  .row[aria-current="true"] { background:var(--accent-soft); }
+  .row > .stripe { align-self:stretch; background:var(--sev-low); }
+  .row.crit > .stripe { background:var(--sev-crit); }
+  .row.high > .stripe { background:var(--sev-high); }
+  .row.med  > .stripe { background:var(--sev-med); }
+  .row .score { font-size:19px; font-weight:600; padding:12px 0 0; letter-spacing:-.02em; }
+  .row .body { padding:11px 0 12px; min-width:0; }
+  .row .handle { font-size:13.5px; font-weight:600; word-break:break-word; margin-bottom:2px; }
+  .row .rowurl { display:block; font-size:11px; color:var(--ink-3); margin:1px 0 0; word-break:break-all; }
+  a.dt-url { display:inline-block; color:var(--accent); text-decoration:none; border-bottom:1px solid var(--accent-line); }
+  a.dt-url:hover { border-bottom-color:var(--accent); }
+  .row .snippet { font-size:12.5px; color:var(--ink-2); margin:3px 0 7px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .row .tags { display:flex; flex-wrap:wrap; gap:5px; }
+  .row .side { padding:12px 14px 12px 0; text-align:right; }
+  .sev { display:inline-flex; align-items:center; gap:4px; font-size:10px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:2px 7px; border-radius:4px; background:var(--sev-low-bg); color:var(--sev-low); }
+  .sev.crit { background:var(--sev-crit-bg); color:var(--sev-crit); }
+  .sev.high { background:var(--sev-high-bg); color:var(--sev-high); }
+  .sev.med  { background:var(--sev-med-bg);  color:var(--sev-med); }
+  .tag-s { font-size:11px; padding:2px 7px; border-radius:4px; background:var(--surface-sunk); color:var(--ink-2); border:1px solid var(--line-soft); }
+  .plat { font-size:10.5px; font-weight:600; letter-spacing:.04em; color:var(--ink-3); text-transform:uppercase; white-space:nowrap; }
+  .seen { font-size:11px; color:var(--ink-3); margin-top:5px; white-space:nowrap; }
+  .fresh-dot { display:inline-block; width:5px; height:5px; border-radius:50%; background:var(--ok); margin-right:4px; vertical-align:1px; }
+  .fresh-dot.stale { background:var(--sev-low); }
+
+  .detail-body { padding:14px; }
+  .dt-handle { font-size:16px; font-weight:600; word-break:break-word; margin-bottom:4px; }
+  .dt-url { font-size:12px; color:var(--ink-3); word-break:break-all; margin-bottom:12px; }
+  .dt-score { display:flex; align-items:baseline; gap:9px; margin-bottom:3px; }
+  .dt-score .big { font-size:34px; font-weight:700; letter-spacing:-.03em; line-height:1; }
+  .dt-sub { font-size:11.5px; color:var(--ink-3); margin-bottom:14px; }
+  .sect { font-size:10.5px; text-transform:uppercase; letter-spacing:.09em; color:var(--ink-3); font-weight:700; margin:18px 0 8px; padding-bottom:5px; border-bottom:1px solid var(--line-soft); }
+  .bd-row { display:grid; grid-template-columns:1fr 34px; gap:8px; align-items:center; margin-bottom:9px; }
+  .bd-label { font-size:12px; color:var(--ink-2); margin-bottom:4px; display:flex; justify-content:space-between; gap:8px; }
+  .bd-label .w { color:var(--ink-3); font-size:11px; white-space:nowrap; }
+  .bd-bar { height:7px; background:var(--surface-sunk); border-radius:4px; overflow:hidden; }
+  .bd-bar > i { display:block; height:100%; background:var(--accent); border-radius:4px; }
+  .bd-val { font-size:12.5px; font-weight:600; text-align:right; }
+  .ev { background:var(--surface-sunk); border:1px solid var(--line-soft); border-radius:var(--radius); padding:10px 12px; }
+  .ev dl { margin:0; display:grid; grid-template-columns:auto 1fr; gap:5px 12px; font-size:12px; }
+  .ev dt { color:var(--ink-3); white-space:nowrap; }
+  .ev dd { margin:0; word-break:break-all; }
+  .actions { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
+  .btn { border:1px solid var(--line); background:var(--surface); color:var(--ink); font-size:12.5px; font-weight:600; padding:8px 14px; }
+  .btn:hover { border-color:var(--accent); color:var(--accent); }
+  .btn.primary { background:var(--accent); border-color:var(--accent); color:#fff; }
+  :root[data-theme="dark"] .btn.primary { color:#06191c; }
+  @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .btn.primary { color:#06191c; } }
+  .empty { padding:26px 14px; color:var(--ink-3); font-size:13px; }
+  .foot { margin-top:22px; padding-top:14px; border-top:1px solid var(--line); font-size:11.5px; color:var(--ink-3); max-width:76ch; }
+  .toast { position:fixed; left:50%; transform:translateX(-50%); bottom:calc(18px + env(safe-area-inset-bottom,0px)); background:var(--ink); color:var(--ground); font-size:12.5px; font-weight:500; padding:9px 16px; border-radius:999px; box-shadow:var(--shadow); z-index:40; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="logo"><span class="dot"></span>DarkMap</div>
+    <div class="module">Discovery Prototype</div>
+    <div class="spacer"></div>
+    <span class="modepill live" id="modepill">Live · Decodo</span>
+  </header>
+
+  <div class="searchbar">
+    <label class="field" for="q">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M11 11l3.2 3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <input id="q" value="" autocomplete="off" spellcheck="false"
+             placeholder="Any film title, brand or keyword"
+             aria-label="Title, brand or keyword to scan for">
+    </label>
+    <button class="btn-go" id="go" type="button">Run live scan</button>
+  </div>
+
+  <div class="examples">
+    <span>Try</span>
+    <button class="ex" type="button">Obsession</button>
+    <button class="ex" type="button">Jawan</button>
+    <button class="ex" type="button">Netflix</button>
+    <button class="ex" type="button">HDFC Bank</button>
+    <button class="ex" type="button">Kalki 2898 AD</button>
+  </div>
+
+  <div class="verdict" id="verdict" hidden></div>
+
+  <div class="scope" id="scope"></div>
+
+  <section class="strip">
+    <div class="strip-head">
+      <h2>Source status</h2>
+      <div class="spacer"></div>
+      <div class="asof" id="asof">Idle</div>
+    </div>
+    <div class="sources" id="sources"></div>
+  </section>
+
+  <details class="how">
+    <summary>
+      <svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+        <path d="M4 2.5L8 6l-4 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      How discovery works, and what it cannot promise
+    </summary>
+    <div class="how-body">
+      <div class="callout">
+        <strong>DarkMap pulls. Platforms do not push.</strong> No social platform offers a
+        webhook for "someone just posted about your title." Results are live as of the moment
+        you press scan, and nothing arrives between scans unless a monitor polls for it.
+      </div>
+
+      <h3>What each source mode means</h3>
+      <div class="scroll-x">
+        <table class="how-tbl">
+          <thead><tr><th>Mode</th><th>Behaviour</th><th>Freshness you can claim</th></tr></thead>
+          <tbody>
+            <tr><td>Live on search</td><td>The page is fetched and rendered at scan time. Nothing is cached.</td><td>Current to the second, for whatever the platform chooses to show.</td></tr>
+            <tr><td>Official API</td><td>Queried against the platform's own public API.</td><td>Current, subject to the platform's publishing delay.</td></tr>
+            <tr><td>Search index</td><td>Reads a search engine index rather than the live site.</td><td>Up to several days behind. Backfill only, never the primary signal.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Three limits to state plainly</h3>
+      <p><b>1. Coverage, not completeness.</b> Hashtag pages filter and delay content the
+      platform suspects breaches policy, which piracy content does. Some posts appear late,
+      some never appear, private accounts never appear. No single source returns everything,
+      which is why a scan fans out across several.</p>
+      <p><b>2. Index-backed sources lag.</b> An account created four hours ago is not in any
+      search engine's index and may never be.</p>
+      <p><b>3. Monitoring latency equals the polling interval.</b> Once a title is on a
+      watchlist, detection is as fast as that schedule and no faster.</p>
+
+      <h3>How a score is built</h3>
+      <p>Five components, fixed weights, computed the same way every time. In this prototype
+      all five are deterministic. In production a model would contribute to title match and
+      harm likelihood only, and never produce the total, so every score stays explainable.</p>
+    </div>
+  </details>
+
+  <div class="kpis">
+    <div class="kpi"><div class="k">Findings</div><div class="v num" id="kpiTotal">—</div><div class="s" id="kpiSrc">across sources</div></div>
+    <div class="kpi"><div class="k">Critical</div><div class="v num" id="kpiCrit" style="color:var(--sev-crit)">—</div><div class="s">score 85 and above</div></div>
+    <div class="kpi"><div class="k">Instagram</div><div class="v num" id="kpiIg">—</div><div class="s">handles discovered</div></div>
+    <div class="kpi"><div class="k">Facebook</div><div class="v num" id="kpiFb">—</div><div class="s">pages discovered</div></div>
+    <div class="kpi"><div class="k">Slowest source</div><div class="v num" id="kpiSlow">—</div><div class="s">time to last result</div></div>
+  </div>
+
+  <div class="cols">
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Review queue</h2><div class="spacer"></div>
+        <span class="count" id="queueCount">—</span>
+      </div>
+      <div class="filters" role="group" aria-label="Filter findings by severity">
+        <button class="chip" data-f="all"  aria-pressed="true"  type="button">All</button>
+        <button class="chip" data-f="crit" aria-pressed="false" type="button">Critical</button>
+        <button class="chip" data-f="high" aria-pressed="false" type="button">High</button>
+        <button class="chip" data-f="med"  aria-pressed="false" type="button">Medium</button>
+        <button class="chip" data-f="low"  aria-pressed="false" type="button">Low</button>
+      </div>
+      <div class="rows" id="rows"><div class="empty">Type a title, brand or keyword and press <b>Run live scan</b>.<br><br>Every result is fetched from Instagram and Facebook at that moment. Nothing here is cached or pre-generated, so a scan takes 60 to 90 seconds.</div></div>
+    </section>
+
+    <aside class="panel" aria-live="polite">
+      <div class="panel-head"><h2>Finding detail</h2></div>
+      <div class="detail-body" id="detailBody"><p style="color:var(--ink-3);margin:0">Select a finding.</p></div>
+    </aside>
+  </div>
+
+  <p class="foot" id="foot">
+    Live prototype. There is no demo or sample data: every finding below was fetched from a
+    public Instagram or Facebook URL at the moment you pressed scan. Stage 1 reads hashtag pages
+    for post IDs, stage 2 opens each post page for the author, caption and like count. Scores are
+    computed from those five components and nothing is cached between scans.
+  </p>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var SEV_LABEL = { crit:"Critical", high:"High", med:"Medium", low:"Low" };
+  var state = { data:null, filter:"all", selected:null, busy:false };
+
+  function $(s){ return document.querySelector(s); }
+  function esc(s){ return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){
+    return ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c]; }); }
+
+  var toastTimer;
+  function toast(msg){
+    var old = document.querySelector(".toast"); if (old) old.remove();
+    var el = document.createElement("div");
+    el.className = "toast"; el.setAttribute("role","status"); el.textContent = msg;
+    document.body.appendChild(el);
+    clearTimeout(toastTimer); toastTimer = setTimeout(function(){ el.remove(); }, 3000);
+  }
+
+  /* ---------- render ---------- */
+
+  function renderScope(exp){
+    if (!exp) { $("#scope").innerHTML = ""; return; }
+    var tags = exp.hashtags.map(function(h){ return '<span class="tag mono">#'+esc(h)+'</span>'; });
+    var ph   = exp.phrases.slice(0,2).map(function(p){ return '<span class="tag">"'+esc(p)+'"</span>'; });
+    $("#scope").innerHTML = "<span>Expanded to</span>" + tags.join("") + ph.join("") +
+      '<span class="tag">+ '+ (exp.handles.length) +' handle patterns</span>';
+  }
+
+  function renderVerdict(v){
+    var el = $("#verdict");
+    if (!v) { el.hidden = true; return; }
+    el.hidden = false;
+    el.className = "verdict" + (v.pass === true ? " pass" : v.pass === false ? " fail" : "");
+    var label = v.pass === true ? "Logged-out access works"
+              : v.pass === false ? "Blocked" : "Inconclusive";
+    el.innerHTML = "<div><b>" + esc(label) + "</b>" + esc(v.text) + "</div>";
+  }
+
+  function renderSources(srcs, progress){
+    if (!srcs || !srcs.length) { $("#sources").innerHTML = ""; return; }
+    $("#sources").innerHTML = srcs.map(function(s){
+      var done = !progress || progress >= 1;
+      var pip = s.error || s.wall ? "bad" : done ? "" : "wait";
+      var diag = "";
+      if (s.wall)       diag = '<div class="src-diag bad">Login wall: ' + esc((s.markers||[]).join(", ") || "detected") + '</div>';
+      else if (s.error) diag = '<div class="src-diag bad">' + esc(s.error) + '</div>';
+      else if (s.route && s.route !== "none")
+                        diag = '<div class="src-diag">parsed via ' + esc(s.route) + ' · ' + fmtBytes(s.bytes) + '</div>';
+      else if (s.route === "none")
+                        diag = '<div class="src-diag bad">no handles parsed · ' + fmtBytes(s.bytes) + '</div>';
+      return '<div class="src">' +
+        '<div class="src-top"><span class="pip '+pip+'"></span><span class="src-name">'+esc(s.name)+'</span>' +
+          (s.stage ? '<span class="stagepill">S'+s.stage+'</span>' : '') + '</div>' +
+        '<span class="src-mode">'+esc(s.mode)+'</span>' +
+        '<div class="src-meta"><span>'+ (done ? (s.ms/1000).toFixed(1)+'s · '+esc(s.note) : "fetching…") +
+          '</span><span class="hits num">'+ (done ? s.hits + (s.hits===1?" hit":" hits") : "—") +'</span></div>' +
+        diag +
+        '<div class="track"><i style="width:'+ (done?100:Math.round((progress||0)*100)) +'%"></i></div>' +
+      '</div>';
+    }).join("");
+  }
+
+  function fmtBytes(b){
+    if (!b) return "0 B";
+    if (b > 1048576) return (b/1048576).toFixed(1) + " MB";
+    if (b > 1024) return Math.round(b/1024) + " KB";
+    return b + " B";
+  }
+
+  function visible(){
+    if (!state.data) return [];
+    return state.data.findings.filter(function(f){
+      return state.filter === "all" || f.sev === state.filter;
+    });
+  }
+
+  function renderRows(){
+    var list = visible();
+    $("#queueCount").textContent = list.length + (list.length===1?" finding":" findings");
+    if (!list.length){
+      $("#rows").innerHTML = '<div class="empty">' +
+        (state.data ? "No findings at this severity."
+                    : "Type a title, brand or keyword and press <b>Run live scan</b>.<br><br>" +
+                      "Every result is fetched from Instagram and Facebook at that moment. " +
+                      "Nothing here is cached or pre-generated, so a scan takes 60 to 90 seconds.") + "</div>";
+      return;
+    }
+    $("#rows").innerHTML = list.map(function(f){
+      return '<button class="row '+f.sev+'" type="button" data-id="'+esc(f.id)+'"'+
+        (f.id===state.selected?' aria-current="true"':'')+'>'+
+        '<span class="stripe"></span>'+
+        '<span class="score num">'+f.score+'</span>'+
+        '<span class="body">'+
+          '<span class="handle">'+esc(f.handle)+'</span>'+
+          '<span class="rowurl mono">'+esc(f.url)+'</span>'+
+          '<span class="snippet">'+esc(f.snippet || "No caption captured.")+'</span>'+
+          '<span class="tags"><span class="sev '+f.sev+'">'+SEV_LABEL[f.sev]+'</span>'+
+            (f.matched||[]).slice(0,3).map(function(t){ return '<span class="tag-s">'+esc(t)+'</span>'; }).join("")+
+            (f.repeat?'<span class="tag-s">Repeat actor</span>':'')+
+          '</span>'+
+        '</span>'+
+        '<span class="side"><span class="plat">'+esc(f.platform)+'</span>'+
+          '<span class="seen"><span class="fresh-dot '+(f.fresh?"":"stale")+'"></span>'+esc(f.seen)+'</span></span>'+
+      '</button>';
+    }).join("");
+  }
+
+  function renderDetail(){
+    var f = (state.data ? state.data.findings : []).filter(function(x){ return x.id === state.selected; })[0];
+    if (!f){ $("#detailBody").innerHTML = '<p style="color:var(--ink-3);margin:0">Select a finding.</p>'; return; }
+
+    var bars = f.breakdown.map(function(c){
+      var name = c[0], val = c[1], w = c[2];
+      return '<div><div class="bd-label"><span>'+esc(name)+'</span>'+
+        '<span class="w num">weight '+Math.round(w*100)+'% · adds '+(val*w).toFixed(1)+'</span></div>'+
+        '<div class="bd-row"><div class="bd-bar"><i style="width:'+val+'%"></i></div>'+
+        '<div class="bd-val num">'+val+'</div></div></div>';
+    }).join("");
+
+    var matched = (f.matched||[]).length
+      ? '<p style="font-size:11.5px;color:var(--ink-3);margin:-3px 0 12px">Harm signals matched: ' +
+        f.matched.map(function(m){ return '<span class="mono">'+esc(m)+'</span>'; }).join(", ") + '</p>'
+      : '<p style="font-size:11.5px;color:var(--ink-3);margin:-3px 0 12px">No harm lexicon matched in the captured text.</p>';
+
+    $("#detailBody").innerHTML =
+      '<div class="dt-handle">'+esc(f.handle)+'</div>'+
+      '<a class="dt-url mono" href="'+esc(/^https?:/.test(f.url)?f.url:'https://'+f.url)+'" target="_blank" rel="noopener noreferrer">'+esc(f.url)+' ↗</a>'+
+      '<div class="dt-score"><span class="big num">'+f.score+'</span>'+
+        '<span class="sev '+f.sev+'">'+SEV_LABEL[f.sev]+'</span></div>'+
+      '<div class="dt-sub">Weighted from five components.'+
+        (f.followers ? ' Reach estimated from ' + Number(f.followers).toLocaleString() + ' followers.' : '') +
+      '</div>'+
+      '<div class="sect">Why this score</div>' + bars + matched +
+      '<div class="sect">Evidence</div>'+
+      '<div class="ev"><dl>'+
+        '<dt>Captured</dt><dd class="mono num">'+esc(f.evidence.captured)+'</dd>'+
+        '<dt>SHA-256</dt><dd class="mono">'+esc(f.evidence.sha)+'</dd>'+
+        '<dt>Method</dt><dd class="mono">'+esc(f.evidence.method)+'</dd>'+
+        '<dt>Stored</dt><dd>R2, write-once</dd>'+
+      '</dl></div>'+
+      '<div class="actions">'+
+        '<button class="btn primary" type="button" data-act="case">Open case</button>'+
+        '<button class="btn" type="button" data-act="packet">Build proof packet</button>'+
+        '<button class="btn" type="button" data-act="dismiss">Not relevant</button>'+
+      '</div>';
+  }
+
+  function renderKpis(){
+    var d = state.data;
+    if (!d){ return; }
+    var f = d.findings;
+    $("#kpiTotal").textContent = f.length;
+    $("#kpiCrit").textContent  = f.filter(function(x){ return x.score >= 85; }).length;
+    $("#kpiIg").textContent    = f.filter(function(x){ return x.platform === "Instagram"; }).length;
+    $("#kpiFb").textContent    = f.filter(function(x){ return x.platform === "Facebook"; }).length;
+    var slow = d.sources.reduce(function(m,s){ return Math.max(m, s.ms||0); }, 0);
+    $("#kpiSlow").textContent  = (slow/1000).toFixed(1) + "s";
+    $("#kpiSrc").textContent   = "across " + d.sources.length + " sources";
+  }
+
+  /* ---------- scan ---------- */
+
+  function scan(){
+    if (state.busy) return;
+    var q = $("#q").value.trim();
+    if (!q){ toast("Enter a title, brand or keyword."); $("#q").focus(); return; }
+
+    state.busy = true;
+    var btn = $("#go");
+    btn.disabled = true; btn.textContent = "Scanning…";
+    $("#asof").textContent = "Stage 1: reading hashtag pages…";
+    $("#rows").innerHTML = '<div class="empty">Fetching sources…</div>';
+
+    // progress is indicative: the server returns once all sources settle
+    var t0 = Date.now(), pulse = setInterval(function(){
+      var p = Math.min(0.95, (Date.now()-t0)/14000);
+      renderSources(state.data ? state.data.sources : null, p);
+    }, 300);
+
+    fetch("/api/scan?q=" + encodeURIComponent(q))
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        if (data.error) throw new Error(data.error);
+        clearInterval(pulse);
+        state.data = data;
+        state.selected = data.findings.length ? data.findings[0].id : null;
+        renderScope(data.expansion);
+        renderVerdict(data.verdict);
+        renderSources(data.sources, 1);
+        renderRows(); renderDetail(); renderKpis();
+
+
+        var d = new Date(), pad = function(n){ return String(n).padStart(2,"0"); };
+        var slow = data.sources.reduce(function(m,s){ return Math.max(m, s.ms||0); }, 0);
+        $("#asof").innerHTML = "Live as of <b>" + pad(d.getHours())+":"+pad(d.getMinutes())+":"+pad(d.getSeconds()) +
+          "</b> · slowest source <b>" + (slow/1000).toFixed(1) + "s</b>";
+        toast(data.findings.length + " findings from " + data.sources.length + " sources.");
+      })
+      .catch(function(e){
+        clearInterval(pulse);
+        $("#asof").textContent = "Scan failed";
+        $("#rows").innerHTML = '<div class="empty">Scan failed: ' + esc(e.message) +
+          '<br><br>Is the server running? <span class="mono">node server.js</span></div>';
+        toast("Scan failed: " + e.message);
+      })
+      .then(function(){
+        state.busy = false;
+        btn.disabled = false; btn.textContent = "Run live scan";
+      });
+  }
+
+  /* ---------- wiring ---------- */
+
+  $("#go").addEventListener("click", scan);
+  $("#q").addEventListener("keydown", function(e){ if (e.key === "Enter") scan(); });
+
+  document.querySelector(".examples").addEventListener("click", function(e){
+    var b = e.target.closest(".ex"); if (!b) return;
+    $("#q").value = b.textContent; scan();
+  });
+
+  $("#rows").addEventListener("click", function(e){
+    var row = e.target.closest(".row"); if (!row) return;
+    state.selected = row.getAttribute("data-id");
+    renderRows(); renderDetail();
+  });
+
+  document.querySelector(".filters").addEventListener("click", function(e){
+    var chip = e.target.closest(".chip"); if (!chip) return;
+    state.filter = chip.getAttribute("data-f");
+    Array.prototype.forEach.call(this.querySelectorAll(".chip"), function(c){
+      c.setAttribute("aria-pressed", String(c === chip));
+    });
+    renderRows();
+  });
+
+  $("#detailBody").addEventListener("click", function(e){
+    var b = e.target.closest("[data-act]"); if (!b) return;
+    var a = b.getAttribute("data-act");
+    if (a === "case")    toast("Case opened. Evidence and connected items attached.");
+    if (a === "packet")  toast("Proof packet queued. Hashes and capture times included.");
+    if (a === "dismiss") toast("Marked not relevant. Logged as a scoring label.");
+  });
+
+  // Deliberately no scan on load. Every scan is live, takes 60-90s, and spends
+  // real Decodo requests, so it only ever runs when someone asks for it.
+})();
+</script>
+</body>
+</html>

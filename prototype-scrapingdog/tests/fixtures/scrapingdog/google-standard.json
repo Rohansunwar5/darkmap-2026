@@ -1,0 +1,157 @@
+{
+  "request": {
+    "path": "/google",
+    "params": {
+      "query": "site:instagram.com \"nike\"",
+      "results": 10,
+      "country": "in",
+      "language": "en",
+      "page": 0
+    },
+    "url": "https://api.scrapingdog.com/google?query=site%3Ainstagram.com+%22nike%22&results=10&country=in&language=en&page=0"
+  },
+  "status": 200,
+  "ms": 1710,
+  "headers": {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, multipart/form-data",
+    "access-control-allow-methods": "HEAD,GET,POST,DELETE,OPTIONS,PUT",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a3f94d355a71e8eb-BOM",
+    "connection": "keep-alive",
+    "content-encoding": "br",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 23 Sep 2026 11:45:11 GMT",
+    "etag": "W/\"1423-MQQgWoF1il8qQvIwXHdeFQD0u58\"",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2B%2FvwszWzc6zg5kk5Zd8TPq6Rum22qL%2FmFjrTCIWjhhvOp7hN8mNvLaH5tEErvkGaw6aACy3gd0rwap8nrwoom34cHap1wbPEVldK82gGfElLeSRJ7vaj7%2BythReaBfz%2BAeaYpFeFNBfODWiSdN77BWY%3D\"}]}",
+    "server": "cloudflare",
+    "transfer-encoding": "chunked",
+    "vary": "Accept-Encoding",
+    "x-frame-options": "sameorigin, SAMEORIGIN",
+    "x-powered-by": "Express"
+  },
+  "json": {
+    "search_information": {
+      "query_displayed": "site:instagram.com \"nike\"",
+      "organic_results_state": "Results for exact spelling"
+    },
+    "total_time_taken": 1.46,
+    "peopleAlsoAskedFor": [],
+    "organic_results": [
+      {
+        "title": "Nike (@nike) · Beaverton, OR - Instagram",
+        "displayed_link": "https://www.instagram.com › nike",
+        "snippet": "Nike Atelier for Sha'Carri Richardson reflects the beauty of London after rainfall through luminous details, weathered textures, and sculptural silhouettes ...",
+        "link": "https://www.instagram.com/nike/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 1,
+        "page_rank": 1
+      },
+      {
+        "title": "Nike Football (@nikefootball) · Beaverton, OR - Instagram",
+        "displayed_link": "https://www.instagram.com › nikefootball",
+        "snippet": "Two types of speed. Same destruction on the pitch. Nike Mercurial Superfly and Nike Mercurial Vapor in new deadly colorways.",
+        "link": "https://www.instagram.com/nikefootball/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 2,
+        "page_rank": 2
+      },
+      {
+        "title": "Nike Sportswear (@nikesportswear) · Beaverton, OR - Instagram",
+        "displayed_link": "https://www.instagram.com › nikesportswear",
+        "snippet": "A winning fit on and off the track, no bluff. Nike Studio Fleece is available now.",
+        "link": "https://www.instagram.com/nikesportswear/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 3,
+        "page_rank": 3
+      },
+      {
+        "title": "riseindia • Instagram photos and videos",
+        "displayed_link": "https://www.instagram.com › riseindia",
+        "snippet": "Nike Movement Hub Edition 1 is here, making its debut in Delhi with Sonic Reset. ‍♀️ Join Simren Kaley for a morning of movement, ...",
+        "date": "24 Aug 2026",
+        "link": "https://www.instagram.com/riseindia/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 4,
+        "page_rank": 4
+      },
+      {
+        "title": "Nike Women (@nikewomen) · Beaverton, OR - Instagram",
+        "displayed_link": "https://www.instagram.com › nikewomen",
+        "snippet": "Nike and New York brand Kallmeyer come together for their first shoe: The Nike ... Check out her Nike By You designed Pegasus 42 now live on nike.com.",
+        "link": "https://www.instagram.com/nikewomen/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 5,
+        "page_rank": 5
+      },
+      {
+        "title": "Nike Running (@nikerunning) · Beaverton, OR - Instagram",
+        "displayed_link": "https://www.instagram.com › nikerunning",
+        "snippet": "A MIND-ALTERING SHOE. Nike Mind activates your senses to enhance your pregame routine. For runner, boxer, and Nike Trainer @iamthebatman___ [Claire Prince], ...",
+        "link": "https://www.instagram.com/nikerunning/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 6,
+        "page_rank": 6
+      },
+      {
+        "title": "Nike (@nike) · Beaverton, OR - Instagram",
+        "displayed_link": "https://www.instagram.com › nike",
+        "snippet": "nike's profile picture. nike. Nike. 291M followers. 266 following. Just Do It. Follow. Message ...",
+        "link": "https://www.instagram.com/nike/reels/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 7,
+        "page_rank": 7
+      },
+      {
+        "title": "Nike Basketball (@nikebasketball) • Instagram photos and videos",
+        "displayed_link": "https://www.instagram.com › nikebasketball",
+        "snippet": "Caitlin 1 drops October 1st · The hottest thang smokin' Nike KD19 “Purple Stuff” available 6.17.",
+        "link": "https://www.instagram.com/nikebasketball/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 8,
+        "page_rank": 8
+      },
+      {
+        "title": "NIKE MIND INTAKE SESSION Athlete: Shubman Gill Cricketer Key ...",
+        "displayed_link": "https://www.instagram.com › reel › DUTalcSCbgP",
+        "snippet": "Sabia que as Nike Mind ativa os teus sentidos?! Desenvolvida por neurocientistas e testada por atletas de elite, a tecnologia Nike Mind ativa ...",
+        "date": "3 Feb 2026",
+        "link": "https://www.instagram.com/reel/DUTalcSCbgP/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 9,
+        "page_rank": 9
+      },
+      {
+        "title": "Nike Air is not just a shoe. It's innovation and the constant pursuit of ...",
+        "displayed_link": "https://www.instagram.com › reel › DCW-rnkvQ-y",
+        "snippet": "The AIRMAX 1000, manufactured in partnership with Zellerfeld, reinvents the iconic Air Max 1 for Nike's latest expression of visible Air ...",
+        "date": "14 Nov 2024",
+        "link": "https://www.instagram.com/reel/DCW-rnkvQ-y/",
+        "favicon": "https://www.google.com/s2/favicons?domain=www.instagram.com",
+        "rank": 10,
+        "page_rank": 10
+      }
+    ],
+    "dmca_message": {
+      "text": "",
+      "links": []
+    },
+    "pagination": {
+      "current": "1",
+      "next": "https://www.google.com/search?q=site:instagram.com+%22nike%22&sca_esv=585baa279a4b2485&gl=in&hl=en&gbv=1&ei=xruzaqOeK4HW7M8PjvD40AI&start=10&sa=N",
+      "page_no": {
+        "2": "https://www.google.com/search?q=site:instagram.com+%22nike%22&sca_esv=585baa279a4b2485&gl=in&hl=en&gbv=1&ei=xruzaqOeK4HW7M8PjvD40AI&start=10&sa=N"
+      }
+    },
+    "scrapingdog_pagination": {
+      "current": "1",
+      "next": "https://api.scrapingdog.com/google?api_key=[REDACTED]&query=site%3Ainstagram.com+%22nike%22&country=in&language=en&page=1",
+      "page_no": {
+        "2": "https://api.scrapingdog.com/google?api_key=[REDACTED]&query=site%3Ainstagram.com+%22nike%22&country=in&language=en&page=1"
+      }
+    }
+  }
+}

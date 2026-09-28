@@ -1,0 +1,345 @@
+<title>Two Dollars a Search</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+:root{
+  --ground:#F7F8F9;
+  --surface:#FFFFFF;
+  --sunk:#EEF1F3;
+  --ink:#151A22;
+  --graphite:#5A6472;
+  --faint:#8A93A0;
+  --rule:#DCE1E6;
+  --signal:#0F6E5C;
+  --signal-soft:#E3F0EC;
+  --alarm:#A6432B;
+  --alarm-soft:#F7E8E3;
+  --display:"Newsreader",Georgia,"Times New Roman",serif;
+  --body:"Public Sans",-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#101318; --surface:#171B22; --sunk:#1D222B;
+    --ink:#E6E9ED; --graphite:#9AA4B2; --faint:#6B7482; --rule:#2A3140;
+    --signal:#4FBFA3; --signal-soft:#13302A;
+    --alarm:#E08A6E; --alarm-soft:#33211B;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#101318; --surface:#171B22; --sunk:#1D222B;
+  --ink:#E6E9ED; --graphite:#9AA4B2; --faint:#6B7482; --rule:#2A3140;
+  --signal:#4FBFA3; --signal-soft:#13302A;
+  --alarm:#E08A6E; --alarm-soft:#33211B;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px 96px}
+.col{max-width:64ch}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.15;margin:0}
+p{margin:0}
+a{color:var(--signal)}
+code,.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* masthead */
+header{padding:72px 0 40px;border-bottom:1px solid var(--rule);margin-bottom:48px}
+.kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--graphite);display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.kicker .dot{width:4px;height:4px;border-radius:50%;background:var(--faint)}
+h1{font-size:clamp(40px,7vw,68px);font-weight:500;letter-spacing:-.02em;margin:20px 0 0}
+.standfirst{font-family:var(--display);font-size:clamp(19px,2.4vw,23px);color:var(--graphite);
+  max-width:56ch;margin-top:20px;line-height:1.5}
+.byline{font-family:var(--mono);font-size:12px;color:var(--faint);margin-top:28px;letter-spacing:.03em}
+
+/* the opening figure */
+.headline-stat{display:flex;flex-wrap:wrap;gap:0;margin:0 0 48px;border:1px solid var(--rule);
+  background:var(--surface);border-radius:3px;overflow:hidden}
+.hs{flex:1 1 170px;padding:22px 24px;border-right:1px solid var(--rule)}
+.hs:last-child{border-right:0}
+.hs .n{font-family:var(--mono);font-size:30px;font-weight:700;letter-spacing:-.03em;display:block}
+.hs .l{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--graphite);margin-top:8px;display:block;line-height:1.4}
+.hs.bad .n{color:var(--alarm)}
+.hs.good .n{color:var(--signal)}
+
+section{margin-bottom:56px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--signal);display:block;margin-bottom:10px}
+h2{font-size:clamp(25px,3.4vw,33px);font-weight:500;letter-spacing:-.015em;margin-bottom:18px}
+h3{font-size:20px;font-weight:600;margin:32px 0 10px}
+.col p + p{margin-top:18px}
+.lede{font-size:18.5px}
+
+/* phase markers - the investigation genuinely was sequential */
+.phase{display:grid;grid-template-columns:64px 1fr;gap:0;border-top:1px solid var(--rule);
+  padding-top:26px;margin-top:34px}
+.phase-n{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--faint);
+  letter-spacing:.06em;padding-top:6px}
+.phase h3{margin-top:0}
+
+/* measurement block - breaks the column */
+figure{margin:28px 0;background:var(--surface);border:1px solid var(--rule);border-radius:3px}
+figcaption{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--graphite);padding:12px 18px;border-bottom:1px solid var(--rule);background:var(--sunk)}
+.tblwrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th,td{text-align:left;padding:11px 18px;border-bottom:1px solid var(--rule)}
+th{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--graphite);font-weight:500}
+tbody tr:last-child td{border-bottom:0}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+td.bad{color:var(--alarm);font-weight:500}
+td.good{color:var(--signal);font-weight:500}
+tr.total td{font-weight:700;background:var(--sunk)}
+
+pre{font-family:var(--mono);font-size:13px;line-height:1.6;margin:0;padding:18px;
+  overflow-x:auto;color:var(--ink)}
+pre .c{color:var(--faint)}
+pre .g{color:var(--signal)}
+pre .r{color:var(--alarm)}
+
+/* verdict chips */
+.verdict{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10.5px;
+  letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:2px;font-weight:500;
+  white-space:nowrap}
+.verdict.killed{background:var(--alarm-soft);color:var(--alarm)}
+.verdict.held{background:var(--signal-soft);color:var(--signal)}
+
+blockquote{margin:30px 0;padding-left:22px;border-left:2px solid var(--signal);
+  font-family:var(--display);font-size:21px;line-height:1.45;color:var(--ink)}
+blockquote p + p{margin-top:14px}
+
+.callout{background:var(--sunk);border:1px solid var(--rule);border-left:3px solid var(--alarm);
+  padding:20px 22px;border-radius:3px;margin:28px 0;font-size:16px}
+.callout strong{color:var(--alarm)}
+
+ul.plain{list-style:none;padding:0;margin:18px 0;display:flex;flex-direction:column;gap:14px}
+ul.plain li{padding-left:22px;position:relative}
+ul.plain li::before{content:"";position:absolute;left:0;top:.62em;width:9px;height:1px;background:var(--faint)}
+
+footer{border-top:1px solid var(--rule);padding-top:32px;margin-top:72px;
+  font-family:var(--mono);font-size:12.5px;color:var(--graphite);line-height:1.8;max-width:64ch}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (max-width:640px){
+  .phase{grid-template-columns:1fr;gap:6px}
+  .phase-n{padding-top:0}
+  body{font-size:16.5px}
+}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="kicker">
+    <span>Field report</span><span class="dot"></span>
+    <span>Infrastructure &middot; Cost forensics</span><span class="dot"></span>
+    <span>September 2026</span>
+  </div>
+  <h1>Two Dollars a Search</h1>
+  <p class="standfirst">I helped build a scraping fleet to beat Google&rsquo;s CAPTCHAs. Two years later I deleted all of it &mdash; and the interesting part wasn&rsquo;t the saving. It was how many of my own confident answers turned out to be wrong.</p>
+  <p class="byline">Rohan Sunwar &middot; Darkmap, a cyber-threat-intelligence platform</p>
+</header>
+
+<div class="headline-stat">
+  <div class="hs bad"><span class="n">$242</span><span class="l">per month, before</span></div>
+  <div class="hs"><span class="n">106</span><span class="l">searches served / 30 days</span></div>
+  <div class="hs bad"><span class="n">$2.05</span><span class="l">cost per search</span></div>
+  <div class="hs good"><span class="n">~$20</span><span class="l">per month, after</span></div>
+</div>
+
+<section class="col">
+  <p class="lede">Darkmap turns a search term into a ranked list of Telegram channels likely to be leaking data about it. Type <code>AT&amp;T</code>, get back the channels trading its breached records. Police forces use it. It once contributed to solving a case.</p>
+  <p>Underneath, it worked by screen-scraping a Google Programmable Search Engine. And Google does not enjoy being screen-scraped: hit it repeatedly from one address and you get a CAPTCHA instead of results.</p>
+  <p>So the platform spread its requests across many IP addresses &mdash; six containerised services, eighteen tasks, each with its own public address, each behind its own load balancer. It worked. It cost <strong>$242 a month</strong> to serve <strong>106 searches</strong>.</p>
+  <p>That is two dollars and five cents per search, for a product whose entire job is to answer a question in a text box.</p>
+</section>
+
+<section class="col">
+  <span class="eyebrow">The reframe</span>
+  <h2>It wasn&rsquo;t over-engineered. It was mis-sized.</h2>
+  <p>The tempting story is that someone gold-plated the infrastructure. That&rsquo;s not what happened, and getting this right mattered, because it changed what I was allowed to remove.</p>
+  <p>The CAPTCHA constraint was real. I measured it: a single IP address survives roughly ten to fifteen requests against this search engine before Google stops trusting it. And one user search isn&rsquo;t one request &mdash; it&rsquo;s <strong>twelve</strong>, because six different search queries run across two pages each.</p>
+  <p>So a single search nearly exhausts one address&rsquo;s entire budget. Two searches from the same address and you&rsquo;re blocked. The fleet wasn&rsquo;t defensive over-building; it was the minimum that made a burst of twelve simultaneous requests survivable.</p>
+  <p>What had gone stale was the <em>volume assumption</em>. The architecture was sized for a product doing thousands of searches. It was serving three and a half a day. Nobody re-measured after launch, and a fixed cost sat there for two years quietly charging for capacity that never got used.</p>
+  <blockquote><p>The bug wasn&rsquo;t in the design. It was that nobody went back and checked whether the design&rsquo;s assumptions still held.</p></blockquote>
+</section>
+
+<section>
+  <div class="col">
+    <span class="eyebrow">The investigation</span>
+    <h2>Five things I believed that measurement killed</h2>
+    <p>I went in with a plan inherited from the previous handover: swap the scraping for Google&rsquo;s official Custom Search JSON API, which serves the same search engine as structured JSON. Cheaper, faster, no browsers. It was written up as the single most important objective.</p>
+    <p>It was also the first thing to die.</p>
+  </div>
+
+  <div class="col">
+    <div class="phase">
+      <div class="phase-n">01</div>
+      <div>
+        <h3>&ldquo;The official API will fix this&rdquo; <span class="verdict killed">Killed</span></h3>
+        <p>Two Google Cloud projects, both correctly configured &mdash; API enabled, valid keys, right project &mdash; both returning <code>403</code>. I burned an hour on org policy, propagation lag, key restrictions and billing before reading the documentation properly:</p>
+        <figure><figcaption>Google Custom Search JSON API &mdash; documentation</figcaption>
+          <pre>The Custom Search JSON API is <span class="r">closed to new customers</span>.
+Existing customers have until <span class="r">January 1, 2027</span> to transition.</pre>
+        </figure>
+        <p>Not recoverable by any account, any billing arrangement, any amount of clicking. The plan the whole project was organised around had been dead the entire time. <strong>Lesson: read the vendor&rsquo;s deprecation notice before debugging your own configuration.</strong></p>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-n">02</div>
+      <div>
+        <h3>&ldquo;Cheap proxies solve the IP problem&rdquo; <span class="verdict killed">Killed</span></h3>
+        <p>If the constraint is addresses, buy addresses. I tested two free proxy pools against the real search engine. One was half-burned on arrival. The other was flawless &mdash; <strong>120 requests, zero CAPTCHAs</strong> &mdash; and for about twenty minutes I thought the problem was solved for six dollars a month.</p>
+        <p>Then I kept testing. After roughly 900 cumulative requests through those same ten addresses:</p>
+        <figure><figcaption>Same ten IPs, same query, later the same day</figcaption>
+          <div class="tblwrap"><table>
+            <thead><tr><th>Sample</th><th class="num">Requests</th><th class="num">CAPTCHA rate</th></tr></thead>
+            <tbody>
+              <tr><td>Fresh, sequential</td><td class="num">120</td><td class="num good">0%</td></tr>
+              <tr><td>After ~900 cumulative</td><td class="num">10</td><td class="num bad">90%</td></tr>
+            </tbody>
+          </table></div>
+        </figure>
+        <p>Shared datacentre addresses are a consumable, not an asset. And they don&rsquo;t scale with concurrency: ten simultaneous users would mean 120 simultaneous requests, which at this rate needs ~120 addresses &mdash; more expensive than the fleet I was trying to delete.</p>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-n">03</div>
+      <div>
+        <h3>&ldquo;The fastest API wins&rdquo; <span class="verdict killed">Killed</span></h3>
+        <p>A search API returned results in <strong>1.5 seconds</strong> against the incumbent&rsquo;s 8. Cheaper too. I was ready to recommend it.</p>
+        <p>Then I diffed the actual channels against a baseline I&rsquo;d captured from the live system, and found it reproduced 33 of 72. Worse, adding more result pages made the overlap <em>flatten</em> while unrelated channels piled up:</p>
+        <figure><figcaption>Result pages vs. overlap with the incumbent</figcaption>
+          <div class="tblwrap"><table>
+            <thead><tr><th>Pages fetched</th><th class="num">Channels</th><th class="num">Matching baseline</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td class="num">21</td><td class="num">16</td></tr>
+              <tr><td>1&ndash;2</td><td class="num">42</td><td class="num">32</td></tr>
+              <tr><td>1&ndash;3</td><td class="num">48</td><td class="num">33</td></tr>
+              <tr><td>1&ndash;4</td><td class="num">56</td><td class="num">33</td></tr>
+              <tr><td>1&ndash;5</td><td class="num">61</td><td class="num">33</td></tr>
+            </tbody>
+          </table></div>
+        </figure>
+        <p>The missing channels weren&rsquo;t deeper in the results. They weren&rsquo;t there at all &mdash; because that API searches the open web, while Darkmap searches a <em>curated</em> search engine restricted to a handful of Telegram directory sites. Years of tuning live in that configuration.</p>
+        <p>That gave me the rule that sorted every remaining option: <strong>anything that renders our search engine preserves the results; anything that queries Google generally does not.</strong> A product manager would call it knowing where the moat is. I found it by accident, two hours in, because I diffed instead of trusting a latency number.</p>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-n">04</div>
+      <div>
+        <h3>&ldquo;A bigger plan will make it faster&rdquo; <span class="verdict killed">Killed</span></h3>
+        <p>The winning vendor renders our search engine server-side and handles addresses, fingerprinting and blocks internally. Search latency landed at 12&ndash;20 seconds &mdash; slower than the fleet&rsquo;s 3. The obvious move was to pay for the higher tier.</p>
+        <p>I checked first. Higher tiers buy <em>concurrency</em>, and we had no queueing to remove: ten requests, ten workers, zero rate-limit errors across every test. The time was going into each individual request, which no plan tier changes. <strong>The upgrade would have bought one to two seconds for thirty dollars a month.</strong></p>
+        <p>What did work was borrowed from distributed systems: since the twelve requests run in parallel, total latency equals the <em>slowest</em> one. So fire a duplicate for anything still running after seven seconds and take whichever answers first.</p>
+        <figure><figcaption>Effect of hedged requests</figcaption>
+          <div class="tblwrap"><table>
+            <thead><tr><th>Query</th><th class="num">Before</th><th class="num">After</th></tr></thead>
+            <tbody>
+              <tr><td><code>china</code></td><td class="num bad">19.4s / 20.1s</td><td class="num good">13.4s / 13.4s</td></tr>
+              <tr><td><code>delhi</code></td><td class="num">10.0 / 11.8 / 17.0s</td><td class="num good">12.6 / 13.3s</td></tr>
+              <tr class="total"><td>Spread</td><td class="num bad">10&ndash;20s</td><td class="num good">12.6&ndash;14.2s</td></tr>
+            </tbody>
+          </table></div>
+        </figure>
+        <p>The median barely moved. The <em>tail</em> disappeared, and users tolerate a predictable wait far better than one that randomly doubles.</p>
+      </div>
+    </div>
+
+    <div class="phase">
+      <div class="phase-n">05</div>
+      <div>
+        <h3>&ldquo;I know what this system costs&rdquo; <span class="verdict killed">Killed</span></h3>
+        <p>After deleting the fleet I reported, confidently, that the account now had zero load balancers. I was wrong: the AWS CLI is scoped to one region at a time and I&rsquo;d only queried the one everything lived in.</p>
+        <div class="callout">
+          A <strong>forgotten load balancer in another region</strong>, created August 2024. Every target unhealthy. Its cluster: zero tasks. Serving nothing, for thirteen months, at <strong>$25.25 a month</strong> &mdash; roughly <strong>$300</strong> already spent.
+        </div>
+        <p>It never appeared in any cost review because every review had looked in one region. The handover document even recorded &ldquo;the only six load balancers in the whole account.&rdquo; That sentence was true of a region, not an account.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="col">
+  <span class="eyebrow">Product judgement</span>
+  <h2>The two optimisations I turned down</h2>
+  <p>Both were mine, both were technically sound, and both were wrong for this product. Deciding that is the part of the job that isn&rsquo;t engineering.</p>
+
+  <h3>Caching <span class="verdict killed">Rejected</span></h3>
+  <p>Repeat searches would drop from twelve seconds to under one, free, on infrastructure already running. Obvious win &mdash; except the results are sorted by recency, and this is threat intelligence. A cached hit is stale by construction. &ldquo;Here&rsquo;s what was leaking two hours ago&rdquo; is a different product from the one people rely on. The user made this call and was right.</p>
+
+  <h3>Moving the AI ranking off the critical path <span class="verdict killed">Rejected</span></h3>
+  <p>Six of the twelve seconds is an AI pass that scores and re-sorts channels by relevance. Return the list unranked, re-sort when scores arrive, save six seconds of perceived wait. I proposed it before tracing what the client actually does with the response:</p>
+  <figure><figcaption>Production log, immediately after ranking completes</figcaption>
+    <pre><span class="c">19:11:51</span> [rankChannels] #1 md_ghost01 <span class="c">(was #9)</span>
+<span class="c">19:11:55</span> POST /channel-messages {"channel_name":"md_ghost01"}
+<span class="c">19:11:55</span> POST /channel-messages {"channel_name":"chucky_leakbasela"}</pre>
+  </figure>
+  <p>The client immediately fetches message history for the ranked top ten. Return an unranked list and it fetches the <em>wrong</em> ten, then visibly reshuffles under the user. The optimisation didn&rsquo;t save six seconds; it moved the cost somewhere more expensive and less honest.</p>
+  <p>Hedging survived the same test: duplicate requests hit the identical URL, so the merged result set and everything downstream are untouched. Only the waiting changes.</p>
+</section>
+
+<section class="col">
+  <span class="eyebrow">The trade</span>
+  <h2>Why 12 seconds beat 3</h2>
+  <p>On paper I made the product four times slower. In practice I made it available, and that reframing came from one query rather than an opinion.</p>
+  <p>The fleet had an idle-shutdown that scaled it to zero after thirty minutes of quiet &mdash; sensible, given the cost. But nothing in the codebase started it again. I checked the backend, both client applications, their built bundles. Nothing. Starting it required someone to call an endpoint by hand.</p>
+  <p>At three and a half searches a day, <em>cold was the normal state.</em> The honest comparison was never 3s versus 12s:</p>
+  <figure><figcaption>What a user actually experienced</figcaption>
+    <div class="tblwrap"><table>
+      <thead><tr><th>Scenario</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr><td>Fleet warm</td><td class="good">~3s</td><td>~12s</td></tr>
+        <tr><td>Fleet cold &mdash; the usual case</td><td class="bad">returns nothing</td><td class="good">~12s</td></tr>
+        <tr><td>Ten concurrent users</td><td class="bad">degrades</td><td class="good">absorbed</td></tr>
+        <tr><td>A burned IP address</td><td class="bad">manual intervention</td><td class="good">vendor&rsquo;s problem</td></tr>
+      </tbody>
+    </table></div>
+  </figure>
+  <p>Twelve seconds that always works is a better product than three seconds that needs someone to remember to boot a fleet. And the thing that made that trade acceptable was verifying result quality first, not the latency: of the security-relevant channels a real analyst cares about &mdash; the breach forums, the leak brokers &mdash; the replacement returned <strong>13 of 13</strong>. The divergence was entirely in exam-prep and news channels the AI already scores near zero.</p>
+</section>
+
+<section class="col">
+  <span class="eyebrow">Outcome</span>
+  <h2>What actually changed</h2>
+  <figure><figcaption>Monthly infrastructure cost</figcaption>
+    <div class="tblwrap"><table>
+      <thead><tr><th>Line item</th><th class="num">Before</th><th class="num">After</th></tr></thead>
+      <tbody>
+        <tr><td>Load balancing</td><td class="num">$115.04</td><td class="num good">$0</td></tr>
+        <tr><td>Container compute</td><td class="num">$61.05</td><td class="num good">$0</td></tr>
+        <tr><td>Public IP addresses</td><td class="num">$39.94</td><td class="num good">$0</td></tr>
+        <tr><td>Forgotten region</td><td class="num bad">$25.25</td><td class="num good">$0</td></tr>
+        <tr><td>Container registry</td><td class="num">$1.01</td><td class="num">~$1</td></tr>
+        <tr><td>Vendor API + function</td><td class="num">&mdash;</td><td class="num">~$19</td></tr>
+        <tr class="total"><td>Total</td><td class="num bad">~$242</td><td class="num good">~$20</td></tr>
+      </tbody>
+    </table></div>
+  </figure>
+  <p>Deleted along the way: six services, eighteen tasks, seven load balancers across two regions, thirty-nine unused container repositories, an idle-shutdown function, a scheduler, three alarms, and a browser automation stack. The replacement is one function with no dependencies outside the standard library.</p>
+  <p>Also deleted: a <strong>public, unauthenticated endpoint</strong> that spun up eighteen billable containers on request. Something external was still calling it &mdash; twice on the day I found it. Not the product; neither client referenced it. Someone&rsquo;s saved script, most likely, quietly restarting the fleet an idle-shutdown had just switched off.</p>
+</section>
+
+<section class="col">
+  <span class="eyebrow">What I&rsquo;d carry forward</span>
+  <h2>Five things worth keeping</h2>
+  <ul class="plain">
+    <li><strong>Capture the baseline before you touch anything.</strong> Every good decision here traced back to one artefact: a recorded snapshot of what the live system returned for a set of queries. Without it &ldquo;the results look fine&rdquo; is a vibe. With it, it&rsquo;s a diff.</li>
+    <li><strong>Distinguish the constraint from the assumption.</strong> The CAPTCHA limit was real and had to be honoured. The traffic estimate was stale and could be dropped. Conflating them either paralyses you or breaks the product.</li>
+    <li><strong>The fastest option is not the option.</strong> A 1.5-second API that loses half your results is not a faster product, it&rsquo;s a worse one. Latency is the easiest thing to measure, which is exactly why it&rsquo;s the easiest to over-weight.</li>
+    <li><strong>Trace the consumer before optimising the producer.</strong> The async-ranking idea died the moment I read what the client did with the response. Two minutes of reading would have saved proposing it.</li>
+    <li><strong>Check whether the thing you&rsquo;re protecting is switched on.</strong> Discovering the fleet was cold most of the time didn&rsquo;t change one number &mdash; it inverted which option was better.</li>
+  </ul>
+  <p style="margin-top:26px">There&rsquo;s a version of this write-up where I had a hypothesis, tested it, and shipped a 92% saving. That version is tidier and less useful. What actually happened is that five confident answers &mdash; four of them mine &mdash; got killed by measurement, and the migration was decided by a diff nobody had thought to run.</p>
+  <p>The saving is the outcome. The diff was the work.</p>
+</section>
+
+<footer>
+  Darkmap is a cyber-threat-intelligence platform used by law-enforcement teams. Figures are measured from AWS Cost Explorer, CloudWatch and production logs over August&ndash;September 2026. Vendor names are omitted where the comparison, not the vendor, is the point.
+</footer>
+
+</div>

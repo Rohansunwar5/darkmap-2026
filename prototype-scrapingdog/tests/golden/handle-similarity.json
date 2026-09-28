@@ -1,0 +1,1243 @@
+[
+ {
+  "source": "tests/test_heuristics.py::test_bare_search_profile_is_not_ranked_high_from_brand_similarity",
+  "args": [
+   "luminaire_in",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.9
+ },
+ {
+  "source": "tests/test_heuristics.py::test_bare_search_profile_is_not_ranked_high_from_brand_similarity",
+  "args": [
+   "luminaire_in",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.9
+ },
+ {
+  "source": "tests/test_heuristics.py::test_bare_search_snippet_is_not_scored_as_brand_impersonation",
+  "args": [
+   "luminaire_in",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.9
+ },
+ {
+  "source": "tests/test_heuristics.py::test_bare_search_snippet_is_not_scored_as_brand_impersonation",
+  "args": [
+   "luminaire_in",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.9
+ },
+ {
+  "source": "tests/test_heuristics.py::test_brand_loot_offer_with_telegram_link_is_critical",
+  "args": [
+   "dailydeals_india",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.2962962962962963
+ },
+ {
+  "source": "tests/test_heuristics.py::test_brand_loot_offer_with_telegram_link_is_critical",
+  "args": [
+   "Daily Loot Deals",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.3076923076923077
+ },
+ {
+  "source": "tests/test_heuristics.py::test_brand_loot_offer_with_telegram_link_is_critical",
+  "args": [
+   "t",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.0
+ },
+ {
+  "source": "tests/test_heuristics.py::test_brand_scam_complaint_without_solicitation_is_not_critical",
+  "args": [
+   "consumer_reviews",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.5185185185185185
+ },
+ {
+  "source": "tests/test_heuristics.py::test_brand_scam_complaint_without_solicitation_is_not_critical",
+  "args": [
+   "Consumer Reviews",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.5185185185185185
+ },
+ {
+  "source": "tests/test_heuristics.py::test_content_only_mode_does_not_inherit_profile_identity_risk",
+  "args": [
+   "luminaire_support_official",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_heuristics.py::test_content_only_mode_does_not_inherit_profile_identity_risk",
+  "args": [
+   "Luminaire Support",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_heuristics.py::test_counterfeit_and_coordination",
+  "args": [
+   "lumi.outlet.store88",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.46153846153846156
+ },
+ {
+  "source": "tests/test_heuristics.py::test_counterfeit_and_coordination",
+  "args": [
+   "Lumi Outlet Best Replica",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.4
+ },
+ {
+  "source": "tests/test_heuristics.py::test_counterfeit_and_coordination",
+  "args": [
+   "lumi-outlet",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.5263157894736842
+ },
+ {
+  "source": "tests/test_heuristics.py::test_established_profile_with_direct_phishing_flow_remains_actionable",
+  "args": [
+   "verified_deals_daily",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.3333333333333333
+ },
+ {
+  "source": "tests/test_heuristics.py::test_established_profile_with_direct_phishing_flow_remains_actionable",
+  "args": [
+   "Verified Deals Daily",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.3333333333333333
+ },
+ {
+  "source": "tests/test_heuristics.py::test_established_profile_with_ordinary_banking_language_is_not_escalated",
+  "args": [
+   "trusted_finance_news",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.4
+ },
+ {
+  "source": "tests/test_heuristics.py::test_established_profile_with_ordinary_banking_language_is_not_escalated",
+  "args": [
+   "Trusted Finance News",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.4
+ },
+ {
+  "source": "tests/test_heuristics.py::test_established_publisher_is_not_fraud_from_loot_or_counterfeit_words",
+  "args": [
+   "appletv",
+   [
+    "Netflix",
+    "Netflix"
+   ]
+  ],
+  "result": 0.2857142857142857
+ },
+ {
+  "source": "tests/test_heuristics.py::test_established_publisher_is_not_fraud_from_loot_or_counterfeit_words",
+  "args": [
+   "Apple TV",
+   [
+    "Netflix",
+    "Netflix"
+   ]
+  ],
+  "result": 0.2857142857142857
+ },
+ {
+  "source": "tests/test_heuristics.py::test_fan_page_stays_low",
+  "args": [
+   "luminaire.lovers",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_heuristics.py::test_fan_page_stays_low",
+  "args": [
+   "Luminaire Lovers (fan page)",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_heuristics.py::test_free_eyewear_telegram_promotion_is_critical",
+  "args": [
+   "offerofworld",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.25
+ },
+ {
+  "source": "tests/test_heuristics.py::test_free_eyewear_telegram_promotion_is_critical",
+  "args": [
+   "Offer World",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.2727272727272727
+ },
+ {
+  "source": "tests/test_heuristics.py::test_generic_kyc_or_upi_education_is_not_credential_or_payment_fraud",
+  "args": [
+   "finance_explainer",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.32
+ },
+ {
+  "source": "tests/test_heuristics.py::test_generic_kyc_or_upi_education_is_not_credential_or_payment_fraud",
+  "args": [
+   "Finance explainer",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.32
+ },
+ {
+  "source": "tests/test_heuristics.py::test_handle_similarity",
+  "args": [
+   "luminaire.support.hq",
+   [
+    "Luminaire"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_heuristics.py::test_handle_similarity",
+  "args": [
+   "totally_unrelated",
+   [
+    "Luminaire"
+   ]
+  ],
+  "result": 0.24
+ },
+ {
+  "source": "tests/test_heuristics.py::test_interaction_gated_free_offer_is_critical",
+  "args": [
+   "ugcwithgirl",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.4
+ },
+ {
+  "source": "tests/test_heuristics.py::test_interaction_gated_free_offer_is_critical",
+  "args": [
+   "UGC deals",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.3
+ },
+ {
+  "source": "tests/test_heuristics.py::test_low_reach_brand_lookalike_is_a_ranking_clue_not_a_critical_alert",
+  "args": [
+   "luminaire_247",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.8571428571428571
+ },
+ {
+  "source": "tests/test_heuristics.py::test_low_reach_brand_lookalike_is_a_ranking_clue_not_a_critical_alert",
+  "args": [
+   "New arrivals",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.34782608695652173
+ },
+ {
+  "source": "tests/test_heuristics.py::test_media_limitation_note",
+  "args": [
+   "someshop",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.3
+ },
+ {
+  "source": "tests/test_heuristics.py::test_media_limitation_note",
+  "args": [
+   "",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.0
+ },
+ {
+  "source": "tests/test_heuristics.py::test_official_account_is_suppressed",
+  "args": [
+   "luminaire",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 1.0
+ },
+ {
+  "source": "tests/test_heuristics.py::test_official_account_is_suppressed",
+  "args": [
+   "Luminaire",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 1.0
+ },
+ {
+  "source": "tests/test_heuristics.py::test_official_bank_kyc_and_contact_centre_posts_are_not_fraud_alerts",
+  "args": [
+   "theofficialsbi",
+   [
+    "SBI",
+    "SBI"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_heuristics.py::test_official_bank_kyc_and_contact_centre_posts_are_not_fraud_alerts",
+  "args": [
+   "State Bank of India",
+   [
+    "SBI",
+    "SBI"
+   ]
+  ],
+  "result": 0.3157894736842105
+ },
+ {
+  "source": "tests/test_heuristics.py::test_official_paytm_product_reel_stays_low",
+  "args": [
+   "paytm",
+   [
+    "Paytm",
+    "Paytm"
+   ]
+  ],
+  "result": 1.0
+ },
+ {
+  "source": "tests/test_heuristics.py::test_official_paytm_product_reel_stays_low",
+  "args": [
+   "Paytm",
+   [
+    "Paytm",
+    "Paytm"
+   ]
+  ],
+  "result": 1.0
+ },
+ {
+  "source": "tests/test_heuristics.py::test_official_promotional_posts_are_not_ranked_as_abuse",
+  "args": [
+   "luminaire",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 1.0
+ },
+ {
+  "source": "tests/test_heuristics.py::test_official_promotional_posts_are_not_ranked_as_abuse",
+  "args": [
+   "Luminaire",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 1.0
+ },
+ {
+  "source": "tests/test_heuristics.py::test_paytm_cashback_telegram_reel_is_critical_in_content_only_mode",
+  "args": [
+   "desi_dime",
+   [
+    "Paytm",
+    "Paytm"
+   ]
+  ],
+  "result": 0.15384615384615385
+ },
+ {
+  "source": "tests/test_heuristics.py::test_paytm_cashback_telegram_reel_is_critical_in_content_only_mode",
+  "args": [
+   "desi_dime",
+   [
+    "Paytm",
+    "Paytm"
+   ]
+  ],
+  "result": 0.15384615384615385
+ },
+ {
+  "source": "tests/test_heuristics.py::test_paytm_cashback_telegram_reel_is_critical_in_content_only_mode",
+  "args": [
+   "t",
+   [
+    "Paytm",
+    "Paytm"
+   ]
+  ],
+  "result": 0.3333333333333333
+ },
+ {
+  "source": "tests/test_heuristics.py::test_phishing_support_account_scores_high",
+  "args": [
+   "luminaire.support.hq",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_heuristics.py::test_phishing_support_account_scores_high",
+  "args": [
+   "Luminaire Official Support",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_heuristics.py::test_phishing_support_account_scores_high",
+  "args": [
+   "luminaire-verify",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_heuristics.py::test_profile_linked_to_registered_brand_domain_is_trusted",
+  "args": [
+   "luminaire_india",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_heuristics.py::test_profile_linked_to_registered_brand_domain_is_trusted",
+  "args": [
+   "Luminaire India",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_heuristics.py::test_quantified_paytm_offer_with_link_in_bio_is_high_priority",
+  "args": [
+   "desi_dime",
+   [
+    "Paytm",
+    "Paytm"
+   ]
+  ],
+  "result": 0.15384615384615385
+ },
+ {
+  "source": "tests/test_heuristics.py::test_quantified_paytm_offer_with_link_in_bio_is_high_priority",
+  "args": [
+   "desi_dime",
+   [
+    "Paytm",
+    "Paytm"
+   ]
+  ],
+  "result": 0.15384615384615385
+ },
+ {
+  "source": "tests/test_heuristics.py::test_quoted_comment_free_cash_telegram_lure_is_critical",
+  "args": [
+   "the._.rebel08",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.2727272727272727
+ },
+ {
+  "source": "tests/test_heuristics.py::test_quoted_comment_free_cash_telegram_lure_is_critical",
+  "args": [
+   "Daily offers",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.43478260869565216
+ },
+ {
+  "source": "tests/test_heuristics.py::test_standalone_loot_telegram_reference_is_critical",
+  "args": [
+   "shopaholics80club",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.20689655172413793
+ },
+ {
+  "source": "tests/test_heuristics.py::test_standalone_loot_telegram_reference_is_critical",
+  "args": [
+   "Shopping deals",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.32
+ },
+ {
+  "source": "tests/test_heuristics.py::test_unrelated_bare_publisher_is_not_fraud_from_loot_or_counterfeit_words",
+  "args": [
+   "appletv",
+   [
+    "Netflix",
+    "Netflix"
+   ]
+  ],
+  "result": 0.2857142857142857
+ },
+ {
+  "source": "tests/test_heuristics.py::test_unrelated_bare_publisher_is_not_fraud_from_loot_or_counterfeit_words",
+  "args": [
+   "appletv",
+   [
+    "Netflix",
+    "Netflix"
+   ]
+  ],
+  "result": 0.2857142857142857
+ },
+ {
+  "source": "tests/test_heuristics.py::test_verified_profile_does_not_need_follower_count_to_suppress_identity_only_risk",
+  "args": [
+   "luminaire_india",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_heuristics.py::test_verified_profile_does_not_need_follower_count_to_suppress_identity_only_risk",
+  "args": [
+   "Luminaire India",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "acme_helpdesk247",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "Acme Support",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "acme-verify",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "acme_helpdesk247",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "Acme Support",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "acme_helpdesk247",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "Acme Support",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "acme_helpdesk247",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "Acme Support",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "acme_helpdesk247",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "Acme Support",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "acme_helpdesk247",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "Acme Support",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "acme_helpdesk247",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "Acme Support",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "acme_helpdesk247",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "Acme Support",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_eight_priority_alert_families_are_separate_and_explainable",
+  "args": [
+   "t",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.0
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_legitimate_qr_payment_product_news_is_not_credential_takeover",
+  "args": [
+   "startupstalkingindia",
+   [
+    "Lenskart",
+    "Lenskart"
+   ]
+  ],
+  "result": 0.2857142857142857
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_legitimate_qr_payment_product_news_is_not_credential_takeover",
+  "args": [
+   "Startup Story",
+   [
+    "Lenskart",
+    "Lenskart"
+   ]
+  ],
+  "result": 0.4
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_qr_media_and_victim_reports_become_grounded_signals",
+  "args": [
+   "acme_helpdesk247",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_qr_media_and_victim_reports_become_grounded_signals",
+  "args": [
+   "Acme Support",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_single_indicator_is_not_critical",
+  "args": [
+   "random_shop",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.2857142857142857
+ },
+ {
+  "source": "tests/test_advanced_alerts.py::test_single_indicator_is_not_critical",
+  "args": [
+   "Random shop",
+   [
+    "Acme",
+    "Acme"
+   ]
+  ],
+  "result": 0.2857142857142857
+ },
+ {
+  "source": "fixtures/dossiers/account-changes.json",
+  "args": [
+   "lumi_store_outlet",
+   [
+    "Luminaire",
+    "luminaire"
+   ]
+  ],
+  "result": 0.5
+ },
+ {
+  "source": "fixtures/dossiers/account-changes.json",
+  "args": [
+   "Luminaire Store",
+   [
+    "Luminaire",
+    "luminaire"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "fixtures/dossiers/account-changes.json",
+  "args": [
+   "lumi-outlet",
+   [
+    "Luminaire",
+    "luminaire"
+   ]
+  ],
+  "result": 0.5263157894736842
+ },
+ {
+  "source": "fixtures/dossiers/content-only-reel.json",
+  "args": [
+   "luminaire.support.help",
+   [
+    "Luminaire",
+    "luminaire"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "fixtures/dossiers/content-only-reel.json",
+  "args": [
+   "Luminaire Support",
+   [
+    "Luminaire",
+    "luminaire"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "fixtures/dossiers/emoji-giveaway.json",
+  "args": [
+   "luminaire_giveaway_2026",
+   [
+    "Luminaire",
+    "luminaire"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "fixtures/dossiers/emoji-giveaway.json",
+  "args": [
+   "🎁 Luminaire Giveaway 🎁",
+   [
+    "Luminaire",
+    "luminaire"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "fixtures/dossiers/emoji-giveaway.json",
+  "args": [
+   "wa",
+   [
+    "Luminaire",
+    "luminaire"
+   ]
+  ],
+  "result": 0.18181818181818182
+ },
+ {
+  "source": "fixtures/dossiers/media-analysis-qr.json",
+  "args": [
+   "luminaire_rewards_in",
+   [
+    "Luminaire",
+    "luminaire"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "fixtures/dossiers/media-analysis-qr.json",
+  "args": [
+   "Luminaire Rewards",
+   [
+    "Luminaire",
+    "luminaire"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "fixtures/dossiers/shared-artifacts.json",
+  "args": [
+   "luminaire__deals__daily__",
+   [
+    "Luminaire",
+    "luminaire"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "fixtures/dossiers/shared-artifacts.json",
+  "args": [
+   "Luminaire Deals",
+   [
+    "Luminaire",
+    "luminaire"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "fixtures/dossiers/shared-artifacts.json",
+  "args": [
+   "lumi-claim",
+   [
+    "Luminaire",
+    "luminaire"
+   ]
+  ],
+  "result": 0.6666666666666666
+ },
+ {
+  "source": "fixtures/dossiers/unicode-hindi-scam.json",
+  "args": [
+   "luminaire.offers_hindi",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "fixtures/dossiers/unicode-hindi-scam.json",
+  "args": [
+   "Luminaire ऑफर 😀",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 1.0
+ },
+ {
+  "source": "fixtures/dossiers/unicode-hindi-scam.json",
+  "args": [
+   "t",
+   [
+    "Luminaire",
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.0
+ },
+ {
+  "source": "fixtures/dossiers/verified-established.json",
+  "args": [
+   "moneynews_daily",
+   [
+    "Suraksha Bank",
+    "suraksha bank"
+   ]
+  ],
+  "result": 0.07692307692307693
+ },
+ {
+  "source": "fixtures/dossiers/verified-established.json",
+  "args": [
+   "Money News Daily",
+   [
+    "Suraksha Bank",
+    "suraksha bank"
+   ]
+  ],
+  "result": 0.07692307692307693
+ },
+ {
+  "source": "fixtures/dossiers/verified-established.json",
+  "args": [
+   "moneynews",
+   [
+    "Suraksha Bank",
+    "suraksha bank"
+   ]
+  ],
+  "result": 0.09523809523809523
+ },
+ {
+  "source": "fixtures/similarity-calls.json",
+  "args": [
+   "luminaire.support.hq",
+   [
+    "Luminaire"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "fixtures/similarity-calls.json",
+  "args": [
+   "LUMINAIRE",
+   [
+    "luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 1.0
+ },
+ {
+  "source": "fixtures/similarity-calls.json",
+  "args": [
+   "",
+   [
+    "Luminaire"
+   ]
+  ],
+  "result": 0.0
+ },
+ {
+  "source": "fixtures/similarity-calls.json",
+  "args": [
+   "sbi_help",
+   [
+    "sbi"
+   ]
+  ],
+  "result": 0.85
+ },
+ {
+  "source": "fixtures/similarity-calls.json",
+  "args": [
+   "😀luminaire",
+   [
+    "Luminaire"
+   ]
+  ],
+  "result": 1.0
+ },
+ {
+  "source": "fixtures/similarity-calls.json",
+  "args": [
+   "aurora.series.store",
+   [
+    "Luminaire",
+    "aurora series"
+   ]
+  ],
+  "result": 0.85
+ }
+]

@@ -1,0 +1,20 @@
+{
+  "brand": {"name": "Luminaire", "official_handles": ["luminaire"], "official_domains": ["luminaire.com"],
+            "keywords": ["luminaire"]},
+  "account": {"handle": "lumi_store_outlet", "display_name": "Luminaire Store", "biography":
+              "Now selling at factory price", "external_url": "https://lumi-outlet.shop/sale",
+              "followers_count": 2100, "follows_count": 150, "media_count": 22, "is_verified": false},
+  "provenance": {"collection_mode": "keyword", "lawful_basis": "licensed_public_data_api"},
+  "posts": [{"caption": "Best replica frames, dm to order", "media": [{"media_type": "image"}], "comments": [],
+             "engagement": {"likes": 30, "comments": 2, "views": null, "shares": null}}],
+  "entities": [{"kind": "url", "value": "https://lumi-outlet.shop/sale", "domain": "lumi-outlet.shop",
+                "source_field": "external_url"}],
+  "media_analysis": [], "shared_artifacts": [],
+  "account_changes": [{"field": "display_name", "before": "Lumi Fans", "after": "Luminaire Store",
+                       "observed_at": "2026-09-20T10:00:00"},
+                      {"field": "biography", "before": null, "after": "Now selling at factory price",
+                       "observed_at": "2026-09-21T08:30:00"},
+                      {"field": "followers_count", "before": "100", "after": "2100",
+                       "observed_at": "2026-09-21T08:30:00"}],
+  "velocity": {"posts_last_hour": 0, "posts_last_24h": 1, "follower_delta": null, "duplicate_post_count": 0}
+}

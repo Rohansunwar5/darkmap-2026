@@ -1,0 +1,1786 @@
+[
+ {
+  "name": "full-records.json",
+  "state": {
+   "version": 1,
+   "expires_at": 9999999999,
+   "query": "Brand",
+   "retrieved_at": "2026-09-23T00:00:00",
+   "visible": [],
+   "params": {
+    "mode": "keyword",
+    "max_items": 250,
+    "profile_limit": 50,
+    "include_comments": true,
+    "comments_per_post": 2
+   },
+   "organic": [
+    {
+     "link": "https://www.instagram.com/brand.support/",
+     "title": "Brand Support (@brand.support)",
+     "description": "Help desk • 1,200 followers"
+    },
+    {
+     "link": "https://www.instagram.com/p/POST1/",
+     "source": "Instagram · seller.one",
+     "title": "Brand sale",
+     "description": "#brand deal"
+    },
+    {
+     "link": "https://www.instagram.com/reel/REEL1/",
+     "source": "Instagram · seller.two",
+     "title": "Brand giveaway reel",
+     "image": "https://cdn.example/r1.jpg"
+    },
+    {
+     "link": "https://www.instagram.com/seller.one/reel/REEL2/",
+     "title": "Reel by seller.one"
+    }
+   ],
+   "query_tasks": [],
+   "inputs": [
+    {
+     "dataset": "gd_l1vikfch901nx3by4",
+     "inputs": [
+      {
+       "user_name": "queued.one"
+      }
+     ],
+     "attempt": 0
+    }
+   ],
+   "scheduled": {
+    "gd_l1vikfch901nx3by4": [
+     "queued.one"
+    ],
+    "gd_ltppn085pokosxh13": [
+     "https://www.instagram.com/p/POST1/"
+    ]
+   },
+   "records": {
+    "gd_l1vikfch901nx3by4": [
+     {
+      "account": "brand.support",
+      "id": "123",
+      "full_name": "Brand Support",
+      "biography": "Help at https://brand.example/support",
+      "followers": 440,
+      "following": 10,
+      "posts_count": 2,
+      "is_verified": false,
+      "profile_image_link": "https://cdn.example/avatar.jpg",
+      "posts": [
+       {
+        "id": "900",
+        "caption": "Contact @brand #help",
+        "datetime": "2026-09-12T01:00:00.000Z",
+        "content_type": "Video",
+        "likes": 12,
+        "comments": 3,
+        "url": "https://www.instagram.com/reel/ABC123/",
+        "image_url": "https://cdn.example/cover.jpg"
+       },
+       {
+        "id": "901",
+        "caption": "Second",
+        "url": "https://www.instagram.com/p/DEF456/"
+       }
+      ]
+     }
+    ],
+    "gd_lk5ns7kz21pck8jpis": [
+     {
+      "url": "https://www.instagram.com/p/POST1/",
+      "user_posted": "seller.one",
+      "description": "Brand sale #brand",
+      "post_id": "1",
+      "likes": 4,
+      "profile_name": "Seller One",
+      "followers": "2.5K",
+      "latest_comments": [
+       {
+        "id": "e1",
+        "username": "early",
+        "text": "embedded first"
+       }
+      ]
+     }
+    ],
+    "gd_lyclm20il4r5helnj": [
+     {
+      "url": "https://www.instagram.com/reel/REEL1/",
+      "user_posted": "seller.two",
+      "description": "Brand giveaway @brand",
+      "post_id": "2",
+      "views": 50
+     }
+    ],
+    "gd_ltppn085pokosxh13": [
+     {
+      "post_url": "https://www.instagram.com/p/POST1/",
+      "comment_id": "c1",
+      "comment_user": "victim",
+      "comment": "I paid",
+      "likes_number": 2,
+      "comment_date": "2026-09-20T10:00:00Z",
+      "replies": [
+       {
+        "comment_id": "c1r",
+        "comment_user": "seller.one",
+        "comment": "DM me"
+       }
+      ]
+     },
+     {
+      "post_url": "https://www.instagram.com/p/POST1/",
+      "comment_id": "e1",
+      "comment_user": "early",
+      "comment": "dup of embedded"
+     },
+     {
+      "post_url": "https://evil.example/p/POST1/",
+      "comment_id": "x",
+      "comment": "ignored"
+     }
+    ]
+   }
+  },
+  "bundles": [
+   {
+    "account": {
+     "handle": "brand.support",
+     "platform": "instagram",
+     "platform_account_id": "123",
+     "display_name": "Brand Support",
+     "biography": "Help at https://brand.example/support",
+     "external_url": null,
+     "profile_pic_url": "https://cdn.example/avatar.jpg",
+     "is_verified": false,
+     "is_business": null,
+     "followers_count": 440,
+     "follows_count": 10,
+     "media_count": 2,
+     "account_created_at": null,
+     "raw": {
+      "account": "brand.support",
+      "id": "123",
+      "full_name": "Brand Support",
+      "biography": "Help at https://brand.example/support",
+      "followers": 440,
+      "following": 10,
+      "posts_count": 2,
+      "is_verified": false,
+      "profile_image_link": "https://cdn.example/avatar.jpg"
+     }
+    },
+    "posts": [
+     {
+      "platform_post_id": "900",
+      "shortcode": "ABC123",
+      "post_type": "reel",
+      "permalink": "https://www.instagram.com/reel/ABC123/",
+      "caption": "Contact @brand #help",
+      "posted_at": "2026-09-12T01:00:00",
+      "like_count": 12,
+      "comment_count": 3,
+      "view_count": null,
+      "share_count": null,
+      "language": null,
+      "media": [
+       {
+        "media_type": "image",
+        "media_url": "https://cdn.example/cover.jpg",
+        "thumbnail_url": null,
+        "width": null,
+        "height": null,
+        "duration_seconds": null,
+        "mime_type": null,
+        "byte_size": null,
+        "perceptual_hash": null,
+        "ocr_text": null,
+        "transcript": null,
+        "qr_payloads": [],
+        "brand_match_score": null,
+        "synthetic_media_score": null,
+        "exif": {}
+       }
+      ],
+      "comments": [],
+      "raw": {
+       "id": "900",
+       "caption": "Contact @brand #help",
+       "datetime": "2026-09-12T01:00:00.000Z",
+       "content_type": "Video",
+       "likes": 12,
+       "comments": 3,
+       "url": "https://www.instagram.com/reel/ABC123/",
+       "image_url": "https://cdn.example/cover.jpg"
+      }
+     },
+     {
+      "platform_post_id": "901",
+      "shortcode": "DEF456",
+      "post_type": "post",
+      "permalink": "https://www.instagram.com/p/DEF456/",
+      "caption": "Second",
+      "posted_at": null,
+      "like_count": null,
+      "comment_count": null,
+      "view_count": null,
+      "share_count": null,
+      "language": null,
+      "media": [],
+      "comments": [],
+      "raw": {
+       "id": "901",
+       "caption": "Second",
+       "url": "https://www.instagram.com/p/DEF456/"
+      }
+     }
+    ],
+    "provenance": {
+     "provider": "bright_data_instagram",
+     "lawful_basis": "licensed_public_data_api",
+     "collection_mode": "keyword",
+     "query": "Brand",
+     "source": "Bright Data Instagram Scraper API",
+     "retrieved_at": "2026-09-23T00:00:00"
+    }
+   },
+   {
+    "account": {
+     "handle": "seller.one",
+     "platform": "instagram",
+     "platform_account_id": null,
+     "display_name": "Seller One",
+     "biography": null,
+     "external_url": null,
+     "profile_pic_url": null,
+     "is_verified": null,
+     "is_business": null,
+     "followers_count": 2500,
+     "follows_count": null,
+     "media_count": null,
+     "account_created_at": null,
+     "raw": {
+      "serp_result": {
+       "link": "https://www.instagram.com/p/POST1/",
+       "source": "Instagram · seller.one",
+       "title": "Brand sale",
+       "description": "#brand deal"
+      }
+     }
+    },
+    "posts": [
+     {
+      "platform_post_id": "1",
+      "shortcode": "POST1",
+      "post_type": "post",
+      "permalink": "https://www.instagram.com/p/POST1/",
+      "caption": "Brand sale #brand",
+      "posted_at": null,
+      "like_count": 4,
+      "comment_count": null,
+      "view_count": null,
+      "share_count": null,
+      "language": null,
+      "media": [],
+      "comments": [
+       {
+        "platform_comment_id": "e1",
+        "parent_platform_comment_id": null,
+        "author_handle": "early",
+        "text": "dup of embedded",
+        "like_count": null,
+        "created_at": null
+       },
+       {
+        "platform_comment_id": "c1",
+        "parent_platform_comment_id": null,
+        "author_handle": "victim",
+        "text": "I paid",
+        "like_count": 2,
+        "created_at": "2026-09-20T10:00:00"
+       }
+      ],
+      "raw": {
+       "url": "https://www.instagram.com/p/POST1/",
+       "user_posted": "seller.one",
+       "description": "Brand sale #brand",
+       "post_id": "1",
+       "likes": 4,
+       "profile_name": "Seller One",
+       "followers": "2.5K",
+       "latest_comments": [
+        {
+         "id": "e1",
+         "username": "early",
+         "text": "embedded first"
+        }
+       ]
+      }
+     },
+     {
+      "platform_post_id": "https://www.instagram.com/seller.one/reel/REEL2/",
+      "shortcode": "REEL2",
+      "post_type": "reel",
+      "permalink": "https://www.instagram.com/seller.one/reel/REEL2/",
+      "caption": "Reel by seller.one  ",
+      "posted_at": null,
+      "like_count": null,
+      "comment_count": null,
+      "view_count": null,
+      "share_count": null,
+      "language": null,
+      "media": [],
+      "comments": [],
+      "raw": {
+       "serp_result": {
+        "link": "https://www.instagram.com/reel/REEL1/",
+        "source": "Instagram · seller.two",
+        "title": "Brand giveaway reel"
+       }
+      }
+     }
+    ],
+    "provenance": {
+     "provider": "bright_data_instagram",
+     "lawful_basis": "licensed_public_data_api",
+     "collection_mode": "keyword_serp_fallback",
+     "query": "Brand",
+     "source": "Bright Data Instagram Scraper API",
+     "retrieved_at": "2026-09-23T00:00:00"
+    }
+   },
+   {
+    "account": {
+     "handle": "seller.two",
+     "platform": "instagram",
+     "platform_account_id": null,
+     "display_name": "seller.two",
+     "biography": null,
+     "external_url": null,
+     "profile_pic_url": null,
+     "is_verified": null,
+     "is_business": null,
+     "followers_count": null,
+     "follows_count": null,
+     "media_count": null,
+     "account_created_at": null,
+     "raw": {
+      "serp_result": {
+       "link": "https://www.instagram.com/reel/REEL1/",
+       "source": "Instagram · seller.two",
+       "title": "Brand giveaway reel"
+      }
+     }
+    },
+    "posts": [
+     {
+      "platform_post_id": "2",
+      "shortcode": "REEL1",
+      "post_type": "reel",
+      "permalink": "https://www.instagram.com/reel/REEL1/",
+      "caption": "Brand giveaway @brand",
+      "posted_at": null,
+      "like_count": null,
+      "comment_count": null,
+      "view_count": 50,
+      "share_count": null,
+      "language": null,
+      "media": [],
+      "comments": [],
+      "raw": {
+       "url": "https://www.instagram.com/reel/REEL1/",
+       "user_posted": "seller.two",
+       "description": "Brand giveaway @brand",
+       "post_id": "2",
+       "views": 50
+      }
+     }
+    ],
+    "provenance": {
+     "provider": "bright_data_instagram",
+     "lawful_basis": "licensed_public_data_api",
+     "collection_mode": "keyword_serp_fallback",
+     "query": "Brand",
+     "source": "Bright Data Instagram Scraper API",
+     "retrieved_at": "2026-09-23T00:00:00"
+    }
+   }
+  ],
+  "buckets": {
+   "profile": [
+    "https://www.instagram.com/brand.support/",
+    "https://www.instagram.com/seller.one/",
+    "https://www.instagram.com/seller.two/"
+   ],
+   "probe_profile": [
+    "https://www.instagram.com/brand/",
+    "https://www.instagram.com/brand.official/",
+    "https://www.instagram.com/brand_official/",
+    "https://www.instagram.com/brand.support/",
+    "https://www.instagram.com/brand_support/",
+    "https://www.instagram.com/brand.help/",
+    "https://www.instagram.com/brand_help/",
+    "https://www.instagram.com/brand.customercare/",
+    "https://www.instagram.com/brand_customercare/",
+    "https://www.instagram.com/brand.care/",
+    "https://www.instagram.com/brandcare/",
+    "https://www.instagram.com/brand.giveaway/",
+    "https://www.instagram.com/brand.shop/",
+    "https://www.instagram.com/brand.store/",
+    "https://www.instagram.com/brand.outlet/",
+    "https://www.instagram.com/brand.deals/",
+    "https://www.instagram.com/brand_deals/",
+    "https://www.instagram.com/brand.offers/",
+    "https://www.instagram.com/brand_offers/",
+    "https://www.instagram.com/brand.loot/",
+    "https://www.instagram.com/brand.telegram/",
+    "https://www.instagram.com/brand.claim/",
+    "https://www.instagram.com/brand.rewards/",
+    "https://www.instagram.com/brand.refund/",
+    "https://www.instagram.com/brand.helpdesk/",
+    "https://www.instagram.com/brand.jobs/",
+    "https://www.instagram.com/brand.hr/",
+    "https://www.instagram.com/brand.invest/",
+    "https://www.instagram.com/brand.trading/"
+   ],
+   "post": [
+    "https://www.instagram.com/p/POST1/"
+   ],
+   "reel": [
+    "https://www.instagram.com/reel/REEL1/",
+    "https://www.instagram.com/seller.one/reel/REEL2/"
+   ]
+  },
+  "scheduled_state": {
+   "version": 1,
+   "expires_at": 9999999999,
+   "query": "Brand",
+   "retrieved_at": "2026-09-23T00:00:00",
+   "visible": [],
+   "params": {
+    "mode": "keyword",
+    "max_items": 250,
+    "profile_limit": 50,
+    "include_comments": true,
+    "comments_per_post": 2
+   },
+   "organic": [
+    {
+     "link": "https://www.instagram.com/brand.support/",
+     "title": "Brand Support (@brand.support)",
+     "description": "Help desk • 1,200 followers"
+    },
+    {
+     "link": "https://www.instagram.com/p/POST1/",
+     "source": "Instagram · seller.one",
+     "title": "Brand sale",
+     "description": "#brand deal"
+    },
+    {
+     "link": "https://www.instagram.com/reel/REEL1/",
+     "source": "Instagram · seller.two",
+     "title": "Brand giveaway reel",
+     "image": "https://cdn.example/r1.jpg"
+    },
+    {
+     "link": "https://www.instagram.com/seller.one/reel/REEL2/",
+     "title": "Reel by seller.one"
+    }
+   ],
+   "query_tasks": [],
+   "inputs": [
+    {
+     "dataset": "gd_l1vikfch901nx3by4",
+     "inputs": [
+      {
+       "user_name": "queued.one"
+      },
+      {
+       "user_name": "brand"
+      },
+      {
+       "user_name": "brand.support"
+      },
+      {
+       "user_name": "seller.one"
+      },
+      {
+       "user_name": "seller.two"
+      },
+      {
+       "user_name": "brand.official"
+      },
+      {
+       "user_name": "brand_official"
+      },
+      {
+       "user_name": "brand_support"
+      },
+      {
+       "user_name": "brand.help"
+      },
+      {
+       "user_name": "brand_help"
+      },
+      {
+       "user_name": "brand.customercare"
+      },
+      {
+       "user_name": "brand_customercare"
+      },
+      {
+       "user_name": "brand.care"
+      },
+      {
+       "user_name": "brandcare"
+      },
+      {
+       "user_name": "brand.giveaway"
+      },
+      {
+       "user_name": "brand.shop"
+      },
+      {
+       "user_name": "brand.store"
+      },
+      {
+       "user_name": "brand.outlet"
+      },
+      {
+       "user_name": "brand.deals"
+      },
+      {
+       "user_name": "brand_deals"
+      }
+     ],
+     "attempt": 0
+    },
+    {
+     "dataset": "gd_l1vikfch901nx3by4",
+     "inputs": [
+      {
+       "user_name": "brand.offers"
+      },
+      {
+       "user_name": "brand_offers"
+      },
+      {
+       "user_name": "brand.loot"
+      },
+      {
+       "user_name": "brand.telegram"
+      },
+      {
+       "user_name": "brand.claim"
+      },
+      {
+       "user_name": "brand.rewards"
+      },
+      {
+       "user_name": "brand.refund"
+      },
+      {
+       "user_name": "brand.helpdesk"
+      },
+      {
+       "user_name": "brand.jobs"
+      },
+      {
+       "user_name": "brand.hr"
+      },
+      {
+       "user_name": "brand.invest"
+      },
+      {
+       "user_name": "brand.trading"
+      }
+     ],
+     "attempt": 0
+    },
+    {
+     "dataset": "gd_lk5ns7kz21pck8jpis",
+     "inputs": [
+      {
+       "url": "https://www.instagram.com/p/POST1/"
+      }
+     ],
+     "attempt": 0
+    },
+    {
+     "dataset": "gd_lyclm20il4r5helnj",
+     "inputs": [
+      {
+       "url": "https://www.instagram.com/reel/REEL1/"
+      },
+      {
+       "url": "https://www.instagram.com/seller.one/reel/REEL2/"
+      }
+     ],
+     "attempt": 0
+    },
+    {
+     "dataset": "gd_ltppn085pokosxh13",
+     "inputs": [
+      {
+       "url": "https://www.instagram.com/reel/ABC123/"
+      },
+      {
+       "url": "https://www.instagram.com/p/DEF456/"
+      },
+      {
+       "url": "https://www.instagram.com/seller.one/reel/REEL2/"
+      },
+      {
+       "url": "https://www.instagram.com/reel/REEL1/"
+      }
+     ],
+     "attempt": 0
+    }
+   ],
+   "scheduled": {
+    "gd_l1vikfch901nx3by4": [
+     "queued.one",
+     "brand",
+     "brand.support",
+     "seller.one",
+     "seller.two",
+     "brand.official",
+     "brand_official",
+     "brand_support",
+     "brand.help",
+     "brand_help",
+     "brand.customercare",
+     "brand_customercare",
+     "brand.care",
+     "brandcare",
+     "brand.giveaway",
+     "brand.shop",
+     "brand.store",
+     "brand.outlet",
+     "brand.deals",
+     "brand_deals",
+     "brand.offers",
+     "brand_offers",
+     "brand.loot",
+     "brand.telegram",
+     "brand.claim",
+     "brand.rewards",
+     "brand.refund",
+     "brand.helpdesk",
+     "brand.jobs",
+     "brand.hr",
+     "brand.invest",
+     "brand.trading"
+    ],
+    "gd_ltppn085pokosxh13": [
+     "https://www.instagram.com/p/POST1/",
+     "https://www.instagram.com/reel/ABC123/",
+     "https://www.instagram.com/p/DEF456/",
+     "https://www.instagram.com/seller.one/reel/REEL2/",
+     "https://www.instagram.com/reel/REEL1/"
+    ],
+    "gd_lk5ns7kz21pck8jpis": [
+     "https://www.instagram.com/p/POST1/"
+    ],
+    "gd_lyclm20il4r5helnj": [
+     "https://www.instagram.com/reel/REEL1/",
+     "https://www.instagram.com/seller.one/reel/REEL2/"
+    ]
+   },
+   "records": {
+    "gd_l1vikfch901nx3by4": [
+     {
+      "account": "brand.support",
+      "id": "123",
+      "full_name": "Brand Support",
+      "biography": "Help at https://brand.example/support",
+      "followers": 440,
+      "following": 10,
+      "posts_count": 2,
+      "is_verified": false,
+      "profile_image_link": "https://cdn.example/avatar.jpg",
+      "posts": [
+       {
+        "id": "900",
+        "caption": "Contact @brand #help",
+        "datetime": "2026-09-12T01:00:00.000Z",
+        "content_type": "Video",
+        "likes": 12,
+        "comments": 3,
+        "url": "https://www.instagram.com/reel/ABC123/",
+        "image_url": "https://cdn.example/cover.jpg"
+       },
+       {
+        "id": "901",
+        "caption": "Second",
+        "url": "https://www.instagram.com/p/DEF456/"
+       }
+      ]
+     }
+    ],
+    "gd_lk5ns7kz21pck8jpis": [
+     {
+      "url": "https://www.instagram.com/p/POST1/",
+      "user_posted": "seller.one",
+      "description": "Brand sale #brand",
+      "post_id": "1",
+      "likes": 4,
+      "profile_name": "Seller One",
+      "followers": "2.5K",
+      "latest_comments": [
+       {
+        "id": "e1",
+        "username": "early",
+        "text": "embedded first"
+       }
+      ]
+     }
+    ],
+    "gd_lyclm20il4r5helnj": [
+     {
+      "url": "https://www.instagram.com/reel/REEL1/",
+      "user_posted": "seller.two",
+      "description": "Brand giveaway @brand",
+      "post_id": "2",
+      "views": 50
+     }
+    ],
+    "gd_ltppn085pokosxh13": [
+     {
+      "post_url": "https://www.instagram.com/p/POST1/",
+      "comment_id": "c1",
+      "comment_user": "victim",
+      "comment": "I paid",
+      "likes_number": 2,
+      "comment_date": "2026-09-20T10:00:00Z",
+      "replies": [
+       {
+        "comment_id": "c1r",
+        "comment_user": "seller.one",
+        "comment": "DM me"
+       }
+      ]
+     },
+     {
+      "post_url": "https://www.instagram.com/p/POST1/",
+      "comment_id": "e1",
+      "comment_user": "early",
+      "comment": "dup of embedded"
+     },
+     {
+      "post_url": "https://evil.example/p/POST1/",
+      "comment_id": "x",
+      "comment": "ignored"
+     }
+    ]
+   },
+   "snapshots": [],
+   "errors": [],
+   "queries_completed": 0,
+   "blocked_until": 0,
+   "profile_target": 50
+  },
+  "profile_pending": true,
+  "has_work": true
+ },
+ {
+  "name": "post-fills-profile.json",
+  "state": {
+   "version": 1,
+   "expires_at": 9999999999,
+   "query": "Brand",
+   "retrieved_at": "2026-09-23T00:00:00",
+   "visible": [],
+   "params": {
+    "mode": "keyword",
+    "max_items": 250,
+    "profile_limit": 50,
+    "include_comments": true,
+    "comments_per_post": 20
+   },
+   "organic": [
+    {
+     "link": "https://www.instagram.com/reel/FOUND1/",
+     "source": "Instagram · regional.brand",
+     "title": "Brand regional post"
+    }
+   ],
+   "records": {
+    "gd_lyclm20il4r5helnj": [
+     {
+      "url": "https://www.instagram.com/reel/FOUND1/",
+      "user_posted": "regional.brand",
+      "profile_name": "Regional Brand",
+      "followers": 2500000,
+      "following": 17,
+      "posts_count": 340,
+      "is_verified": true,
+      "profile_image_link": "https://cdn.example/regional-brand.jpg"
+     }
+    ]
+   }
+  },
+  "bundles": [
+   {
+    "account": {
+     "handle": "regional.brand",
+     "platform": "instagram",
+     "platform_account_id": null,
+     "display_name": "Regional Brand",
+     "biography": null,
+     "external_url": null,
+     "profile_pic_url": "https://cdn.example/regional-brand.jpg",
+     "is_verified": true,
+     "is_business": null,
+     "followers_count": 2500000,
+     "follows_count": 17,
+     "media_count": 340,
+     "account_created_at": null,
+     "raw": {
+      "serp_result": {
+       "link": "https://www.instagram.com/reel/FOUND1/",
+       "source": "Instagram · regional.brand",
+       "title": "Brand regional post"
+      }
+     }
+    },
+    "posts": [
+     {
+      "platform_post_id": "FOUND1",
+      "shortcode": "FOUND1",
+      "post_type": "reel",
+      "permalink": "https://www.instagram.com/reel/FOUND1/",
+      "caption": null,
+      "posted_at": null,
+      "like_count": null,
+      "comment_count": null,
+      "view_count": null,
+      "share_count": null,
+      "language": null,
+      "media": [],
+      "comments": [],
+      "raw": {
+       "url": "https://www.instagram.com/reel/FOUND1/",
+       "user_posted": "regional.brand",
+       "profile_name": "Regional Brand",
+       "followers": 2500000,
+       "following": 17,
+       "posts_count": 340,
+       "is_verified": true,
+       "profile_image_link": "https://cdn.example/regional-brand.jpg"
+      }
+     }
+    ],
+    "provenance": {
+     "provider": "bright_data_instagram",
+     "lawful_basis": "licensed_public_data_api",
+     "collection_mode": "keyword_serp_fallback",
+     "query": "Brand",
+     "source": "Bright Data Instagram Scraper API",
+     "retrieved_at": "2026-09-23T00:00:00"
+    }
+   }
+  ],
+  "buckets": {
+   "profile": [
+    "https://www.instagram.com/regional.brand/"
+   ],
+   "probe_profile": [
+    "https://www.instagram.com/brand/",
+    "https://www.instagram.com/brand.official/",
+    "https://www.instagram.com/brand_official/",
+    "https://www.instagram.com/brand.support/",
+    "https://www.instagram.com/brand_support/",
+    "https://www.instagram.com/brand.help/",
+    "https://www.instagram.com/brand_help/",
+    "https://www.instagram.com/brand.customercare/",
+    "https://www.instagram.com/brand_customercare/",
+    "https://www.instagram.com/brand.care/",
+    "https://www.instagram.com/brandcare/",
+    "https://www.instagram.com/brand.giveaway/",
+    "https://www.instagram.com/brand.shop/",
+    "https://www.instagram.com/brand.store/",
+    "https://www.instagram.com/brand.outlet/",
+    "https://www.instagram.com/brand.deals/",
+    "https://www.instagram.com/brand_deals/",
+    "https://www.instagram.com/brand.offers/",
+    "https://www.instagram.com/brand_offers/",
+    "https://www.instagram.com/brand.loot/",
+    "https://www.instagram.com/brand.telegram/",
+    "https://www.instagram.com/brand.claim/",
+    "https://www.instagram.com/brand.rewards/",
+    "https://www.instagram.com/brand.refund/",
+    "https://www.instagram.com/brand.helpdesk/",
+    "https://www.instagram.com/brand.jobs/",
+    "https://www.instagram.com/brand.hr/",
+    "https://www.instagram.com/brand.invest/",
+    "https://www.instagram.com/brand.trading/"
+   ],
+   "post": [],
+   "reel": [
+    "https://www.instagram.com/reel/FOUND1/"
+   ]
+  },
+  "scheduled_state": {
+   "version": 1,
+   "expires_at": 9999999999,
+   "query": "Brand",
+   "retrieved_at": "2026-09-23T00:00:00",
+   "visible": [],
+   "params": {
+    "mode": "keyword",
+    "max_items": 250,
+    "profile_limit": 50,
+    "include_comments": true,
+    "comments_per_post": 20
+   },
+   "organic": [
+    {
+     "link": "https://www.instagram.com/reel/FOUND1/",
+     "source": "Instagram · regional.brand",
+     "title": "Brand regional post"
+    }
+   ],
+   "records": {
+    "gd_lyclm20il4r5helnj": [
+     {
+      "url": "https://www.instagram.com/reel/FOUND1/",
+      "user_posted": "regional.brand",
+      "profile_name": "Regional Brand",
+      "followers": 2500000,
+      "following": 17,
+      "posts_count": 340,
+      "is_verified": true,
+      "profile_image_link": "https://cdn.example/regional-brand.jpg"
+     }
+    ]
+   },
+   "query_tasks": [
+    {
+     "query": "site:instagram.com/reel/ \"Brand\" \"telegram channel\"",
+     "country": "in",
+     "index": 0,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/reel/ \"Brand\" \"loot\"",
+     "country": "in",
+     "index": 1,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/reel/ \"Brand\" \"free cash\"",
+     "country": "in",
+     "index": 2,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/p/ \"Brand\" \"telegram\"",
+     "country": "in",
+     "index": 3,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/reel/ \"Brand\" \"link in bio\"",
+     "country": "in",
+     "index": 4,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"giveaway\" OR \"discount\" OR \"scam\")",
+     "country": "in",
+     "index": 5,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com (\"Brand_support\" OR \"Brand.support\" OR \"Brand customer care\")",
+     "country": "in",
+     "index": 6,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\"",
+     "country": "in",
+     "index": 7,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"support\" OR \"customer care\" OR \"helpdesk\") (\"phone\" OR \"contact\" OR \"whatsapp\" OR \"refund\")",
+     "country": "in",
+     "index": 8,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"UPI\" OR \"payment\" OR \"delivery fee\" OR \"claim\")",
+     "country": "in",
+     "index": 9,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"account blocked\" OR \"KYC\" OR \"OTP\" OR \"login\" OR \"password reset\")",
+     "country": "in",
+     "index": 10,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"replica\" OR \"first copy\" OR \"factory price\")",
+     "country": "in",
+     "index": 11,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"job\" OR \"internship\" OR \"HR\" OR \"registration fee\")",
+     "country": "in",
+     "index": 12,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"APK\" OR \"install for refund\" OR \"investment\" OR \"trading signals\")",
+     "country": "in",
+     "index": 13,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/p/ \"Brand\"",
+     "country": "in",
+     "index": 14,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/reel/ \"Brand\"",
+     "country": "in",
+     "index": 15,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\"",
+     "country": "us",
+     "index": 16,
+     "attempt": 0
+    }
+   ],
+   "inputs": [
+    {
+     "dataset": "gd_l1vikfch901nx3by4",
+     "inputs": [
+      {
+       "user_name": "brand"
+      },
+      {
+       "user_name": "regional.brand"
+      }
+     ],
+     "attempt": 0
+    },
+    {
+     "dataset": "gd_lyclm20il4r5helnj",
+     "inputs": [
+      {
+       "url": "https://www.instagram.com/reel/FOUND1/"
+      }
+     ],
+     "attempt": 0
+    },
+    {
+     "dataset": "gd_ltppn085pokosxh13",
+     "inputs": [
+      {
+       "url": "https://www.instagram.com/reel/FOUND1/"
+      }
+     ],
+     "attempt": 0
+    }
+   ],
+   "scheduled": {
+    "gd_l1vikfch901nx3by4": [
+     "brand",
+     "regional.brand"
+    ],
+    "gd_lk5ns7kz21pck8jpis": [],
+    "gd_lyclm20il4r5helnj": [
+     "https://www.instagram.com/reel/FOUND1/"
+    ],
+    "gd_ltppn085pokosxh13": [
+     "https://www.instagram.com/reel/FOUND1/"
+    ]
+   },
+   "snapshots": [],
+   "errors": [],
+   "queries_completed": 0,
+   "blocked_until": 0,
+   "profile_target": 50
+  },
+  "profile_pending": false,
+  "has_work": true
+ },
+ {
+  "name": "prioritize-evidence.json",
+  "state": {
+   "version": 1,
+   "expires_at": 9999999999,
+   "query": "Brand",
+   "retrieved_at": "2026-09-23T00:00:00",
+   "visible": [],
+   "params": {
+    "mode": "keyword",
+    "max_items": 250,
+    "profile_limit": 5,
+    "include_comments": true,
+    "comments_per_post": 20
+   },
+   "organic": [
+    {
+     "link": "https://www.instagram.com/found0/",
+     "title": "Found account 0"
+    },
+    {
+     "link": "https://www.instagram.com/found1/",
+     "title": "Found account 1"
+    },
+    {
+     "link": "https://www.instagram.com/found2/",
+     "title": "Found account 2"
+    },
+    {
+     "link": "https://www.instagram.com/found3/",
+     "title": "Found account 3"
+    },
+    {
+     "link": "https://www.instagram.com/found4/",
+     "title": "Found account 4"
+    },
+    {
+     "link": "https://www.instagram.com/found5/",
+     "title": "Found account 5"
+    }
+   ]
+  },
+  "bundles": [
+   {
+    "account": {
+     "handle": "found0",
+     "platform": "instagram",
+     "platform_account_id": null,
+     "display_name": "found0",
+     "biography": "Found account 0  ",
+     "external_url": null,
+     "profile_pic_url": null,
+     "is_verified": null,
+     "is_business": null,
+     "followers_count": null,
+     "follows_count": null,
+     "media_count": null,
+     "account_created_at": null,
+     "raw": {
+      "serp_result": {
+       "link": "https://www.instagram.com/found0/",
+       "title": "Found account 0"
+      }
+     }
+    },
+    "posts": [],
+    "provenance": {
+     "provider": "bright_data_instagram",
+     "lawful_basis": "licensed_public_data_api",
+     "collection_mode": "keyword_serp_fallback",
+     "query": "Brand",
+     "source": "Bright Data Instagram Scraper API",
+     "retrieved_at": "2026-09-23T00:00:00"
+    }
+   },
+   {
+    "account": {
+     "handle": "found1",
+     "platform": "instagram",
+     "platform_account_id": null,
+     "display_name": "found1",
+     "biography": "Found account 1  ",
+     "external_url": null,
+     "profile_pic_url": null,
+     "is_verified": null,
+     "is_business": null,
+     "followers_count": null,
+     "follows_count": null,
+     "media_count": null,
+     "account_created_at": null,
+     "raw": {
+      "serp_result": {
+       "link": "https://www.instagram.com/found1/",
+       "title": "Found account 1"
+      }
+     }
+    },
+    "posts": [],
+    "provenance": {
+     "provider": "bright_data_instagram",
+     "lawful_basis": "licensed_public_data_api",
+     "collection_mode": "keyword_serp_fallback",
+     "query": "Brand",
+     "source": "Bright Data Instagram Scraper API",
+     "retrieved_at": "2026-09-23T00:00:00"
+    }
+   },
+   {
+    "account": {
+     "handle": "found2",
+     "platform": "instagram",
+     "platform_account_id": null,
+     "display_name": "found2",
+     "biography": "Found account 2  ",
+     "external_url": null,
+     "profile_pic_url": null,
+     "is_verified": null,
+     "is_business": null,
+     "followers_count": null,
+     "follows_count": null,
+     "media_count": null,
+     "account_created_at": null,
+     "raw": {
+      "serp_result": {
+       "link": "https://www.instagram.com/found2/",
+       "title": "Found account 2"
+      }
+     }
+    },
+    "posts": [],
+    "provenance": {
+     "provider": "bright_data_instagram",
+     "lawful_basis": "licensed_public_data_api",
+     "collection_mode": "keyword_serp_fallback",
+     "query": "Brand",
+     "source": "Bright Data Instagram Scraper API",
+     "retrieved_at": "2026-09-23T00:00:00"
+    }
+   },
+   {
+    "account": {
+     "handle": "found3",
+     "platform": "instagram",
+     "platform_account_id": null,
+     "display_name": "found3",
+     "biography": "Found account 3  ",
+     "external_url": null,
+     "profile_pic_url": null,
+     "is_verified": null,
+     "is_business": null,
+     "followers_count": null,
+     "follows_count": null,
+     "media_count": null,
+     "account_created_at": null,
+     "raw": {
+      "serp_result": {
+       "link": "https://www.instagram.com/found3/",
+       "title": "Found account 3"
+      }
+     }
+    },
+    "posts": [],
+    "provenance": {
+     "provider": "bright_data_instagram",
+     "lawful_basis": "licensed_public_data_api",
+     "collection_mode": "keyword_serp_fallback",
+     "query": "Brand",
+     "source": "Bright Data Instagram Scraper API",
+     "retrieved_at": "2026-09-23T00:00:00"
+    }
+   },
+   {
+    "account": {
+     "handle": "found4",
+     "platform": "instagram",
+     "platform_account_id": null,
+     "display_name": "found4",
+     "biography": "Found account 4  ",
+     "external_url": null,
+     "profile_pic_url": null,
+     "is_verified": null,
+     "is_business": null,
+     "followers_count": null,
+     "follows_count": null,
+     "media_count": null,
+     "account_created_at": null,
+     "raw": {
+      "serp_result": {
+       "link": "https://www.instagram.com/found4/",
+       "title": "Found account 4"
+      }
+     }
+    },
+    "posts": [],
+    "provenance": {
+     "provider": "bright_data_instagram",
+     "lawful_basis": "licensed_public_data_api",
+     "collection_mode": "keyword_serp_fallback",
+     "query": "Brand",
+     "source": "Bright Data Instagram Scraper API",
+     "retrieved_at": "2026-09-23T00:00:00"
+    }
+   },
+   {
+    "account": {
+     "handle": "found5",
+     "platform": "instagram",
+     "platform_account_id": null,
+     "display_name": "found5",
+     "biography": "Found account 5  ",
+     "external_url": null,
+     "profile_pic_url": null,
+     "is_verified": null,
+     "is_business": null,
+     "followers_count": null,
+     "follows_count": null,
+     "media_count": null,
+     "account_created_at": null,
+     "raw": {
+      "serp_result": {
+       "link": "https://www.instagram.com/found5/",
+       "title": "Found account 5"
+      }
+     }
+    },
+    "posts": [],
+    "provenance": {
+     "provider": "bright_data_instagram",
+     "lawful_basis": "licensed_public_data_api",
+     "collection_mode": "keyword_serp_fallback",
+     "query": "Brand",
+     "source": "Bright Data Instagram Scraper API",
+     "retrieved_at": "2026-09-23T00:00:00"
+    }
+   }
+  ],
+  "buckets": {
+   "profile": [
+    "https://www.instagram.com/found0/",
+    "https://www.instagram.com/found1/",
+    "https://www.instagram.com/found2/",
+    "https://www.instagram.com/found3/",
+    "https://www.instagram.com/found4/",
+    "https://www.instagram.com/found5/"
+   ],
+   "probe_profile": [
+    "https://www.instagram.com/brand/",
+    "https://www.instagram.com/brand.official/",
+    "https://www.instagram.com/brand_official/",
+    "https://www.instagram.com/brand.support/",
+    "https://www.instagram.com/brand_support/",
+    "https://www.instagram.com/brand.help/",
+    "https://www.instagram.com/brand_help/",
+    "https://www.instagram.com/brand.customercare/",
+    "https://www.instagram.com/brand_customercare/",
+    "https://www.instagram.com/brand.care/",
+    "https://www.instagram.com/brandcare/",
+    "https://www.instagram.com/brand.giveaway/",
+    "https://www.instagram.com/brand.shop/",
+    "https://www.instagram.com/brand.store/",
+    "https://www.instagram.com/brand.outlet/",
+    "https://www.instagram.com/brand.deals/",
+    "https://www.instagram.com/brand_deals/",
+    "https://www.instagram.com/brand.offers/",
+    "https://www.instagram.com/brand_offers/",
+    "https://www.instagram.com/brand.loot/",
+    "https://www.instagram.com/brand.telegram/",
+    "https://www.instagram.com/brand.claim/",
+    "https://www.instagram.com/brand.rewards/",
+    "https://www.instagram.com/brand.refund/",
+    "https://www.instagram.com/brand.helpdesk/",
+    "https://www.instagram.com/brand.jobs/",
+    "https://www.instagram.com/brand.hr/",
+    "https://www.instagram.com/brand.invest/",
+    "https://www.instagram.com/brand.trading/"
+   ],
+   "post": [],
+   "reel": []
+  },
+  "scheduled_state": {
+   "version": 1,
+   "expires_at": 9999999999,
+   "query": "Brand",
+   "retrieved_at": "2026-09-23T00:00:00",
+   "visible": [],
+   "params": {
+    "mode": "keyword",
+    "max_items": 250,
+    "profile_limit": 5,
+    "include_comments": true,
+    "comments_per_post": 20
+   },
+   "organic": [
+    {
+     "link": "https://www.instagram.com/found0/",
+     "title": "Found account 0"
+    },
+    {
+     "link": "https://www.instagram.com/found1/",
+     "title": "Found account 1"
+    },
+    {
+     "link": "https://www.instagram.com/found2/",
+     "title": "Found account 2"
+    },
+    {
+     "link": "https://www.instagram.com/found3/",
+     "title": "Found account 3"
+    },
+    {
+     "link": "https://www.instagram.com/found4/",
+     "title": "Found account 4"
+    },
+    {
+     "link": "https://www.instagram.com/found5/",
+     "title": "Found account 5"
+    }
+   ],
+   "query_tasks": [
+    {
+     "query": "site:instagram.com/reel/ \"Brand\" \"telegram channel\"",
+     "country": "in",
+     "index": 0,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/reel/ \"Brand\" \"loot\"",
+     "country": "in",
+     "index": 1,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/reel/ \"Brand\" \"free cash\"",
+     "country": "in",
+     "index": 2,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/p/ \"Brand\" \"telegram\"",
+     "country": "in",
+     "index": 3,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/reel/ \"Brand\" \"link in bio\"",
+     "country": "in",
+     "index": 4,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"giveaway\" OR \"discount\" OR \"scam\")",
+     "country": "in",
+     "index": 5,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com (\"Brand_support\" OR \"Brand.support\" OR \"Brand customer care\")",
+     "country": "in",
+     "index": 6,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\"",
+     "country": "in",
+     "index": 7,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"support\" OR \"customer care\" OR \"helpdesk\") (\"phone\" OR \"contact\" OR \"whatsapp\" OR \"refund\")",
+     "country": "in",
+     "index": 8,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"UPI\" OR \"payment\" OR \"delivery fee\" OR \"claim\")",
+     "country": "in",
+     "index": 9,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"account blocked\" OR \"KYC\" OR \"OTP\" OR \"login\" OR \"password reset\")",
+     "country": "in",
+     "index": 10,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"replica\" OR \"first copy\" OR \"factory price\")",
+     "country": "in",
+     "index": 11,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"job\" OR \"internship\" OR \"HR\" OR \"registration fee\")",
+     "country": "in",
+     "index": 12,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"APK\" OR \"install for refund\" OR \"investment\" OR \"trading signals\")",
+     "country": "in",
+     "index": 13,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/p/ \"Brand\"",
+     "country": "in",
+     "index": 14,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/reel/ \"Brand\"",
+     "country": "in",
+     "index": 15,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\"",
+     "country": "us",
+     "index": 16,
+     "attempt": 0
+    }
+   ],
+   "inputs": [
+    {
+     "dataset": "gd_l1vikfch901nx3by4",
+     "inputs": [
+      {
+       "user_name": "brand"
+      },
+      {
+       "user_name": "found0"
+      },
+      {
+       "user_name": "found1"
+      },
+      {
+       "user_name": "found2"
+      },
+      {
+       "user_name": "found3"
+      }
+     ],
+     "attempt": 0
+    }
+   ],
+   "scheduled": {
+    "gd_l1vikfch901nx3by4": [
+     "brand",
+     "found0",
+     "found1",
+     "found2",
+     "found3"
+    ],
+    "gd_lk5ns7kz21pck8jpis": [],
+    "gd_lyclm20il4r5helnj": [],
+    "gd_ltppn085pokosxh13": []
+   },
+   "snapshots": [],
+   "records": {},
+   "errors": [],
+   "queries_completed": 0,
+   "blocked_until": 0,
+   "profile_target": 5
+  },
+  "profile_pending": true,
+  "has_work": true
+ },
+ {
+  "name": "speculative-wait.json",
+  "state": {
+   "version": 1,
+   "expires_at": 9999999999,
+   "query": "Brand",
+   "retrieved_at": "2026-09-23T00:00:00",
+   "visible": [],
+   "params": {
+    "mode": "keyword",
+    "max_items": 250,
+    "profile_limit": 50,
+    "include_comments": true,
+    "comments_per_post": 20
+   }
+  },
+  "bundles": [],
+  "buckets": {
+   "profile": [],
+   "probe_profile": [
+    "https://www.instagram.com/brand/",
+    "https://www.instagram.com/brand.official/",
+    "https://www.instagram.com/brand_official/",
+    "https://www.instagram.com/brand.support/",
+    "https://www.instagram.com/brand_support/",
+    "https://www.instagram.com/brand.help/",
+    "https://www.instagram.com/brand_help/",
+    "https://www.instagram.com/brand.customercare/",
+    "https://www.instagram.com/brand_customercare/",
+    "https://www.instagram.com/brand.care/",
+    "https://www.instagram.com/brandcare/",
+    "https://www.instagram.com/brand.giveaway/",
+    "https://www.instagram.com/brand.shop/",
+    "https://www.instagram.com/brand.store/",
+    "https://www.instagram.com/brand.outlet/",
+    "https://www.instagram.com/brand.deals/",
+    "https://www.instagram.com/brand_deals/",
+    "https://www.instagram.com/brand.offers/",
+    "https://www.instagram.com/brand_offers/",
+    "https://www.instagram.com/brand.loot/",
+    "https://www.instagram.com/brand.telegram/",
+    "https://www.instagram.com/brand.claim/",
+    "https://www.instagram.com/brand.rewards/",
+    "https://www.instagram.com/brand.refund/",
+    "https://www.instagram.com/brand.helpdesk/",
+    "https://www.instagram.com/brand.jobs/",
+    "https://www.instagram.com/brand.hr/",
+    "https://www.instagram.com/brand.invest/",
+    "https://www.instagram.com/brand.trading/"
+   ],
+   "post": [],
+   "reel": []
+  },
+  "scheduled_state": {
+   "version": 1,
+   "expires_at": 9999999999,
+   "query": "Brand",
+   "retrieved_at": "2026-09-23T00:00:00",
+   "visible": [],
+   "params": {
+    "mode": "keyword",
+    "max_items": 250,
+    "profile_limit": 50,
+    "include_comments": true,
+    "comments_per_post": 20
+   },
+   "organic": [],
+   "query_tasks": [
+    {
+     "query": "site:instagram.com/reel/ \"Brand\" \"telegram channel\"",
+     "country": "in",
+     "index": 0,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/reel/ \"Brand\" \"loot\"",
+     "country": "in",
+     "index": 1,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/reel/ \"Brand\" \"free cash\"",
+     "country": "in",
+     "index": 2,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/p/ \"Brand\" \"telegram\"",
+     "country": "in",
+     "index": 3,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/reel/ \"Brand\" \"link in bio\"",
+     "country": "in",
+     "index": 4,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"giveaway\" OR \"discount\" OR \"scam\")",
+     "country": "in",
+     "index": 5,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com (\"Brand_support\" OR \"Brand.support\" OR \"Brand customer care\")",
+     "country": "in",
+     "index": 6,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\"",
+     "country": "in",
+     "index": 7,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"support\" OR \"customer care\" OR \"helpdesk\") (\"phone\" OR \"contact\" OR \"whatsapp\" OR \"refund\")",
+     "country": "in",
+     "index": 8,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"UPI\" OR \"payment\" OR \"delivery fee\" OR \"claim\")",
+     "country": "in",
+     "index": 9,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"account blocked\" OR \"KYC\" OR \"OTP\" OR \"login\" OR \"password reset\")",
+     "country": "in",
+     "index": 10,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"replica\" OR \"first copy\" OR \"factory price\")",
+     "country": "in",
+     "index": 11,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"job\" OR \"internship\" OR \"HR\" OR \"registration fee\")",
+     "country": "in",
+     "index": 12,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\" (\"APK\" OR \"install for refund\" OR \"investment\" OR \"trading signals\")",
+     "country": "in",
+     "index": 13,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/p/ \"Brand\"",
+     "country": "in",
+     "index": 14,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com/reel/ \"Brand\"",
+     "country": "in",
+     "index": 15,
+     "attempt": 0
+    },
+    {
+     "query": "site:instagram.com \"Brand\"",
+     "country": "us",
+     "index": 16,
+     "attempt": 0
+    }
+   ],
+   "inputs": [
+    {
+     "dataset": "gd_l1vikfch901nx3by4",
+     "inputs": [
+      {
+       "user_name": "brand"
+      }
+     ],
+     "attempt": 0
+    }
+   ],
+   "scheduled": {
+    "gd_l1vikfch901nx3by4": [
+     "brand"
+    ],
+    "gd_lk5ns7kz21pck8jpis": [],
+    "gd_lyclm20il4r5helnj": [],
+    "gd_ltppn085pokosxh13": []
+   },
+   "snapshots": [],
+   "records": {},
+   "errors": [],
+   "queries_completed": 0,
+   "blocked_until": 0,
+   "profile_target": 50
+  },
+  "profile_pending": false,
+  "has_work": true
+ }
+]

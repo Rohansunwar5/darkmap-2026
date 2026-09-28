@@ -1,0 +1,8 @@
+{"version": 1, "expires_at": 9999999999, "query": "Brand", "retrieved_at": "2026-09-23T00:00:00", "visible": [],
+ "params": {"mode": "keyword", "max_items": 250, "profile_limit": 5, "include_comments": true, "comments_per_post": 20},
+ "organic": [{"link": "https://www.instagram.com/found0/", "title": "Found account 0"},
+             {"link": "https://www.instagram.com/found1/", "title": "Found account 1"},
+             {"link": "https://www.instagram.com/found2/", "title": "Found account 2"},
+             {"link": "https://www.instagram.com/found3/", "title": "Found account 3"},
+             {"link": "https://www.instagram.com/found4/", "title": "Found account 4"},
+             {"link": "https://www.instagram.com/found5/", "title": "Found account 5"}]}

@@ -1,0 +1,5 @@
+{"url": "https://instagram.com/p/MEDIA1?igsh=1", "user_posted": "scan.win", "content_type": "Carousel",
+ "photos": ["https://cdn.example/a.jpg", {"url": "https://cdn.example/b.mp4", "thumbnail": "https://cdn.example/b.jpg",
+             "qr_codes": [{"data": "https://pay.example/claim"}, "upi://pay?pa=x@ybl"], "ocr_text": "Send OTP", "phash": "abc123"}],
+ "videos": [{"video_url": "https://cdn.example/v.mp4", "cover_url": "https://cdn.example/v.jpg", "transcript": "invest now"}],
+ "display_url": "https://cdn.example/a.jpg", "likes": "3.4K", "num_comments": "12", "timestamp": 1758363330}

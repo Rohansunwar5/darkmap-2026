@@ -1,0 +1,28 @@
+{"version": 1, "expires_at": 9999999999, "query": "Brand", "retrieved_at": "2026-09-23T00:00:00", "visible": [],
+ "params": {"mode": "keyword", "max_items": 250, "profile_limit": 50, "include_comments": true, "comments_per_post": 2},
+ "organic": [
+  {"link": "https://www.instagram.com/brand.support/", "title": "Brand Support (@brand.support)", "description": "Help desk • 1,200 followers"},
+  {"link": "https://www.instagram.com/p/POST1/", "source": "Instagram · seller.one", "title": "Brand sale", "description": "#brand deal"},
+  {"link": "https://www.instagram.com/reel/REEL1/", "source": "Instagram · seller.two", "title": "Brand giveaway reel", "image": "https://cdn.example/r1.jpg"},
+  {"link": "https://www.instagram.com/seller.one/reel/REEL2/", "title": "Reel by seller.one"}],
+ "query_tasks": [],
+ "inputs": [{"dataset": "gd_l1vikfch901nx3by4", "inputs": [{"user_name": "queued.one"}], "attempt": 0}],
+ "scheduled": {"gd_l1vikfch901nx3by4": ["queued.one"], "gd_ltppn085pokosxh13": ["https://www.instagram.com/p/POST1/"]},
+ "records": {
+  "gd_l1vikfch901nx3by4": [{"account": "brand.support", "id": "123", "full_name": "Brand Support",
+    "biography": "Help at https://brand.example/support", "followers": 440, "following": 10, "posts_count": 2,
+    "is_verified": false, "profile_image_link": "https://cdn.example/avatar.jpg",
+    "posts": [{"id": "900", "caption": "Contact @brand #help", "datetime": "2026-09-12T01:00:00.000Z", "content_type": "Video",
+               "likes": 12, "comments": 3, "url": "https://www.instagram.com/reel/ABC123/", "image_url": "https://cdn.example/cover.jpg"},
+              {"id": "901", "caption": "Second", "url": "https://www.instagram.com/p/DEF456/"}]}],
+  "gd_lk5ns7kz21pck8jpis": [{"url": "https://www.instagram.com/p/POST1/", "user_posted": "seller.one", "description": "Brand sale #brand",
+    "post_id": "1", "likes": 4, "profile_name": "Seller One", "followers": "2.5K",
+    "latest_comments": [{"id": "e1", "username": "early", "text": "embedded first"}]}],
+  "gd_lyclm20il4r5helnj": [{"url": "https://www.instagram.com/reel/REEL1/", "user_posted": "seller.two",
+    "description": "Brand giveaway @brand", "post_id": "2", "views": 50}],
+  "gd_ltppn085pokosxh13": [
+    {"post_url": "https://www.instagram.com/p/POST1/", "comment_id": "c1", "comment_user": "victim", "comment": "I paid",
+     "likes_number": 2, "comment_date": "2026-09-20T10:00:00Z",
+     "replies": [{"comment_id": "c1r", "comment_user": "seller.one", "comment": "DM me"}]},
+    {"post_url": "https://www.instagram.com/p/POST1/", "comment_id": "e1", "comment_user": "early", "comment": "dup of embedded"},
+    {"post_url": "https://evil.example/p/POST1/", "comment_id": "x", "comment": "ignored"}]}}

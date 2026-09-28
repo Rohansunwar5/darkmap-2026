@@ -1,0 +1,18 @@
+{
+  "brand": {"name": "Luminaire", "official_handles": ["luminaire"], "official_domains": ["luminaire.com"],
+            "keywords": ["luminaire"]},
+  "account": {"handle": "luminaire_giveaway_2026", "display_name": "🎁 Luminaire Giveaway 🎁", "biography":
+              "🎉🎉 Official page 🎉 winners DM us on WhatsApp 👉 wa.me/15550001111 😍",
+              "external_url": "https://wa.me/15550001111", "followers_count": 1200, "follows_count": 800,
+              "media_count": 14, "is_verified": false},
+  "provenance": {"collection_mode": "keyword", "lawful_basis": "licensed_public_data_api"},
+  "posts": [{"caption": "🎁🎁 GIVEAWAY 🎁🎁 Congratulations you are our lucky winner 🏆 Luminaire 😍💯 claim your prize 👉 pay small fee ₹99 delivery fee on WhatsApp 📲 link in bio 🔥🔥",
+             "media": [{"media_type": "image"}],
+             "comments": [{"author_handle": "happy_user", "text": "😍😍 wow"},
+                          {"author_handle": "lucky.me", "text": "🎁 claim now??"}],
+             "engagement": {"likes": 250, "comments": 12, "views": null, "shares": null}}],
+  "entities": [{"kind": "url", "value": "https://wa.me/15550001111", "domain": "wa.me", "source_field": "external_url"},
+               {"kind": "phone", "value": "15550001111", "domain": null, "source_field": "bio"}],
+  "media_analysis": [], "shared_artifacts": [], "account_changes": [],
+  "velocity": {"posts_last_hour": 0, "posts_last_24h": 2, "follower_delta": null, "duplicate_post_count": 0}
+}

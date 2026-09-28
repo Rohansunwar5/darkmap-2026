@@ -1,0 +1,78 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.normal-class {
+  color: #ff0000;
+  filter: blur(3px);
+  margin-left: 4px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.premium-class {
+  margin-left: 4px;
+  display: inline-block;
+}
+
+.panel {
+  background: linear-gradient(to top, #04121A, #0B2530 25%, #00060C 90%);
+}
+
+/* Add these to your styles.css */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { 
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modal animations */
+.fixed.inset-0 {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.fixed.inset-0 > div {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Input focus styles */
+input:focus {
+  transition: all 0.2s ease;
+}
+
+/* Button hover effects */
+button:hover {
+  transition: all 0.2s ease;
+  transform: translateY(-1px);
+}
+
+.code-font {
+  font-family: "Fira Code", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}

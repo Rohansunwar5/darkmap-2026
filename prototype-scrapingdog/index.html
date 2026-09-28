@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b10">
+  <meta name="description" content="Darkmap Instagram brand protection workspace">
+  <title>Darkmap · Instagram Brand Protection</title>
+  <link rel="icon" href="/static/panda-logo.png" type="image/png">
+  <link rel="preload" href="/static/fonts/chakra-petch-400.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/static/fonts/chakra-petch-600.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/static/styles.css?v=20260915-search-heading-1">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <a class="brand-lockup" href="/" aria-label="Darkmap home">
+        <span class="brand-panda-wrap">
+          <img class="brand-panda" src="/static/panda-logo.png" alt="">
+        </span>
+        <span class="brand-identity">
+          <img class="brand-wordmark" src="/static/darkmap-wordmark.png" alt="">
+        </span>
+      </a>
+
+      <nav class="nav-list">
+        <button class="nav-item active" data-view="overview">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h6V4H4v9Zm0 7h6v-4H4v4Zm10 0h6v-9h-6v9Zm0-16v4h6V4h-6Z"/></svg>
+          Overview
+        </button>
+        <button class="nav-item" data-view="alerts">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 20h18L12 3Z"/><path d="M12 9v5m0 3h.01"/></svg>
+          Critical alerts
+          <span class="nav-count" id="alertCount">0</span>
+        </button>
+        <button class="nav-item" data-view="campaigns">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="m9 11 6-4m-6 6 6 4"/></svg>
+          Campaigns &amp; cases
+          <span class="nav-count" id="campaignCount">0</span>
+        </button>
+        <button class="nav-item" data-view="investigations">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/></svg>
+          Global search
+          <span class="nav-count" id="investigationCount">0</span>
+        </button>
+        <button class="nav-item" data-view="history">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11a9 9 0 1 1 2.6 7M3 4v7h7M12 7v5l3 2"/></svg>
+          Search history
+          <span class="nav-count" id="historyCount">0</span>
+        </button>
+        <button class="nav-item" data-view="jobs">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 4v6m10-6v6M5 11h14v9H5z"/></svg>
+          Collection jobs
+          <span class="nav-count" id="jobCount">0</span>
+        </button>
+        <button class="nav-item" data-view="audit">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.8 2.8 8.2 7 10 4.2-1.8 7-5.2 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-5"/></svg>
+          Audit trail
+        </button>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="source-status"><span class="status-dot" id="sourceDot"></span><div><b>Instagram source</b><span id="sourceStatus">Checking configuration</span></div></div>
+        <button class="sidebar-setting" id="openSettings">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/><path d="M4 12a8 8 0 0 1 .2-1.8L2.8 8.5l2-3.4 2.2.8A8 8 0 0 1 10 4.2L10.4 2h4l.5 2.2A8 8 0 0 1 17 5.9l2.2-.8 2 3.4-1.4 1.7A8 8 0 0 1 20 12c0 .6-.1 1.2-.2 1.8l1.4 1.7-2 3.4-2.2-.8a8 8 0 0 1-2.1 1.7l-.5 2.2h-4l-.5-2.2A8 8 0 0 1 7 18.1l-2.2.8-2-3.4 1.4-1.7A8 8 0 0 1 4 12Z"/></svg>
+          Access settings
+        </button>
+      </div>
+    </aside>
+
+    <main class="workspace">
+      <header class="topbar">
+        <div class="topbar-title">
+          <p class="eyebrow">BRAND INTELLIGENCE</p>
+          <h1 id="pageTitle">Protection overview</h1>
+        </div>
+        <div class="top-actions">
+          <label class="global-search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/></svg>
+            <input id="globalSearch" type="search" placeholder="Live Instagram search…" aria-label="Live Instagram search; press Enter to run" autocomplete="off">
+            <kbd>⌘ K</kbd>
+          </label>
+          <button class="icon-button" id="refreshAll" aria-label="Refresh data" title="Refresh data">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6.1 9A7 7 0 0 1 18 6l2 2M17.9 15A7 7 0 0 1 6 18l-2-2"/></svg>
+          </button>
+          <div class="system-chip"><span class="status-dot live"></span><span>AI analysis</span></div>
+        </div>
+      </header>
+
+      <section class="view active" id="view-overview">
+        <section class="universal-search-panel" aria-labelledby="universalSearchTitle">
+          <div class="universal-search-copy">
+            <h2 id="universalSearchTitle">Scan Brand Abuse Across the Internet</h2>
+            <p>Mapping threats, exposing impersonation.</p>
+          </div>
+          <form class="universal-search-form" id="universalSearchForm">
+            <label class="universal-search-input">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/></svg>
+              <input id="universalSearch" type="search" required maxlength="100" placeholder="Enter a keyword, #hashtag, or exact @username…" autocomplete="off">
+            </label>
+            <button class="primary-button universal-search-button live-search-submit" type="submit">
+              Search Instagram
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </form>
+          <div class="search-coverage" aria-label="Retrieved Instagram data">
+            <span>@ Accounts</span><span>▤ Posts &amp; reels</span><span># Hashtags</span><span>◎ Mentions</span><span>↗ URLs</span>
+          </div>
+          <p class="live-search-note">Retrieves current public Instagram results through the connected collection source. No Instagram password or session cookie is used.</p>
+        </section>
+
+        <article class="scan-panel">
+          <div class="scan-copy">
+            <span class="section-index">01 / COLLECTION</span>
+            <h2>Start an Instagram investigation</h2>
+            <p>Collect authorized public signals, then score brand impersonation, scams, phishing, counterfeit sales, and coordinated abuse.</p>
+          </div>
+          <form id="scanForm" class="scan-form">
+            <div class="mode-tabs" role="group" aria-label="Collection target">
+              <button type="button" class="mode-tab active" data-mode="account">Account</button>
+              <button type="button" class="mode-tab" data-mode="hashtag_recent">Hashtag</button>
+              <button type="button" class="mode-tab" data-mode="hashtag_top">Top posts</button>
+              <button type="button" class="mode-tab" data-mode="owned">Owned</button>
+              <button type="button" class="mode-tab" data-mode="tagged">Tagged</button>
+            </div>
+            <input type="hidden" id="scanMode" value="account">
+            <div class="scan-row">
+              <label class="field target-field">
+                <span id="queryLabel">Instagram account</span>
+                <div class="input-shell">
+                  <span class="input-prefix" id="queryPrefix">@</span>
+                  <input id="scanQuery" required maxlength="100" placeholder="account.name" autocomplete="off">
+                </div>
+              </label>
+              <label class="field brand-field">
+                <span>Protected brand</span>
+                <select id="scanBrand"><option value="">No brand selected</option></select>
+              </label>
+              <button class="primary-button" type="submit" id="startScan">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18"/></svg>
+                Start scan
+              </button>
+            </div>
+            <div class="scan-options">
+              <label><input type="checkbox" id="analyzeWithAI" checked><span>Analyze risk with AI</span></label>
+              <label><input type="checkbox" id="includeComments" checked><span>Include comments when authorized</span></label>
+              <span class="scope-note" id="scopeNote">Public account and recent media through the connected source</span>
+            </div>
+          </form>
+        </article>
+
+        <section class="metrics-grid" aria-label="Protection metrics">
+          <button type="button" class="metric-card" data-overview-filter="all"><div class="metric-head"><span>Collected accounts</span><span class="metric-icon cyan">@</span></div><strong id="metricAccounts">—</strong><p id="metricAccountsNote">Loading account index</p></button>
+          <button type="button" class="metric-card" data-overview-filter="70"><div class="metric-head"><span>High-risk findings</span><span class="metric-icon red">!</span></div><strong id="metricHighRisk">—</strong><p id="metricHighRiskNote">Scores of 70 or higher</p></button>
+          <button type="button" class="metric-card" data-view-link="jobs"><div class="metric-head"><span>Active jobs</span><span class="metric-icon amber">↻</span></div><strong id="metricJobs">—</strong><p id="metricJobsNote">Queue activity</p></button>
+          <button type="button" class="metric-card" data-overview-filter="0"><div class="metric-head"><span>Average risk</span><span class="metric-icon violet">◆</span></div><strong id="metricAverage">—</strong><p>Across scored accounts</p></button>
+        </section>
+
+        <p class="overview-note" id="overviewDataNote" aria-live="polite"></p>
+        <section class="overview-grid">
+          <article class="panel risk-panel">
+            <div class="panel-heading"><div><span class="section-index">RISK MAP</span><h3>Exposure distribution</h3></div><button class="text-button" data-overview-filter="all">View all</button></div>
+            <div class="risk-visual">
+              <div class="risk-ring" id="riskRing">
+                <svg viewBox="0 0 120 120" aria-label="Risk distribution of scored accounts">
+                  <circle class="risk-ring-track" cx="60" cy="60" r="51" fill="none" stroke-width="12" />
+                  <g transform="rotate(-90 60 60)">
+                    <circle data-risk-segment="critical" role="button" tabindex="0" cx="60" cy="60" r="51" pathLength="100" fill="none" stroke-width="12"><title>Critical accounts</title></circle>
+                    <circle data-risk-segment="high" role="button" tabindex="0" cx="60" cy="60" r="51" pathLength="100" fill="none" stroke-width="12"><title>High-risk accounts</title></circle>
+                    <circle data-risk-segment="elevated" role="button" tabindex="0" cx="60" cy="60" r="51" pathLength="100" fill="none" stroke-width="12"><title>Elevated-risk accounts</title></circle>
+                    <circle data-risk-segment="low" role="button" tabindex="0" cx="60" cy="60" r="51" pathLength="100" fill="none" stroke-width="12"><title>Low-risk accounts</title></circle>
+                  </g>
+                </svg>
+                <button type="button" class="risk-ring-center" data-overview-filter="0" aria-label="Show all scored accounts"><strong id="riskRingValue">0</strong><span>scored</span></button>
+              </div>
+              <ul class="risk-legend">
+                <li><button type="button" data-risk-bucket="critical" aria-pressed="false"><i class="critical"></i><span>Critical</span><b id="riskCritical">0</b></button></li>
+                <li><button type="button" data-risk-bucket="high" aria-pressed="false"><i class="high"></i><span>High</span><b id="riskHigh">0</b></button></li>
+                <li><button type="button" data-risk-bucket="elevated" aria-pressed="false"><i class="elevated"></i><span>Elevated</span><b id="riskElevated">0</b></button></li>
+                <li><button type="button" data-risk-bucket="low" aria-pressed="false"><i class="low"></i><span>Low</span><b id="riskLow">0</b></button></li>
+              </ul>
+            </div>
+            <p class="overview-note" id="riskUnscoredNote"></p>
+          </article>
+          <article class="panel activity-panel">
+            <div class="panel-heading"><div><span class="section-index">LIVE QUEUE</span><h3>Recent collection activity</h3></div><button class="text-button" data-view-link="jobs">All jobs</button></div>
+            <div class="activity-list" id="activityList"><div class="empty-mini">No collection jobs yet</div></div>
+          </article>
+        </section>
+
+        <section class="insights-grid" id="overviewInsights" aria-label="Collected evidence insights">
+          <article class="panel insight-panel">
+            <div class="panel-heading"><div><span class="section-index">COLLECTION MIX</span><h3>What we collected</h3></div><span class="insight-mark" aria-hidden="true">▥</span></div>
+            <div id="contentMixChart" class="insight-body"></div>
+            <p class="insight-note" id="contentMixNote"></p>
+          </article>
+          <article class="panel insight-panel">
+            <div class="panel-heading"><div><span class="section-index">SIGNALS FOR REVIEW</span><h3>Top risk signals</h3></div><span class="insight-mark" aria-hidden="true">⌁</span></div>
+            <div id="riskSignalsChart" class="insight-body"></div>
+            <p class="insight-note" id="riskSignalsNote"></p>
+          </article>
+          <article class="panel insight-panel">
+            <div class="panel-heading"><div><span class="section-index">ACCOUNT REACH</span><h3>Follower ranges</h3></div><span class="insight-mark" aria-hidden="true">▴</span></div>
+            <div id="followerReachChart" class="insight-body"></div>
+            <p class="insight-note" id="followerReachNote"></p>
+          </article>
+        </section>
+
+        <section class="panel findings-panel">
+          <div class="panel-heading findings-heading">
+            <div><span class="section-index">PRIORITY QUEUE</span><h3>Collected accounts</h3><span id="findingsCount" class="overview-note"></span></div>
+            <div class="table-tools"><select id="riskFilter"><option value="all">All risk levels</option><option value="70">High & critical</option><option value="45">Elevated+</option><option value="0">Scored only</option><option value="critical">Critical</option><option value="high">High</option><option value="elevated">Elevated</option><option value="low">Low</option><option value="unscored">Unscored</option></select><button class="secondary-button" id="newBrand">+ Add brand</button></div>
+          </div>
+          <div class="chart-selection" id="chartSelection" hidden><span id="chartSelectionLabel"></span><button type="button" class="text-button" id="clearChartSelection">Clear filter ×</button></div>
+          <div class="table-wrap"><table><thead><tr><th>Account</th><th>Source</th><th>Followers</th><th>Risk score</th><th>Action</th><th>Last seen</th><th></th></tr></thead><tbody id="findingsBody"></tbody></table></div>
+          <div class="empty-state hidden" id="findingsEmpty"><span class="empty-mark">⌁</span><h4>No matching accounts</h4><p>Start an account or hashtag scan to add findings.</p></div>
+        </section>
+      </section>
+
+      <section class="view" id="view-investigations">
+        <div class="view-heading"><div><span class="section-index" id="searchViewEyebrow">LIVE DISCOVERY RESULTS</span><h2>Instagram search</h2><p id="searchViewDescription">Fresh public results collected through Darkmap's connected source.</p></div></div>
+        <form class="results-search-form" id="resultsSearchForm">
+          <label>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/></svg>
+            <input id="resultsSearch" type="search" required maxlength="100" placeholder="Enter a keyword, #hashtag, or exact @username…" autocomplete="off">
+          </label>
+          <button class="primary-button live-search-submit" type="submit">Search Instagram</button>
+        </form>
+        <div class="live-search-status hidden" id="liveSearchStatus" role="status" aria-live="polite">
+          <span class="live-search-spinner" aria-hidden="true"></span>
+          <div><b id="liveSearchStatusTitle">Collecting signals</b><span id="liveSearchStatusDetail">Starting a fresh public collection…</span></div>
+          <span class="live-search-timer hidden" id="liveSearchTimer"></span>
+        </div>
+        <div class="detection-coverage hidden" id="detectionCoverage"></div>
+        <div class="search-scopes disabled" id="searchScopes" role="group" aria-label="Filter search results">
+          <button class="search-scope active" data-search-scope="all">All <span id="scopeAll">0</span></button>
+          <button class="search-scope" data-search-scope="accounts">Accounts <span id="scopeAccounts">0</span></button>
+          <button class="search-scope" data-search-scope="posts">Posts <span id="scopePosts">0</span></button>
+          <button class="search-scope" data-search-scope="hashtags">Hashtags <span id="scopeHashtags">0</span></button>
+          <button class="search-scope" data-search-scope="mentions">Mentions <span id="scopeMentions">0</span></button>
+          <button class="search-scope" data-search-scope="urls">URLs <span id="scopeUrls">0</span></button>
+        </div>
+        <section class="panel search-results-panel">
+          <div class="results-summary"><div><strong id="searchResultCount">0 results</strong><span id="searchContext">Run a live Instagram search above</span></div><button class="download-results-button" id="downloadResults" type="button" disabled aria-label="Download all Instagram results as JSON"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg>Download JSON</button></div>
+          <div class="result-cards" id="searchResults"></div>
+          <div class="search-pagination" id="searchPagination" hidden>
+            <span id="paginationSummary" aria-live="polite"></span>
+            <button class="secondary-button" id="viewMoreResults" type="button">View more · next 50</button>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" id="view-history">
+        <div class="view-heading"><div><span class="section-index">SAVED SEARCHES</span><h2>Search history</h2><p>Reopen collected results and rankings. Searches from the search bar always collect fresh results.</p></div></div>
+        <section class="panel history-panel">
+          <div class="history-toolbar">
+            <div><strong id="historySummary">Saved searches</strong><p>Saved in this browser, including every batch you loaded.</p></div>
+            <input id="historyFilter" type="search" placeholder="Find a saved query…" aria-label="Filter saved searches">
+          </div>
+          <div id="historyEntries" aria-live="polite"><div class="empty-state"><h4>No saved searches yet</h4><p>Your next completed search will appear here.</p></div></div>
+        </section>
+      </section>
+
+      <section class="view" id="view-alerts">
+        <div class="view-heading threat-heading"><div><span class="section-index">CRITICAL DETECTION</span><h2>Priority fraud alerts</h2><p>Alerts require multiple grounded indicators and are scored across deception, harm, exposure, and coordination.</p></div>
+          <select id="alertFamilyFilter" aria-label="Filter by alert family">
+            <option value="">All alert families</option>
+            <option value="credential_takeover">Credential &amp; account takeover</option>
+            <option value="payment_fraud">Payment fraud</option>
+            <option value="fake_customer_support">Fake customer support</option>
+            <option value="scam_promotions">Scam promotions</option>
+            <option value="counterfeit_sales">Counterfeit sales</option>
+            <option value="employee_recruiter_impersonation">Employee &amp; recruiter impersonation</option>
+            <option value="malicious_apps_downloads">Malicious apps &amp; downloads</option>
+            <option value="investment_financial_impersonation">Investment impersonation</option>
+          </select>
+        </div>
+        <div class="alert-grid" id="alertGrid"><div class="empty-state"><h4>No priority alerts yet</h4><p>Run a brand search to collect and score Instagram evidence.</p></div></div>
+      </section>
+
+      <section class="view" id="view-campaigns">
+        <div class="view-heading"><div><span class="section-index">CONNECTED ABUSE</span><h2>Campaigns and cases</h2><p>Shared payment details, domains, phones, media hashes, captions, and messaging channels connect related accounts.</p></div></div>
+        <section class="intel-columns">
+          <article class="panel"><div class="panel-heading"><div><span class="section-index">CAMPAIGN CLUSTERS</span><h3>Connected accounts</h3></div></div><div id="campaignList" class="intel-list"></div></article>
+          <article class="panel"><div class="panel-heading"><div><span class="section-index">CASE MANAGEMENT</span><h3>Investigation cases</h3></div></div><div id="caseList" class="intel-list"></div></article>
+        </section>
+      </section>
+
+      <section class="view" id="view-jobs">
+        <div class="view-heading"><div><span class="section-index">PIPELINE</span><h2>Collection jobs</h2><p>Instagram collection and AI risk-analysis progress.</p></div></div>
+        <section class="panel"><div class="table-wrap"><table><thead><tr><th>Job</th><th>Type</th><th>Target</th><th>Status</th><th>Attempts</th><th>Updated</th></tr></thead><tbody id="jobsBody"></tbody></table></div></section>
+      </section>
+
+      <section class="view" id="view-audit">
+        <div class="view-heading"><div><span class="section-index">PROVENANCE</span><h2>Audit trail</h2><p>Collection permissions, source requests, retries, and analysis decisions.</p></div></div>
+        <section class="panel audit-stream" id="auditStream"></section>
+      </section>
+    </main>
+  </div>
+
+  <aside class="detail-drawer" id="detailDrawer" aria-hidden="true">
+    <div class="drawer-head"><div><span class="section-index">ACCOUNT DOSSIER</span><h2 id="detailHandle">@account</h2></div><button class="icon-button" id="closeDrawer" aria-label="Close details">×</button></div>
+    <div id="drawerContent"></div>
+  </aside>
+  <div class="drawer-scrim" id="drawerScrim"></div>
+
+  <dialog id="brandDialog">
+    <form method="dialog" class="dialog-card" id="brandForm">
+      <div class="dialog-head"><div><span class="section-index">PROTECTED ASSET</span><h2>Add a brand</h2></div><button class="icon-button" value="cancel" aria-label="Close">×</button></div>
+      <label class="field"><span>Brand name</span><input id="brandName" required placeholder="Acme"></label>
+      <label class="field"><span>Official Instagram handles</span><input id="brandHandles" placeholder="acme, acme_support"></label>
+      <label class="field"><span>Official domains</span><input id="brandDomains" placeholder="acme.com"></label>
+      <label class="field"><span>Keywords and product names</span><input id="brandKeywords" placeholder="Acme Pro, Roadrunner"></label>
+      <div class="dialog-actions"><button class="secondary-button" value="cancel">Cancel</button><button class="primary-button" type="submit" value="default">Save brand</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="settingsDialog">
+    <form method="dialog" class="dialog-card" id="settingsForm">
+      <div class="dialog-head"><div><span class="section-index">LOCAL ACCESS</span><h2>Access settings</h2></div><button class="icon-button" value="cancel" aria-label="Close">×</button></div>
+      <p class="dialog-note">If this Darkmap deployment requires an access key, enter it here. It stays only in this browser.</p>
+      <label class="field"><span>Darkmap access key</span><input id="apiKeyInput" type="password" autocomplete="off" placeholder="Optional for local development"></label>
+      <div class="dialog-actions"><button class="secondary-button" id="clearApiKey" type="button">Clear</button><button class="primary-button" type="submit" value="default">Save</button></div>
+    </form>
+  </dialog>
+
+  <div class="search-focus-overlay" id="searchFocusOverlay" aria-hidden="true">
+    <div class="search-focus-scene" role="status" aria-live="polite">
+      <div class="darkmap-mapper" aria-hidden="true">
+        <span class="mapper-aura"></span>
+        <div class="mapper-panda">
+          <span class="mapper-panda-glare"></span>
+          <img src="/static/panda-logo.png" alt="">
+        </div>
+        <span class="mapper-projection"></span>
+        <div class="mapper-globe">
+          <svg class="mapper-globe-svg" viewBox="0 0 180 180" aria-hidden="true">
+            <circle class="mapper-globe-edge" cx="90" cy="90" r="75"></circle>
+            <g class="mapper-grid">
+              <ellipse cx="90" cy="90" rx="32" ry="75"></ellipse>
+              <ellipse cx="90" cy="90" rx="59" ry="75"></ellipse>
+              <ellipse cx="90" cy="90" rx="75" ry="27"></ellipse>
+              <ellipse cx="90" cy="90" rx="75" ry="52"></ellipse>
+            </g>
+            <g class="mapper-land">
+              <path d="M38 61 53 48l17-2 12 9-4 12-13 4-6 13-13-3-9-10Z"></path>
+              <path d="m67 91 14 5 7 15-5 23-12 16-7-18 3-18-8-11Z"></path>
+              <path d="m105 47 20-5 18 10 8 14-12 8-14-5-8 9-12-7-8-12Z"></path>
+              <path d="m112 87 18-7 18 10-2 14-13 4-5 19-12 11-7-17 5-13-8-10Z"></path>
+            </g>
+          </svg>
+          <span class="mapper-scan"></span>
+          <i class="mapper-threat mapper-threat-one"></i>
+          <i class="mapper-threat mapper-threat-two"></i>
+          <i class="mapper-threat mapper-threat-three"></i>
+          <span class="mapper-orbit"></span>
+        </div>
+      </div>
+      <div class="focus-caption"><span aria-hidden="true"></span>Mapping threat surface</div>
+    </div>
+  </div>
+
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <script src="/static/overview-data.js?v=20260915-pagination-null-fix-1" defer></script>
+  <script src="/static/search-history.js?v=20260915-history-1" defer></script>
+  <script src="/static/search-outcome.js?v=20260915-search-fix-1" defer></script>
+  <script src="/static/app.js?v=20260915-pagination-null-fix-1" defer></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{"keyword": "@Luminaire", "max_items": 2, "organic": [
+  {"link": "https://www.google.com/goto?url=x", "title": "Luminaire deals by @lumi.deals. and @Lumi_Help",
+   "description": "Follow @lumi.deals for loot • 12.4K followers", "image": "https://cdn.example/g.jpg"},
+  {"link": "https://www.instagram.com/lumi_help/", "title": "Lumi Help (@lumi_help) • Instagram photos and videos",
+   "snippet": "3.1M followers, 12 following", "thumbnail": {"url": "https://cdn.example/lh.jpg"}, "image_base64": "zzz", "icon": "i"},
+  {"link": "https://www.instagram.com/lumi_help/reel/R1/", "title": "Reel by Lumi Help", "image": "http://insecure.example/i.jpg"},
+  {"link": "https://www.instagram.com/p/P1/", "title": "Post mentioning @someone.else", "source": "Instagram · poster_x"},
+  {"link": "https://www.instagram.com/explore/tags/luminaire/", "title": "#luminaire"},
+  {"link": "https://www.instagram.com/p/P1/", "title": "duplicate link", "source": "Instagram · poster_x"},
+  {"link": "https://www.instagram.com/stories/luminaire/123/", "title": "@story.maker story"}]}

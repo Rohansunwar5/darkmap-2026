@@ -1,0 +1,15 @@
+{
+  "brand": {"name": "Luminaire", "official_handles": ["luminaire"], "official_domains": ["luminaire.com"],
+            "keywords": ["luminaire"]},
+  "account": {"handle": "luminaire.support.help", "display_name": "Luminaire Support", "biography":
+              "Official account. Customer support 24x7", "external_url": null, "followers_count": 90,
+              "follows_count": 1500, "media_count": 3, "is_verified": false},
+  "provenance": {"collection_mode": "keyword", "lawful_basis": "licensed_public_data_api"},
+  "content_only": true,
+  "posts": [{"caption": "Luminaire loot deal 🔥 free cash for the first 100 — join our telegram channel now, link in bio",
+             "media": [{"media_type": "video"}], "comments": [],
+             "engagement": {"likes": 12, "comments": 0, "views": 900, "shares": null}}],
+  "entities": [{"kind": "telegram", "value": "lumiloot", "domain": null, "source_field": "caption"}],
+  "media_analysis": [], "shared_artifacts": [], "account_changes": [],
+  "velocity": {"posts_last_hour": 0, "posts_last_24h": 1, "follower_delta": null, "duplicate_post_count": 0}
+}

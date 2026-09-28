@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find \"c:\\\\telegram-new\\\\premium-server\\\\\" -type f -name \"*.json\" -o -name \"*.ts\" -o -name \"*.js\" | head -50)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(docker exec *)",
+      "Bash(npm run *)"
+    ]
+  }
+}

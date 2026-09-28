@@ -1,0 +1,143 @@
+@keyframes flip1 {
+  0%, 35.3% { transform: perspective(400px) rotateX(0deg) rotateZ(-45deg); opacity: 1; }
+  50%, 85.3% { transform: perspective(400px) rotateX(90deg) rotateZ(-45deg); opacity: 0; }
+  85.4% { transform: perspective(400px) rotateX(-90deg) rotateZ(-45deg); opacity: 0; }
+  100% { transform: perspective(400px) rotateX(0deg) rotateZ(-45deg); opacity: 1; }
+}
+
+@keyframes flip2 {
+  0%, 35.3% { transform: perspective(400px) rotateX(-90deg); opacity: 0; }
+  50%, 85.3% { transform: perspective(400px) rotateX(0deg); opacity: 1; }
+  100% { transform: perspective(400px) rotateX(90deg); opacity: 0; }
+}
+
+.animate-icon-1 {
+  animation: flip1 3.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-icon-2 {
+  animation: flip2 3.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.15);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* Gemini-style flowing gradient screen-sharing border glow */
+.gemini-glow-container {
+  position: relative;
+  border-radius: 1rem;
+  padding: 3px;
+  background: linear-gradient(90deg, #00d1ff, #a855f7, #f97316, #00d1ff);
+  background-size: 400% 400%;
+  animation: gemini-flow-glow 6s linear infinite;
+  box-shadow: 0 0 30px rgba(0, 209, 255, 0.35);
+}
+
+/* Gemini Galaxy AI border glow animation */
+.gemini-galaxy-container {
+  position: relative;
+  border-radius: 1rem;
+  padding: 3px;
+  background: linear-gradient(90deg, #00d1ff, #3b82f6, #a855f7, #ec4899, #10b981, #00d1ff);
+  background-size: 400% 400%;
+  animation: gemini-flow-glow 8s ease infinite;
+  box-shadow: 0 0 40px rgba(0, 209, 255, 0.25);
+}
+
+.gemini-galaxy-inner {
+  box-shadow: inset 0 0 40px rgba(0, 209, 255, 0.12), inset 0 0 40px rgba(20, 184, 166, 0.12);
+}
+
+@keyframes gemini-flow-glow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Ambient breathing glow overlays inside the card */
+@keyframes glow-pulse {
+  0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.3; }
+  50% { transform: scale(1.15) translate(2%, 2%); opacity: 0.45; }
+}
+
+.ambient-glow-blue {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 209, 255, 0.08) 0%, transparent 70%);
+  filter: blur(80px);
+  animation: glow-pulse 8s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.ambient-glow-green {
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.08) 0%, transparent 70%);
+  filter: blur(80px);
+  animation: glow-pulse 8s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Glass Glow Effect */
+.glass-glow {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3),
+              inset 0 0 15px rgba(0, 209, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.glass-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: linear-gradient(
+    135deg, 
+    rgba(0, 209, 255, 0.4), 
+    rgba(168, 85, 247, 0.4), 
+    rgba(249, 115, 22, 0.4),
+    rgba(0, 209, 255, 0.2)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.glass-glow:hover {
+  box-shadow: 0 8px 32px 0 rgba(0, 209, 255, 0.15),
+              inset 0 0 20px rgba(0, 209, 255, 0.08);
+}

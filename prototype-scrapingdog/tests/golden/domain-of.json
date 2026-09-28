@@ -1,0 +1,268 @@
+[
+ {
+  "source": "tests/test_advanced_alerts.py::test_extracts_investigation_pivots",
+  "args": [
+   "https://bad.example/app.apk"
+  ],
+  "result": "bad.example"
+ },
+ {
+  "source": "tests/test_extract_normalize.py::test_domain_of",
+  "args": [
+   "https://www.Luminaire.com/path"
+  ],
+  "result": "luminaire.com"
+ },
+ {
+  "source": "tests/test_extract_normalize.py::test_domain_of",
+  "args": [
+   "bit.ly/abc"
+  ],
+  "result": "bit.ly"
+ },
+ {
+  "source": "tests/test_extract_normalize.py::test_domain_of",
+  "args": [
+   ""
+  ],
+  "result": ""
+ },
+ {
+  "source": "tests/test_extract_normalize.py::test_extract_entities",
+  "args": [
+   "https://bit.ly/abc"
+  ],
+  "result": "bit.ly"
+ },
+ {
+  "source": "tests/test_extract_normalize.py::test_extract_entities",
+  "args": [
+   "www.lumi-outlet.xyz"
+  ],
+  "result": "lumi-outlet.xyz"
+ },
+ {
+  "source": "tests/test_extract_normalize.py::test_extract_entities",
+  "args": [
+   "www.lumi-outlet.xyz"
+  ],
+  "result": "lumi-outlet.xyz"
+ },
+ {
+  "source": "tests/test_extract_normalize.py::test_extracts_bare_telegram_invite",
+  "args": [
+   "t.me/lenskart_loot"
+  ],
+  "result": "t.me"
+ },
+ {
+  "source": "tests/test_extract_normalize.py::test_extracts_bare_telegram_invite",
+  "args": [
+   "t.me/lenskart_loot"
+  ],
+  "result": "t.me"
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "https://luminaire-offer.xyz/claim?x=1"
+  ],
+  "result": "luminaire-offer.xyz"
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "t.me/lootchannel_01"
+  ],
+  "result": "t.me"
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "t.me/lootchannel_01"
+  ],
+  "result": "t.me"
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "www.example-shop.store"
+  ],
+  "result": "example-shop.store"
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "https://bit.ly/abc"
+  ],
+  "result": "bit.ly"
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "www.example-shop.store"
+  ],
+  "result": "example-shop.store"
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "https://files.example.com/app.APK?ref=ig"
+  ],
+  "result": "files.example.com"
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "www.mirror.net/setup.exe"
+  ],
+  "result": "mirror.net"
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "files.example.com"
+  ],
+  "result": "files.example.com"
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "www.mirror.net"
+  ],
+  "result": "mirror.net"
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "www.a.com"
+  ],
+  "result": "a.com"
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "http://b.net"
+  ],
+  "result": "b.net"
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "www.a.com"
+  ],
+  "result": "a.com"
+ },
+ {
+  "source": "fixtures/texts.json",
+  "args": [
+   "HTTPS://EXAMPLE.COM/PATH"
+  ],
+  "result": "example.com"
+ },
+ {
+  "source": "fixtures/urls.json",
+  "args": [
+   "http://[::1]:80/"
+  ],
+  "result": "["
+ },
+ {
+  "source": "fixtures/urls.json",
+  "args": [
+   "http://[bad/"
+  ],
+  "result": ""
+ },
+ {
+  "source": "fixtures/urls.json",
+  "args": [
+   "http://[127.0.0.1]/"
+  ],
+  "result": ""
+ },
+ {
+  "source": "fixtures/urls.json",
+  "args": [
+   "user@host.com:8080"
+  ],
+  "result": "host.com"
+ },
+ {
+  "source": "fixtures/urls.json",
+  "args": [
+   "http://exämple.com/x"
+  ],
+  "result": "exämple.com"
+ },
+ {
+  "source": "fixtures/urls.json",
+  "args": [
+   "www.EXAMPLE.com"
+  ],
+  "result": "example.com"
+ },
+ {
+  "source": "fixtures/urls.json",
+  "args": [
+   ""
+  ],
+  "result": ""
+ },
+ {
+  "source": "fixtures/urls.json",
+  "args": [
+   "mailto:x@y.com"
+  ],
+  "result": "y.com"
+ },
+ {
+  "source": "fixtures/urls.json",
+  "args": [
+   "http://example.com#frag"
+  ],
+  "result": "example.com"
+ },
+ {
+  "source": "fixtures/urls.json",
+  "args": [
+   "https://a.com\\@b.com"
+  ],
+  "result": "b.com"
+ },
+ {
+  "source": "fixtures/urls.json",
+  "args": [
+   " \thttp://tab.com"
+  ],
+  "result": "tab.com"
+ },
+ {
+  "source": "fixtures/urls.json",
+  "args": [
+   "t.me/channel"
+  ],
+  "result": "t.me"
+ },
+ {
+  "source": "fixtures/urls.json",
+  "args": [
+   "ftp://files.example.org/x"
+  ],
+  "result": "files.example.org"
+ },
+ {
+  "source": "fixtures/urls.json",
+  "args": [
+   "//double.slash.com/p"
+  ],
+  "result": ""
+ },
+ {
+  "source": "fixtures/urls.json",
+  "args": [
+   "http://example.com:99999/"
+  ],
+  "result": "example.com"
+ }
+]

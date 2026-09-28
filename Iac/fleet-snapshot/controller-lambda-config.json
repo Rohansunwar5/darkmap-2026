@@ -1,0 +1,55 @@
+{
+    "FunctionName": "ECS-Service-Controller-MyLambdaFunction-4dOCutIT76KM",
+    "FunctionArn": "arn:aws:lambda:us-east-1:407343953791:function:ECS-Service-Controller-MyLambdaFunction-4dOCutIT76KM",
+    "Runtime": "python3.10",
+    "Role": "arn:aws:iam::407343953791:role/ECS-Service-Controller-LambdaExecutionRole-Fel0cIdagavs",
+    "Handler": "index.lambda_handler",
+    "CodeSize": 1971,
+    "Description": "",
+    "Timeout": 30,
+    "MemorySize": 2048,
+    "LastModified": "2026-09-05T09:35:35.000+0000",
+    "CodeSha256": "QqDqUmFYiGC8v9vLUdnN6lwL3289eg7lolKaZA+LQWw=",
+    "Version": "$LATEST",
+    "VpcConfig": {
+        "SubnetIds": [],
+        "SecurityGroupIds": [],
+        "VpcId": "",
+        "Ipv6AllowedForDualStack": false
+    },
+    "Environment": {
+        "Variables": {
+            "API_URLS": "http://Service-Generic1-ELB-381866955.us-east-1.elb.amazonaws.com:5000/api/retrieve-channel-names, http://Service-Generic2-ELB-648064567.us-east-1.elb.amazonaws.com:5000/api/retrieve-channel-names, http://Service-Generic3-ELB-211896461.us-east-1.elb.amazonaws.com:5000/api/retrieve-channel-names, http://Service-Generic4-ELB-1571364021.us-east-1.elb.amazonaws.com:5000/api/retrieve-channel-names, http://Service-Generic5-ELB-1578864847.us-east-1.elb.amazonaws.com:5000/api/retrieve-channel-names"
+        }
+    },
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "f0744e3b-103a-4443-8dd7-f7b7e6b965bc",
+    "Layers": [
+        {
+            "Arn": "arn:aws:lambda:us-east-1:407343953791:layer:Httpx-Layer:1",
+            "CodeSize": 1144494
+        }
+    ],
+    "State": "Active",
+    "LastUpdateStatus": "Successful",
+    "PackageType": "Zip",
+    "Architectures": [
+        "x86_64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "RuntimeVersionConfig": {
+        "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:0e2e61e284752c7ed1d11bb16929e0aceee8b6d40aba0cc2af06547dd74a6db2"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/ECS-Service-Controller-MyLambdaFunction-4dOCutIT76KM"
+    }
+}

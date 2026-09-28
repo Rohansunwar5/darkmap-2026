@@ -1,0 +1,27 @@
+[
+ [
+  "",
+  "x",
+  null
+ ],
+ [
+  "short body",
+  null,
+  "short body"
+ ],
+ [
+  "A long caption 😀 with Brand appearing late in the text and more words to push past the width limit so that ellipses appear on both sides of the snippet window for sure because it is long enough",
+  "brand",
+  "A long caption 😀 with Brand appearing late in the text and more words to push past the width limit so that ellipses appear on both sides of the snippet window for sure because it i..."
+ ],
+ [
+  "no match here",
+  "zzz",
+  "no match here"
+ ],
+ [
+  "नमस्ते Brand ऑफर",
+  "brand",
+  "नमस्ते Brand ऑफर"
+ ]
+]

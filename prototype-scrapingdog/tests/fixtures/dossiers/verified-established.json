@@ -1,0 +1,17 @@
+{
+  "brand": {"name": "Suraksha Bank", "official_handles": ["surakshabank"], "official_domains": ["surakshabank.in"],
+            "keywords": ["suraksha bank"]},
+  "account": {"handle": "moneynews_daily", "display_name": "Money News Daily", "biography":
+              "Banking, KYC and UPI explainers. Stay safe: never share your OTP.",
+              "external_url": "https://moneynews.example.org", "followers_count": 250000, "follows_count": 310,
+              "media_count": 1840, "is_verified": true},
+  "provenance": {"collection_mode": "keyword", "lawful_basis": "licensed_public_data_api"},
+  "posts": [{"caption": "Suraksha Bank asks customers to complete your KYC before 31 March. Account blocked SMS warnings are fake, beware of such links. Customer support is only in the official app.",
+             "media": [{"media_type": "image"}],
+             "comments": [{"author_handle": "reader_1", "text": "Thanks, very useful"}],
+             "engagement": {"likes": 5400, "comments": 88, "views": null, "shares": null}}],
+  "entities": [{"kind": "url", "value": "https://moneynews.example.org", "domain": "moneynews.example.org",
+                "source_field": "external_url"}],
+  "media_analysis": [], "shared_artifacts": [], "account_changes": [],
+  "velocity": {"posts_last_hour": 0, "posts_last_24h": 3, "follower_delta": null, "duplicate_post_count": 0}
+}

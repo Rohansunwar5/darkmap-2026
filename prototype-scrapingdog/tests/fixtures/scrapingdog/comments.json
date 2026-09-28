@@ -1,0 +1,106 @@
+{
+  "request": {
+    "path": "/instagram/comments",
+    "params": {
+      "url": "https://www.instagram.com/p/Ddl5eH-u4le/"
+    },
+    "url": "https://api.scrapingdog.com/instagram/comments?url=https%3A%2F%2Fwww.instagram.com%2Fp%2FDdl5eH-u4le%2F"
+  },
+  "status": 200,
+  "ms": 1729,
+  "headers": {
+    "access-control-allow-credentials": "true",
+    "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept, multipart/form-data",
+    "access-control-allow-methods": "HEAD,GET,POST,DELETE,OPTIONS,PUT",
+    "access-control-allow-origin": "*",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "a3f94de5ed9ae8eb-BOM",
+    "connection": "keep-alive",
+    "content-encoding": "br",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 23 Sep 2026 11:45:39 GMT",
+    "etag": "W/\"e69-zu9x9It/yRsWT6aCBSMsIEpQpLQ\"",
+    "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=hja9S52hOYr6l1ANYQguSc3f2SIUS5M1j7%2FvwmuxkA%2F1jrnL9IWdBQs4nEU8cA8oUVThnrsFSwYBMZ1Nryokg%2BBh0K3sRIRAl%2Flo2J594TQqJ%2FgMOkFuvhsV8OSJIKlSSwovxDweRDxKmhYrcW%2Bv8C0%3D\"}]}",
+    "server": "cloudflare",
+    "transfer-encoding": "chunked",
+    "x-frame-options": "sameorigin, SAMEORIGIN",
+    "x-powered-by": "Express"
+  },
+  "json": {
+    "post": {
+      "url": "https://www.instagram.com/reel/Ddl5eH-u4le/",
+      "shortcode": "Ddl5eH-u4le",
+      "caption": "*Just a normal day for @caitlinclark22.\n\nWake up. Eat cereal. Lace up the Caitlin 1. Sell out arenas. Repeat.",
+      "mediaId": "3991849403537918302",
+      "like_count": 51946,
+      "comment_count": 736,
+      "media_type": 2,
+      "taken_at": 1790085604,
+      "taken_at_iso": "2026-09-22T14:00:04.000Z"
+    },
+    "account": {
+      "username": "nike",
+      "userId": "13460080",
+      "profileUrl": "https://www.instagram.com/nike/",
+      "profilePic": "https://scontent-lga3-2.cdninstagram.com/v/t51.82787-19/551608484_18567162979020081_1135468084872726555_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4zOTkuQzMifQ%3D%3D&_nc_ohc=l3wg8iAkAc4Q7kNvwFiTsU4&_nc_oc=Adr0DbVopg7UrCVckv3Wi5NRFR43IB2fTW-jhbHueoR8SS5eXJ8-3wBdMGIfGTf5sSY&_nc_zt=24&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_gid=OXqW5PPJzfLMTaOVfGsu5Q&_nc_ss=7d689&oh=00_AQLIkhXVCp__nNmuJum-nastVwoWc730IMDwst_7dmq4Dw&oe=6AB9883A",
+      "is_verified": true
+    },
+    "comments": [
+      {
+        "id": "17948240022295713",
+        "text": "😍❤️",
+        "created_at": 1790162134,
+        "created_at_iso": "2026-09-23T11:15:34.000Z",
+        "like_count": 0,
+        "reply_count": null,
+        "parent_comment_id": null,
+        "user": {
+          "id": "75216035432",
+          "username": "perkasaaudiangga",
+          "full_name": null,
+          "profile_pic_url": "https://scontent-lga3-3.cdninstagram.com/v/t51.75761-19/505144714_17844320685507433_6750059512146381656_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=106&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy43MjAuQzMifQ%3D%3D&_nc_ohc=DI5zm-iwxIkQ7kNvwEXdWse&_nc_oc=AdplEkqeXkL0DumagWyrsJQSkPSuRB47sClvGovjMo7e3o5QAhAJBeKkzcrBsEchi2s&_nc_zt=24&_nc_ht=scontent-lga3-3.cdninstagram.com&_nc_gid=OXqW5PPJzfLMTaOVfGsu5Q&_nc_ss=7d689&oh=00_AQLxuH_sYAEf7AXd-aQ5P3MKB6tA4PvNpbSTUTRfuuFp0Q&oe=6AB98270",
+          "is_verified": false
+        }
+      },
+      {
+        "id": "17923355325203517",
+        "text": "❤️",
+        "created_at": 1790158089,
+        "created_at_iso": "2026-09-23T10:08:09.000Z",
+        "like_count": 0,
+        "reply_count": null,
+        "parent_comment_id": null,
+        "user": {
+          "id": "72321944366",
+          "username": "fathy_zaatr1",
+          "full_name": null,
+          "profile_pic_url": "https://scontent-lga3-2.cdninstagram.com/v/t51.2885-19/475364023_2719138558287086_2287864691070805106_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy43MjAuQzMifQ%3D%3D&_nc_ohc=gEo4QY9zzgwQ7kNvwFG9X7E&_nc_oc=Adr2UDza834yTzeWh9Yi8jHShkVvlP6N52UCGc4hjKvjagE3eIOnZL13GRlckHWBx-w&_nc_zt=24&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_ss=7d689&oh=00_AQKi80mo8VjPFtz9KOWWuSZYsRxLIm-Marz4G0sPPV7JGg&oe=6AB98821",
+          "is_verified": false
+        }
+      },
+      {
+        "id": "18433256422176442",
+        "text": "Somewhere, a cereal brand just opened a sponsorship deck. 😄",
+        "created_at": 1790158070,
+        "created_at_iso": "2026-09-23T10:07:50.000Z",
+        "like_count": 0,
+        "reply_count": null,
+        "parent_comment_id": null,
+        "user": {
+          "id": "15152641496",
+          "username": "bass.t33",
+          "full_name": null,
+          "profile_pic_url": "https://scontent-lga3-2.cdninstagram.com/v/t51.82787-19/816176197_18147686407505497_5824175740111852130_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=100&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=imApYIKAmxwQ7kNvwE3o-vh&_nc_oc=AdqD-ABUtYDMnTrxM5psZIePY6aYaK98TA2fYlPRkzXWHNs_Ze1uox-qxm0TtrlMdJc&_nc_zt=24&_nc_ht=scontent-lga3-2.cdninstagram.com&_nc_gid=OXqW5PPJzfLMTaOVfGsu5Q&_nc_ss=7d689&oh=00_AQKGkwKewXMMeT_PDr-VnRxJd1yA5Le-IZyyAEXtJtujzQ&oe=6AB976F2",
+          "is_verified": false
+        }
+      }
+    ],
+    "comments_count": 3,
+    "next_page_token": {
+      "has_next_page": true,
+      "token": "eyJtIjoiMzk5MTg0OTQwMzUzNzkxODMwMiIsImMiOiJ7XCJpc19zZXJ2ZXJfY3Vyc29yX2ludmVyc2VcIjp0cnVlLFwic2VydmVyX2N1cnNvclwiOlwiQVFIVFE0bkNIeG1wN1RnUWljWjk5dGRLT0w0czN2eTJUUUhBMWp2ZkFqNVpUMFNiMzRBeW1kTnF4SDB6eFFJUGIwQUJyM0QxbFpPZWtDV1RTenRzTGp6SjJnXCJ9In0="
+    }
+  }
+}

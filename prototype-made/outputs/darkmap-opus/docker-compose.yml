@@ -1,0 +1,23 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: darkmap
+      POSTGRES_PASSWORD: darkmap
+      POSTGRES_DB: darkmap
+    ports: ['5432:5432']
+  api:
+    build: .
+    environment:
+      DARKMAP_DATABASE_URL: postgresql+psycopg://darkmap:darkmap@db:5432/darkmap
+      EXPERIENTIAL_LABS_API_KEY: ${EXPERIENTIAL_LABS_API_KEY:-}
+    ports: ['8000:8000']
+    depends_on: [db]
+  worker:
+    build: .
+    command: python -m darkmap.worker
+    environment:
+      DARKMAP_DATABASE_URL: postgresql+psycopg://darkmap:darkmap@db:5432/darkmap
+      EXPERIENTIAL_LABS_API_KEY: ${EXPERIENTIAL_LABS_API_KEY:-}
+    depends_on: [db]

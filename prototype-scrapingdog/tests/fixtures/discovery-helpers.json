@@ -1,0 +1,13 @@
+{
+  "as_int": ["12.4K", "3.1M followers", "1,234", {"count": 5}, "abc", null, "", 7, "7 posts", "0.5k", "2B", {"value": "9"}],
+  "serp_followers": [{"title": "Brand (@brand) • 12.4K followers"}, {"followers": "1,200"}, {"snippet": "no count"}],
+  "as_url": [["", "https://a"], {"url": "https://b"}, [{"link": "https://c"}], "  https://d  ", 5, null],
+  "video": ["https://cdn/x.mp4?y=1", "https://cdn/x.jpg", null, "https://cdn/X.MOV"],
+  "urls": ["https://www.instagram.com/p/ABC/", "http://instagram.com/p/ABC", "https://instagram.com/brand?igsh=1",
+           "https://www.instagram.com/brand/reel/XYZ/", "https://www.instagram.com/explore/tags/x/",
+           "https://evil.com/instagram.com/p/A/", "https://www.instagram.com/", "not a url", "https://www.instagram.com/reels/R1/"],
+  "canonical_urls": ["https://www.instagram.com/p/ABC/", "https://www.instagram.com/reel/R/", "https://www.instagram.com/reels/R/",
+                     "https://www.instagram.com/brand/reel/XYZ/", "https://www.instagram.com/brand/",
+                     "https://www.instagram.com/explore/", "https://www.instagram.com/brand/p/ABC/"],
+  "keywords": ["Brand", "A&B \"x\"", "sbi", "ÉTÉ", "loot 😀", "100% off"]
+}

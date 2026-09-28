@@ -1,0 +1,637 @@
+{
+ "as_int": [
+  [
+   "12.4K",
+   12400
+  ],
+  [
+   "3.1M followers",
+   3100000
+  ],
+  [
+   "1,234",
+   1234
+  ],
+  [
+   {
+    "count": 5
+   },
+   5
+  ],
+  [
+   "abc",
+   null
+  ],
+  [
+   null,
+   null
+  ],
+  [
+   "",
+   null
+  ],
+  [
+   7,
+   7
+  ],
+  [
+   "7 posts",
+   7
+  ],
+  [
+   "0.5k",
+   500
+  ],
+  [
+   "2B",
+   2000000000
+  ],
+  [
+   {
+    "value": "9"
+   },
+   9
+  ]
+ ],
+ "serp_followers": [
+  [
+   {
+    "title": "Brand (@brand) • 12.4K followers"
+   },
+   12400
+  ],
+  [
+   {
+    "followers": "1,200"
+   },
+   1200
+  ],
+  [
+   {
+    "snippet": "no count"
+   },
+   null
+  ]
+ ],
+ "as_url": [
+  [
+   [
+    "",
+    "https://a"
+   ],
+   "https://a"
+  ],
+  [
+   {
+    "url": "https://b"
+   },
+   "https://b"
+  ],
+  [
+   [
+    {
+     "link": "https://c"
+    }
+   ],
+   "https://c"
+  ],
+  [
+   "  https://d  ",
+   "https://d"
+  ],
+  [
+   5,
+   null
+  ],
+  [
+   null,
+   null
+  ]
+ ],
+ "looks_like_video_url": [
+  [
+   "https://cdn/x.mp4?y=1",
+   true
+  ],
+  [
+   "https://cdn/x.jpg",
+   false
+  ],
+  [
+   null,
+   false
+  ],
+  [
+   "https://cdn/X.MOV",
+   true
+  ]
+ ],
+ "canonical": [
+  [
+   "https://www.instagram.com/p/ABC/",
+   "https://www.instagram.com/p/ABC/"
+  ],
+  [
+   "http://instagram.com/p/ABC",
+   null
+  ],
+  [
+   "https://instagram.com/brand?igsh=1",
+   "https://www.instagram.com/brand/"
+  ],
+  [
+   "https://www.instagram.com/brand/reel/XYZ/",
+   "https://www.instagram.com/brand/reel/XYZ/"
+  ],
+  [
+   "https://www.instagram.com/explore/tags/x/",
+   "https://www.instagram.com/explore/tags/x/"
+  ],
+  [
+   "https://evil.com/instagram.com/p/A/",
+   null
+  ],
+  [
+   "https://www.instagram.com/",
+   null
+  ],
+  [
+   "not a url",
+   null
+  ],
+  [
+   "https://www.instagram.com/reels/R1/",
+   "https://www.instagram.com/reels/R1/"
+  ]
+ ],
+ "url_kind": [
+  [
+   "https://www.instagram.com/p/ABC/",
+   "post"
+  ],
+  [
+   "https://www.instagram.com/reel/R/",
+   "reel"
+  ],
+  [
+   "https://www.instagram.com/reels/R/",
+   "reel"
+  ],
+  [
+   "https://www.instagram.com/brand/reel/XYZ/",
+   "reel"
+  ],
+  [
+   "https://www.instagram.com/brand/",
+   "profile"
+  ],
+  [
+   "https://www.instagram.com/explore/",
+   null
+  ],
+  [
+   "https://www.instagram.com/brand/p/ABC/",
+   "post"
+  ]
+ ],
+ "queries": [
+  [
+   "Brand",
+   [
+    [
+     "site:instagram.com/reel/ \"Brand\" \"telegram channel\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"Brand\" \"loot\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"Brand\" \"free cash\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/p/ \"Brand\" \"telegram\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"Brand\" \"link in bio\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"Brand\" (\"giveaway\" OR \"discount\" OR \"scam\")",
+     "in"
+    ],
+    [
+     "site:instagram.com (\"Brand_support\" OR \"Brand.support\" OR \"Brand customer care\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"Brand\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"Brand\" (\"support\" OR \"customer care\" OR \"helpdesk\") (\"phone\" OR \"contact\" OR \"whatsapp\" OR \"refund\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"Brand\" (\"UPI\" OR \"payment\" OR \"delivery fee\" OR \"claim\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"Brand\" (\"account blocked\" OR \"KYC\" OR \"OTP\" OR \"login\" OR \"password reset\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"Brand\" (\"replica\" OR \"first copy\" OR \"factory price\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"Brand\" (\"job\" OR \"internship\" OR \"HR\" OR \"registration fee\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"Brand\" (\"APK\" OR \"install for refund\" OR \"investment\" OR \"trading signals\")",
+     "in"
+    ],
+    [
+     "site:instagram.com/p/ \"Brand\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"Brand\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"Brand\"",
+     "us"
+    ]
+   ]
+  ],
+  [
+   "A&B \"x\"",
+   [
+    [
+     "site:instagram.com/reel/ \"A&B \"x\"\" \"telegram channel\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"A&B \"x\"\" \"loot\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"A&B \"x\"\" \"free cash\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/p/ \"A&B \"x\"\" \"telegram\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"A&B \"x\"\" \"link in bio\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"A&B \"x\"\" (\"giveaway\" OR \"discount\" OR \"scam\")",
+     "in"
+    ],
+    [
+     "site:instagram.com (\"A&B \"x\"_support\" OR \"A&B \"x\".support\" OR \"A&B \"x\" customer care\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"A&B \"x\"\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"A&B \"x\"\" (\"support\" OR \"customer care\" OR \"helpdesk\") (\"phone\" OR \"contact\" OR \"whatsapp\" OR \"refund\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"A&B \"x\"\" (\"UPI\" OR \"payment\" OR \"delivery fee\" OR \"claim\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"A&B \"x\"\" (\"account blocked\" OR \"KYC\" OR \"OTP\" OR \"login\" OR \"password reset\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"A&B \"x\"\" (\"replica\" OR \"first copy\" OR \"factory price\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"A&B \"x\"\" (\"job\" OR \"internship\" OR \"HR\" OR \"registration fee\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"A&B \"x\"\" (\"APK\" OR \"install for refund\" OR \"investment\" OR \"trading signals\")",
+     "in"
+    ],
+    [
+     "site:instagram.com/p/ \"A&B \"x\"\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"A&B \"x\"\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"A&B \"x\"\"",
+     "us"
+    ]
+   ]
+  ],
+  [
+   "sbi",
+   [
+    [
+     "site:instagram.com/reel/ \"sbi\" \"telegram channel\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"sbi\" \"loot\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"sbi\" \"free cash\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/p/ \"sbi\" \"telegram\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"sbi\" \"link in bio\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"sbi\" (\"giveaway\" OR \"discount\" OR \"scam\")",
+     "in"
+    ],
+    [
+     "site:instagram.com (\"sbi_support\" OR \"sbi.support\" OR \"sbi customer care\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"sbi\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"sbi\" (\"support\" OR \"customer care\" OR \"helpdesk\") (\"phone\" OR \"contact\" OR \"whatsapp\" OR \"refund\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"sbi\" (\"UPI\" OR \"payment\" OR \"delivery fee\" OR \"claim\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"sbi\" (\"account blocked\" OR \"KYC\" OR \"OTP\" OR \"login\" OR \"password reset\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"sbi\" (\"replica\" OR \"first copy\" OR \"factory price\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"sbi\" (\"job\" OR \"internship\" OR \"HR\" OR \"registration fee\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"sbi\" (\"APK\" OR \"install for refund\" OR \"investment\" OR \"trading signals\")",
+     "in"
+    ],
+    [
+     "site:instagram.com/p/ \"sbi\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"sbi\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"sbi\"",
+     "us"
+    ]
+   ]
+  ],
+  [
+   "ÉTÉ",
+   [
+    [
+     "site:instagram.com/reel/ \"ÉTÉ\" \"telegram channel\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"ÉTÉ\" \"loot\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"ÉTÉ\" \"free cash\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/p/ \"ÉTÉ\" \"telegram\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"ÉTÉ\" \"link in bio\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"ÉTÉ\" (\"giveaway\" OR \"discount\" OR \"scam\")",
+     "in"
+    ],
+    [
+     "site:instagram.com (\"ÉTÉ_support\" OR \"ÉTÉ.support\" OR \"ÉTÉ customer care\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"ÉTÉ\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"ÉTÉ\" (\"support\" OR \"customer care\" OR \"helpdesk\") (\"phone\" OR \"contact\" OR \"whatsapp\" OR \"refund\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"ÉTÉ\" (\"UPI\" OR \"payment\" OR \"delivery fee\" OR \"claim\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"ÉTÉ\" (\"account blocked\" OR \"KYC\" OR \"OTP\" OR \"login\" OR \"password reset\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"ÉTÉ\" (\"replica\" OR \"first copy\" OR \"factory price\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"ÉTÉ\" (\"job\" OR \"internship\" OR \"HR\" OR \"registration fee\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"ÉTÉ\" (\"APK\" OR \"install for refund\" OR \"investment\" OR \"trading signals\")",
+     "in"
+    ],
+    [
+     "site:instagram.com/p/ \"ÉTÉ\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"ÉTÉ\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"ÉTÉ\"",
+     "us"
+    ]
+   ]
+  ],
+  [
+   "loot 😀",
+   [
+    [
+     "site:instagram.com/reel/ \"loot 😀\" \"telegram channel\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"loot 😀\" \"loot\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"loot 😀\" \"free cash\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/p/ \"loot 😀\" \"telegram\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"loot 😀\" \"link in bio\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"loot 😀\" (\"giveaway\" OR \"discount\" OR \"scam\")",
+     "in"
+    ],
+    [
+     "site:instagram.com (\"loot 😀_support\" OR \"loot 😀.support\" OR \"loot 😀 customer care\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"loot 😀\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"loot 😀\" (\"support\" OR \"customer care\" OR \"helpdesk\") (\"phone\" OR \"contact\" OR \"whatsapp\" OR \"refund\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"loot 😀\" (\"UPI\" OR \"payment\" OR \"delivery fee\" OR \"claim\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"loot 😀\" (\"account blocked\" OR \"KYC\" OR \"OTP\" OR \"login\" OR \"password reset\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"loot 😀\" (\"replica\" OR \"first copy\" OR \"factory price\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"loot 😀\" (\"job\" OR \"internship\" OR \"HR\" OR \"registration fee\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"loot 😀\" (\"APK\" OR \"install for refund\" OR \"investment\" OR \"trading signals\")",
+     "in"
+    ],
+    [
+     "site:instagram.com/p/ \"loot 😀\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"loot 😀\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"loot 😀\"",
+     "us"
+    ]
+   ]
+  ],
+  [
+   "100% off",
+   [
+    [
+     "site:instagram.com/reel/ \"100% off\" \"telegram channel\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"100% off\" \"loot\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"100% off\" \"free cash\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/p/ \"100% off\" \"telegram\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"100% off\" \"link in bio\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"100% off\" (\"giveaway\" OR \"discount\" OR \"scam\")",
+     "in"
+    ],
+    [
+     "site:instagram.com (\"100% off_support\" OR \"100% off.support\" OR \"100% off customer care\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"100% off\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"100% off\" (\"support\" OR \"customer care\" OR \"helpdesk\") (\"phone\" OR \"contact\" OR \"whatsapp\" OR \"refund\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"100% off\" (\"UPI\" OR \"payment\" OR \"delivery fee\" OR \"claim\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"100% off\" (\"account blocked\" OR \"KYC\" OR \"OTP\" OR \"login\" OR \"password reset\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"100% off\" (\"replica\" OR \"first copy\" OR \"factory price\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"100% off\" (\"job\" OR \"internship\" OR \"HR\" OR \"registration fee\")",
+     "in"
+    ],
+    [
+     "site:instagram.com \"100% off\" (\"APK\" OR \"install for refund\" OR \"investment\" OR \"trading signals\")",
+     "in"
+    ],
+    [
+     "site:instagram.com/p/ \"100% off\"",
+     "in"
+    ],
+    [
+     "site:instagram.com/reel/ \"100% off\"",
+     "in"
+    ],
+    [
+     "site:instagram.com \"100% off\"",
+     "us"
+    ]
+   ]
+  ]
+ ]
+}

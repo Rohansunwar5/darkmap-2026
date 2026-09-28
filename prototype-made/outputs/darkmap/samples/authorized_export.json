@@ -1,0 +1,49 @@
+{
+  "brand": {
+    "name": "Acme",
+    "official_accounts": ["acme"],
+    "official_domains": ["acme.example"]
+  },
+  "entities": [
+    {
+      "external_id": "profile-acme-support",
+      "kind": "profile",
+      "account": "acme.support",
+      "display_name": "Acme Support",
+      "bio": "Official Acme support account",
+      "caption": "",
+      "mentions": [],
+      "hashtags": [],
+      "urls": [],
+      "timestamp": "2026-09-11T08:00:00Z",
+      "engagement": {"followers": 12},
+      "media": [],
+      "provenance": {
+        "method": "user_export",
+        "source": "Instagram account export supplied by the rights holder",
+        "authorization": "Rights holder authorized this export for brand-protection review.",
+        "collected_at": "2026-09-11T08:00:00Z"
+      }
+    },
+    {
+      "external_id": "post-verify-1",
+      "kind": "post",
+      "account": "acme.support",
+      "display_name": "Acme Support",
+      "bio": "Official support",
+      "caption": "Acme giveaway winner: pay a verification fee and send your password at https://acme-verify.example/login",
+      "mentions": [],
+      "hashtags": ["acme"],
+      "urls": [],
+      "timestamp": "2026-09-11T08:05:00Z",
+      "engagement": {"likes": 4, "comments": 1},
+      "media": [],
+      "provenance": {
+        "method": "user_export",
+        "source": "Instagram account export supplied by the rights holder",
+        "authorization": "Rights holder authorized this export for brand-protection review.",
+        "collected_at": "2026-09-11T08:05:00Z"
+      }
+    }
+  ]
+}
