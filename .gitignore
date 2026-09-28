@@ -49,3 +49,7 @@ darkwebscrapper/ok.js
 
 # generated
 graphify-out/
+
+# local-only docs
+HANDOVER*.md
+better-pm-video-script.md
